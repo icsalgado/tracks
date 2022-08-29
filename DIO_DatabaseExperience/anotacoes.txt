@@ -1,0 +1,32 @@
+instalando mysql no ubuntu
+	sudo apt-get install mysql-server
+	sudo apt-get install mysql-client
+	
+configurar sgbd com outro usuario alem do root
+	sudo mysql_secure_installation
+	
+Verificar status
+	sudo systemctl status mysql.service
+	
+Entrar como root
+	sudo mysql
+	
+instalando o postgreSQL no ubuntu
+	sudo apt-get install postgresql postgresql-cliet
+	
+Verificar status
+	systemctl status postgresql.service
+	
+Conectando no postgresql
+	é criado um user postgres
+		sudo -i -u postgres
+		
+	criar um banco
+		createdb teste;
+		psql teste;
+	Verificar versão do sgbd
+		SELECT version();
+	Verificar a data
+		SELECT current_date;
+	Remover o banco
+		dropdb teste;
