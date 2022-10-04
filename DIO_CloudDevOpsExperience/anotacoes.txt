@@ -1,0 +1,82 @@
+INTRODUÇÃO E LABORATÓRIO VIRTUAL
+
+Links Úteis 
+
+Separamos aqui alguns materiais complementares como artigos, apostilas, apresentações, entre outros. Esses materiais serão úteis para você se aprofundar ainda mais nos principais temas deste Módulo, listados a seguir:
+
+O que são containers? 
+
+https://www.ibm.com/br-pt/cloud/learn/containers
+
+https://www.redhat.com/pt-br/topics/containers
+
+ 
+
+Diferenças entre containers e máquinas virtuais (VMs)
+
+https://www.redhat.com/pt-br/topics/containers/containers-vs-vms
+
+ 
+
+O que é Docker?
+
+https://www.redhat.com/pt-br/topics/containers/what-is-docker
+
+https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/container-docker-introduction/docker-defined
+
+ 
+
+Comandos essenciais 
+
+https://medium.com/xp-inc/principais-comandos-docker-f9b02e6944cd
+
+https://docs.docker.com/engine/reference/commandline/docker/
+
+https://dev.to/soutoigor/docker-imagens-containers-e-seus-principais-comandos-23p6
+
+Bons estudos! wink
+
+
+Na maquina configurar o SSH, caso não tenha instalado o openssh
+	ip a mostra o IP da maquina para acesso user@ip
+	
+	baixando o docker usando curl com script rápido
+	
+	https://hub.docker.com/
+	
+	docker pull hello-world
+	docker images
+	docker run hello-world
+	docker ps >>>> mostra os containers
+		-a >>>> mostra o que foi feito
+		
+	docker pull ubuntu
+	docker run ubuntu >>> entra e sair rapidamente
+	docker run ubuntu sleep 10 >>> umnovo container fica em execução por 0 segundos
+	docker stop "id"
+		ou
+		docer stop "name"
+	
+	docker run -it ubuntu >>> modo interativo e com terminal dentro do container
+		** exite a sintaxe onde existe o comando container depois do docker ex: docker containet ls ou docker container run ubuntu
+		
+	docker run -d ubuntu >>> para rodar em background
+	docker exec -it "id do container" /bin/bash >>> executar o container inicializado e rodando em background
+	
+	docker rm "id do container" >>>> remove o container
+	docker rm1 "nome da imagem" >>> remove a imagem
+	
+	docker run -dti --name Ubuntu-A ubuntu >>> para dar nome a um container
+	
+	docker cp "arquivo.txt" Ubuntu-A:/destino >>> do local para o container
+	
+	mysql
+		docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 mysql  >>>p para setar a porta (porta do host:porta do container) e -e para setar variaveis de ambiente
+	
+		docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 --volume=/data/mysql-A:/var/lib/mysql mysql >>> para salvar os arquivos do banco nesse caso em um outro local, nesse caso na maquina local, assim perdendo o container os dados estão preservados
+		
+		docker exec -it mysql-A bash
+		
+		mysql -u root -p --protocol=tcp
+		
+	docker inspect mysql-A
