@@ -1,0 +1,15 @@
+cat /etc/debian_version
+
+	$ significa que está com um user comum, qualquer um menos o root
+	# significa que é o root
+	
+	"su - " vai para super user no ambiente do root
+	
+	o root não fica no diretorio home
+	
+	cd - vai para o último diretorio acessado
+	cd sozinho volta para a home
+	
+	ctrl + l limpa a tela
+	
+	ctrl + d sai do shell
