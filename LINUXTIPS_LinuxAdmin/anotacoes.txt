@@ -14,4 +14,97 @@ cat /etc/debian_version
 	
 	ctrl + d sai do shell
 	
-	
+LSB - linux standard base
+	FHS -  Filesystem Hierarchy Standard
+		/bin
+			binários do sistema, os executaveis como o ls, os essenciais para o linux
+		/boot
+			inicialização do sistema
+			vmlinuz - é o kernel do linux
+		/dev
+			devices - dispositivos
+			sda - 
+				Discos sata
+				um segundo disco seria sdb e assim por diante
+				sda1
+					partição do disco sda
+					os discos podem ser particionado em até 4 primarias
+						sda1, sda2, sda2, sda4
+					partições lógicas são a partir do 5
+						sda5, sda6 ...							
+			hda -
+				Discos IDE
+				
+			Existem dois tipos de devices
+				Bloco - armazenamento
+					HD por exemplo
+				Caractere - transferencia de informação
+					Terminal por exemplo
+						tty
+		/etc
+			arquivos de confguração da maquina
+				nome da maquina - hostname por exemplo
+		/home
+			as homes de cada user
+		initrd.img
+			imagem de inicio 
+		/lib
+			bibliotecas compartilhadas do sistemas
+				libdiscover.so por exemplo
+			/lib/modules/5.10.0-18-amd64/kernel/drivers
+				driveis do sistema
+					modulos de kerner = driver
+						vrs.ko por exemplo
+		/lost+found
+			para recuperar perdidos por falhas
+		/media
+			pendrives, hd externo
+		/mnt
+			ponto de montagem usado mais de forma temporária
+		/opt
+			ponto onde deveriam estar os arquivos de softwares, mas é pouco usado
+		/proc
+			filesystem virtual criado pelo kernel e outros processos
+			normalmente é usado com arquivos dinâmicos				
+		/root
+			home do root
+		/run
+			tudo que está rodando desde o último boot
+			tmpfs temporary filesystem
+		/sbin	
+			super user binaries
+		/srv
+			dados estaticos como arquivos do apache por exemplo
+		/sys
+			arquivos do sistema do pornto de vista de kernel, driver e outros devices	
+		/tmp
+			usado por apps para dados temporários
+		/usr
+			segunda hierarquia de diretórios do linux
+			/bin
+				binarios não essenciais para o sistema
+			as bibliotecas vão ser locais
+			/local
+				terceira hierarquia de diretórios do linux
+		/var
+			variaveis, logs, backups, cache	
+						
+						
+	desligar a maquina
+		halt
+		poweroff
+		shutdowb -h now
+		shutdown -h 18:00
+		agutdown -h +30 "mensagem para os users"
+		shutdown -r now >> reinicia
+		reboot
+		init 0 >> desliga
+		init 6 >> reinicia
+						
+						
+						
+						
+						
+						
+				
+				
