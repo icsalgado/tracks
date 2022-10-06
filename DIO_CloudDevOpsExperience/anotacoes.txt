@@ -80,3 +80,57 @@ Na maquina configurar o SSH, caso não tenha instalado o openssh
 		mysql -u root -p --protocol=tcp
 		
 	docker inspect mysql-A
+		item volume tem destination, dentro o container onde o BD é salvo
+	mysql -u root -p --protocol=tcp --port=3306
+		create database aula;
+		use aula;
+		create table alunos (alunois int, nome varchar(50), sobrenome varchar(50), endereco varchar(50), cidade varchar(50));
+		insert into alunos (alunois, nome, sobrenome, endereco, cidade) values (1, 'carlos', 'silva', 'av123', 'nova');
+		
+	Outros tipos de mount - formas de criar um volume de dados no docker
+		bind
+			foi o exemplo acima
+			vincular umdeterminado diretório ou arquivo do host dentro do conainer
+			docker run -v /hostdir:/containerdir mysql
+			
+			
+			docker run -dti --mount type=bind,src=/root/data/debian-A,dst=/data debian
+			
+			docker run -dti --mount type=bind,src=/root/data/debian-A,dst=/data,ro debian >> acrescenta um ro para read only
+			
+			
+		named
+			São volumes que são criados manualmente
+				docker volume create nome_do_volume
+			São criados em /var/lib/docker/volumes e podem ser refenciados apenas pelo nome
+				docker run -v mysql_data:/containerdir mysql
+				
+			docker volume ls
+				para listar os volumes
+			
+			docker volume create data-debian
+			
+			docker run -dti --name debian-B --mount type=volume,src=data-debian,dst=/data debian
+			
+			docker volume rm data-debian
+			
+			docker volume prune >> remove todosos volumes no host que não estão em uso
+				
+			docker em -f centos-A >> para remover o container sem precisar para-lo
+		dockerfile volume
+			criados pela instrução volume criados no mesmo caminho do docker /var/lib/docker/volumes
+			o volume é criado ao executar o container e são uteis para salvar dados persistentes
+	
+	
+	docker container prune >> remove todos containers
+	
+Apache
+	docker pool httpd
+		os arquivos ficam em /var/local/apache2/htdocs
+		
+		docker run --name apache-A -d -p 80:80 --volume=/root/data/apache-A:/usr/local/apache2/htdocs httpd
+		
+php
+	docker pull php:7.4-apache
+	
+	docker run --name php-A -d -p 8080:80 --volume=/root/data/php-A:/var/www/html php:7.4-apache

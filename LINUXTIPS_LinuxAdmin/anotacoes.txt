@@ -13,3 +13,5 @@ cat /etc/debian_version
 	ctrl + l limpa a tela
 	
 	ctrl + d sai do shell
+	
+	
