@@ -1,0 +1,250 @@
+cat /etc/debian_version
+
+	$ significa que está com um user comum, qualquer um menos o root
+	# significa que é o root
+	
+	"su - " vai para super user no ambiente do root
+	
+	o root não fica no diretorio home
+	
+	cd - vai para o último diretorio acessado
+	cd sozinho volta para a home
+	
+	ctrl + l limpa a tela
+	
+	ctrl + d sai do shell
+	
+LSB - linux standard base
+	FHS -  Filesystem Hierarchy Standard
+		/bin
+			binários do sistema, os executaveis como o ls, os essenciais para o linux
+		/boot
+			inicialização do sistema
+			vmlinuz - é o kernel do linux
+		/dev
+			devices - dispositivos
+			sda - 
+				Discos sata
+				um segundo disco seria sdb e assim por diante
+				sda1
+					partição do disco sda
+					os discos podem ser particionado em até 4 primarias
+						sda1, sda2, sda2, sda4
+					partições lógicas são a partir do 5
+						sda5, sda6 ...							
+			hda -
+				Discos IDE
+				
+			Existem dois tipos de devices
+				Bloco - armazenamento
+					HD por exemplo
+				Caractere - transferencia de informação
+					Terminal por exemplo
+						tty
+		/etc
+			arquivos de confguração da maquina
+				nome da maquina - hostname por exemplo
+		/home
+			as homes de cada user
+		initrd.img
+			imagem de inicio 
+		/lib
+			bibliotecas compartilhadas do sistemas
+				libdiscover.so por exemplo
+			/lib/modules/5.10.0-18-amd64/kernel/drivers
+				driveis do sistema
+					modulos de kerner = driver
+						vrs.ko por exemplo
+		/lost+found
+			para recuperar perdidos por falhas
+		/media
+			pendrives, hd externo
+		/mnt
+			ponto de montagem usado mais de forma temporária
+		/opt
+			ponto onde deveriam estar os arquivos de softwares, mas é pouco usado
+		/proc
+			filesystem virtual criado pelo kernel e outros processos
+			normalmente é usado com arquivos dinâmicos				
+		/root
+			home do root
+		/run
+			tudo que está rodando desde o último boot
+			tmpfs temporary filesystem
+		/sbin	
+			super user binaries
+		/srv
+			dados estaticos como arquivos do apache por exemplo
+		/sys
+			arquivos do sistema do pornto de vista de kernel, driver e outros devices	
+		/tmp
+			usado por apps para dados temporários
+		/usr
+			segunda hierarquia de diretórios do linux
+			/bin
+				binarios não essenciais para o sistema
+			as bibliotecas vão ser locais
+			/local
+				terceira hierarquia de diretórios do linux
+		/var
+			variaveis, logs, backups, cache	
+						
+						
+	desligar a maquina
+		halt
+		poweroff
+		shutdowb -h now
+		shutdown -h 18:00
+		agutdown -h +30 "mensagem para os users"
+		shutdown -r now >> reinicia
+		reboot
+		init 0 >> desliga
+		init 6 >> reinicia
+
+Comandos internos e externos do shell
+	internos, dentro do interpretador de comandos e é executado mais rapidamente
+	
+	which ls
+		para saber onde está o comando
+	man builtins
+	
+	type alias
+		diz se o comando é interno ou externo
+	
+ls -B 
+	lista arquivos exceto backups
+		backups são terminados em ~ por convenção
+		
+ls --color=auto
+	diferencia pastas e arquivos em cores
+
+ls -f = ls -p esse último não mostra o * e @ 
+	lista por ordem de criação/alteração
+	
+Links simbolicos(atalhos)
+	representados por @ no final
+
+Executaveis
+	representados por * no final
+	
+ls -lG = ls -lo esse ultimo lista apenas o dono e ls -lg lista apenas o grupo
+	oculta a coluna do grupo
+	
+ls -ln
+	muda o nome do dono e grupo para formato numérico
+	
+ls -L
+	altera os links simbilicos listados apenas para uma referencia unica
+	
+ls -r
+	reverte a listagem para ultimos alterados
+		boa para analisar Logs
+ls -lac
+	classifica pela ctime de alteração
+ls -X
+	classifica conforme a extensão
+ls -R
+	listagem recursiva
+
+	drwxr-xr-x 2 root root 4096 out  6 21:13 pasta1
+		o 2 depois da permissão indica quantos diretórios tem dentro do diretorio listado, incluindo . e ..
+		
+pwd
+	caminho atual
+cd - 
+	volta para o diretório anterior
+
+mkdir 
+	criar diretório
+	
+	mkdir -p diretorio1/diretorio1-1/diretorio1-1-1
+		para criar uma estrutura maior de diretórios -p
+		
+comando tree -A mostra a arvore mais bonitinha
+	
+rmdir -p diretorio1
+	remover recursuvamente os diretorios vazios
+
+cat - semelhante ao type no windows
+	visualiza o conteudo de um arquivio
+	-n exibe o numero da linha
+	-s oculta linhas em branco repetidas exceto uma
+	-b numera linhas com caracteres
+	-E adiciona um $ no final de cada linha
+	-T tabs são convertidos em ^I
+	
+zcat
+	arquivos .gz
+bzcat
+	.bz2
+xzcat
+	.xz
+tac
+	exibe o arquivo ao contrário
+	
+rm
+	-r remove recursivo
+	-rf remove recursivamente sem perguntas
+	-- -
+		para remover o arquivo -
+
+cp
+	copiar da origem para o destino
+	-u somente se os arquivos forem atualizados
+	-x não copia arquivos em partições separadas
+	-p preserva dono grupo e permissões
+	-a referencia a links simbolicos, preserva atributos e recursivamente
+
+mv
+	move arquivo para destino
+	renomeia aquivo para outro nome
+	-u move apenas se no destino a data do arquivo for mais antiga
+	
+	
+nano
+	acompanha o debian GNUlinux
+	
+	para sair ctrl^ + x
+
+mcedit
+	apt-get install mc
+	utiliza do F1 ao F10
+	para sair pode usar além do F10 duas vezes o esc
+	
+vi
+	funciona com modal
+		modo de comandos
+		modo de edição
+	
+Extra por minha conta hahah
+	EMACS
+		apt install snapd
+		snap install emacs --classic
+		
+		ou
+		
+		apt-get install emacs
+		
+		https://www.youtube.com/watch?v=eu_UiSiIwz0
+		
+		com GUI 
+			emacs texto.txt
+			
+		sem GUI
+			emacs -nw texto.txt
+			ctrl + x sai da edição
+			ctrs + s salva
+			crtl + x
+			ctrl + c sair
+			
+	
+	
+	
+	
+				
+						
+						
+						
+						
+				
+				
