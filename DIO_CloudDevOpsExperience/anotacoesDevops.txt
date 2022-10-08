@@ -176,8 +176,36 @@ docker run -dti --name ubuntu-A --network minha-rede ubuntu
 docker network rm minha-rede
 
 
+DEFINIÇÃO E CRIAÇÃOD E UM DOCKER FILE
 
+docker run -dti --name ubuntuPython ubuntu
+docker exec -it ubuntuPython bash
+apt install python3 -y
+apt install nano
+apt clean
 
+nano app.py
+	nome = input("qual seu nome")
+	print (nome)
+
+acima é o modo manual, criando o container, entrando, instlando e criando aplicação
+
+docker file
+
+cria a aplicação
+
+vim dockerfile
+	FROM ubuntu
+
+	RUN apt update && apt install -y python3 && apt clean
+
+	COPY app.py /opt/app.py
+
+	CMD python3 /opt/app.py
+
+docker build . -t ubuntupython2
+
+docker run -it --name meu-app ubuntupython2
 
 
 
