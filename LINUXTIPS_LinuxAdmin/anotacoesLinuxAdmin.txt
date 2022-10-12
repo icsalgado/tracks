@@ -236,12 +236,130 @@ Extra por minha conta hahah
 			ctrs + s salva
 			crtl + x
 			ctrl + c sair
+
+Day 4
+Coringas
+	*
+		nenhum um ou mais de um caractere na posição
+	?
+		um caractere
+	[a-z]
+		padrão
+		[^abc]
+			negação, não termina com nenhum dos caracteres
+	{}
+		padrão strings
+		{zd,ze}
+			pedaços do arquivo
 			
-	
-	
-	
-	
-				
+Comandos diversos
+	clear
+		limapr a tela
+		ctrl+l também tem essa função no shell
+	#
+		pode comentar um comando e salva-lo sem executar
+	date
+		data e hora atual e fuso
+		date -u
+			horario GMT
+		date -s 18:36
+			alteração do horário
+		date 10101837202240
+			MES DIA HORA MINUTO ANO SEGUNDOS
+			para alterar a data
+			
+		hwclock --systohc
+			para salvar no hardware da maquina
+			
+		date +%d
+			somente dia
+		date +%y
+			somente ano com 2 digitos
+		date +%Y
+			somente ano com 4 digitos
+		date +%m
+			somente mês
+		date +%d_%m_%Y
+			data completa com _ de espaçador
+		date +"%d %Y %j %T "
+			j para dia do ano em 365 
+			T para hora completa
+		date +"%r %p"
+			r para horario americano
+			p AM PM
+		date --date='@1234567890'
+			contador do unix time
+		date -u --date='@1'
+			primeiro segundo do unix time
+	df
+		espaço livre nas partições
+		df -h
+			mostrando com multiplos da computação
+		df -H
+			mostrando com multiplos do SI
+		df -l
+			arquivos locais
+		df -m
+			saidas em megabytes
+		df -a
+			detalhamento em pseudo filesystems
+			parecido com mounts
+		df -i
+			inodes > posição no disco	
+		df -T
+			sistemas de arquivo	
+		df -t ext4
+			filtro para uma listagem
+		df -P
+			formato posix
+	ln
+		cria um link
+		ln -s
+			link simbólico
+			cp -l
+				faz um apontamento hard link
+	du
+		ocupação do tamnho de cada arquivo
+		du -h
+			mostra em multiplos
+		du -s
+			para sumarizar
+		du -k
+			para mostrar em kbytes
+		du -m
+			mebytes
+		du --inodes
+			inodes
+		du -c
+			mostra o total
+	find
+		buscar tudo dentro do diretório atual
+		find . -name ls
+			diretorios que tenham no ls
+		find . -name mc
+			binarios e pastas
+		find . -type d -name mc
+			busca tipo diretorios
+		find . -type f -name mc
+			busca arquivos
+		find . -maxpth 2 -type f -name mc
+			busca com dois niveis
+			-minpth
+				minimo de niveis
+		find /etc -mtime -1
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 						
 						
 						
