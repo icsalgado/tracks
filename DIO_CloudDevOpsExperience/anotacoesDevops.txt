@@ -64,7 +64,7 @@ Na maquina configurar o SSH, caso não tenha instalado o openssh
 	docker exec -it "id do container" /bin/bash >>> executar o container inicializado e rodando em background
 	
 	docker rm "id do container" >>>> remove o container
-	docker rm1 "nome da imagem" >>> remove a imagem
+	docker rmi "nome da imagem" >>> remove a imagem
 	
 	docker run -dti --name Ubuntu-A ubuntu >>> para dar nome a um container
 	
@@ -208,13 +208,46 @@ docker build . -t ubuntupython2
 docker run -it --name meu-app ubuntupython2
 
 
+Imagem MULTISTAGE
+	Gerada uma imagem de uma linguagem (golang), encapsulado o binário em outra imagem (alpine)
+	
+Subir para o Dockerhub
+	docker login
+	docker build . -t icsalgado/my-go-app:1.0
+	docker push icsalgado/my-go-app:1.0
 
+Registry - nome dado a um repositorio de imagens
 
+	docker run -d -p 5000:5000 --restart=always --name registry registry:2 
+		isso no servidor de imagens
 
+	docker image tag 3369c59bd85b 192.168.122.122:5000/my-go-app:1.0
+		tagear a imagem para o servidor de imagens no servidor inicial
+	curl 192.168.122.122:5000/v2/_catalog
+		para ver se tem imagens no servidor de imagens
 
+	docker push 192.168.122.122:5000/my-go-app:1.0
+		ele vai indicar que não está usando o https
+	editar arquivo /etc/docker/daemon.json 
+		{ "insecure-registries":["192.168.122.122:5000"] }
+	systemctl restart docker
+	
 
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
