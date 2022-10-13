@@ -347,6 +347,123 @@ Comandos diversos
 			-minpth
 				minimo de niveis
 		find /etc -mtime -1
+			data de criação a um dia
+				exite
+					created
+					modified
+					access
+			find /etc -amin -300
+				acessados nos ultimos 300 minutos
+			find /etc -cmin -1
+				criados no ultimo minuto
+					-ctime para dias
+		find /usr -mount
+			faz a pesquisa em pontos montados no diretorio
+		find /usr -gid
+			pesquisa por grupo
+			
+			-uid 
+				por usuario
+			-user nomeDoUser
+				arquivos e pastas desse dono
+			-group nomeDoGrupo
+				arquivos e grupos com esse nome
+		find /usr -links 2
+			arquivos com 2 referencias
+		find /usr -size -1000
+			arquivos menos de 1000 blocos de bytes
+				+1000
+				1000
+		find /usr -types f
+					files
+				d
+					diretorio 
+				b
+					blocos
+				p
+					pipes
+				c
+					caracteres
+				s
+					sockets
+				l
+					links simbolicos
+	free
+		memoria ram fisica livre e memoria swap
+		usa o cat /proc/meminfo
+		
+		free --kilo
+		free --mega
+		free --kibi
+		free --mebi
+		
+		free --mega -s 1
+			a cada segundo
+			
+	grep
+		pesquisa por expressões dentro de um arquivo ou na entrada padrão
+		grep 'root' /etc/passwd
+		
+		grep -v
+			inverte a busca, exceto o que foi indicado
+		grep -f
+			texto num arquivo
+		grep -i
+			ignora case sensitive
+		grep -e 'ŵww-data.*nologin$'
+			pesquisa por expressões regulares ^
+			.* qualquer caractere
+			$ termina alí
+		grep -F
+			busca também caracteres especiais como .*
+		grep -r
+			recursivamente
+		grep -h
+			oculta o nome do arquivo
+		grep -l
+			lista nome do arquivo apenas
+		grep -n
+			numero da linha
+	head
+		10 primeiras linhas de um arquivo
+		head -n 3
+			3 linhas
+		head -c
+			quantidade de bytes
+			-c 50 passwd
+				50 primeiros bytes de um arquivo
+	nl
+		numera a quantidade de linhas de um arquivo
+		nl -f a
+			numerar linhas vazias
+				
+	>
+		salva num arquivo 
+		echo "teste" > arquivo.txt
+		echo "testes" >> arquivo.txt
+			salva no final do arquivo
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
