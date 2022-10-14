@@ -232,11 +232,19 @@ Registry - nome dado a um repositorio de imagens
 		{ "insecure-registries":["192.168.122.122:5000"] }
 	systemctl restart docker
 	
-
+Docker compose
+	definir e compartilar aplicativos com vários conteineres
+	
+	verificar a versão compativel do compose com o docker
 	
 	
+	apt-get install -y docker-compose
 	
 	
+	depois de criar o docker-compose.yml
+	
+	docker-compose up para subir
+			down para descer
 	
 	
 	
