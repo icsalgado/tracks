@@ -271,7 +271,8 @@ Kubernets
 	recuperação de desastre	
 
 
-
+Minikube
+	utilizado para executar o kubernets na maquina local
 
 
 
