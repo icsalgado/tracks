@@ -442,13 +442,142 @@ Comandos diversos
 		echo "teste" > arquivo.txt
 		echo "testes" >> arquivo.txt
 			salva no final do arquivo
+	more
+		more arquivo
+		ele não rola para cima
+		mostra percentual do arquivo
+		pode usar barra para pular página
+		usar enter para linha
 		
+		cat arquivo | more
+			não mostra o percentual
+	less
+		less arquivo
+		não mostra percentual
+		controle com setas, enter e espaço
+		permite pesquisa
 		
-		
-		
-		
-		
-		
+		/expressao
+			enter busca a proxima ocorrencia
+	sort
+		ordena o arquivo em ordem numerica e alfabetica
+		sort -r 
+			inverte string
+		sort -n
+			interte numericamente
+		sort -c
+			informa se esta ordenado ou não
+		sort +1
+			ordenando pela segunda coluna
+		sort -t " "
+			utiliza o delimitador espaço
+		sort -k 1
+			utiliza o delimitador chave primeiro campo
+			-k 2 segundo campo
+	tail
+		visualizar o final de um arquivo, ultimas 10 linhas
+		tail -n 4
+			ultimas 4 linhas
+		tail -f
+			modificações feitas
+			ctrl c sai
+	time
+		tempo de execução de um comando
+		time ls
+			tempo levado para listar
+	touch
+		cria um arquivo
+	uptime
+		tempo de execução da mauina
+	dmesg
+		mensagens do ringbuffer do kernel
+		--color=never
+			sem cor - interessante para scripts
+		-w
+			tipo tail -f
+		-x
+			decodifica msgs em texto
+		-t
+			transforma a timestamp para uma data e hora legivel
+	 	-c
+	 		limpa mensagens depois de exibir as informações
+	 mesg
+	 	receber ou não mensagens do talk
+	 echo
+	 	exibe mensagem na tela
+	 	echo -n 
+	 		não faz quebra de linha
+	 	echo -e
+	 		para caracteres especiais
+	 su
+	 	eleva a privilegios de root
+	 	su -
+	 		equivalente a su -l para login, eliminando variaveis de ambiente, é mais seguro
+	 sudo
+	 	escalar privilégios 
+	 	adduser usuario sudo
+	 	deluser usuario sudo
+	 sync
+	 	gravar buffer do kernel no disco
+	 uname
+	 	nome do sistema
+	 	uname -a
+	 		mais detalhes
+	 	uname -s 
+	 		exibe o kernel
+	 	uname -n
+	 		nome da maquina
+	 	uname -r
+	 		versão do kernel rodando
+	 	uname -v
+	 		data de compilação do kernel
+		uname -m
+			aruitetura 	
+	reboot
+		reinicia a maquina, com o root
+		systemctl reboot
+			mesma coisa
+		reboot -f
+			força sem fechar processos 
+			recomendado usar o sync antes
+		shutdown -r now
+			mesma coisa
+		echo b >/proc/sysrg-trigger
+			reinicia direto no kernel
+	halt
+		desliga a maquina
+		systemctl halt
+			mesma coisa
+		shutdown -h now
+			mesma coisa
+		echo o >/proc/sysrq-trigger
+			desliga no kernel
+		shutdown -h horario
+			agenda para desligar, pode ser o -r para reiniciar
+				shutdown -h +10
+					desliga em 10 minutos
+		shutdown -c
+			cancela os agendamentos
+	wc
+		conta palavras, bytes e linhas
+			na ordem Linha Palavras bytes
+		wc -l
+			numero de linhas
+		wc -c
+			numero de bytes
+		wc -w
+			numero de palavras
+	seq
+		sequencia de numeros
+		seq 10
+			de 1 a 10
+		seq 2 10
+			de de 2 a 10
+		seq 2 2 10
+			de 2 em 2 começando de 2 ate 10
+			inicio incremento final
+		seq -w
+			utiliza 01 02 ...		
 		
 		
 		
