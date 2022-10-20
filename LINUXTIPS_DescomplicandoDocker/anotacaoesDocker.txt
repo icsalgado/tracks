@@ -5,3 +5,58 @@ Containers
 	
 instalando docker
 	curl -fsSL https://get.docker.com | bash
+	
+docker container run -ti
+	terminal e interatividade
+	ctrl d 
+		sai do container como exit ou logout e mata o container
+	ctrl pq 
+		sai do container e deixa ele rodando
+docker container attach IDCONTAINER
+	para entrar no container em execução
+	
+um servidor web sempre precisa rodar em primeiro plano num container
+	deve rodar com -d para ser executado com daemon
+	
+	docker container exec -ti COONTAINERID bash
+		vai abrir o bash do container
+		
+docker container stop CONTAINETID
+		
+docker container start CONTAINETID
+		
+docker container restart CONTAINETID
+
+docker container pause CONTAINETID
+
+docker container unpause CONTAINETID
+
+docker container inspect CONTAINERID
+	detalhes do container
+		
+docker container rm CONTAINERID
+	rm -f
+		força se em execução
+docker container logs CONTAINERID
+
+docker container stats CONTAINERID
+		
+docker container top CONTAINERID
+	processos em execução
+	
+docker container run -d -m 128M nginx
+	limita quantidade de memoria
+		--cpus 0.5
+			meio core
+			
+docker container update 
+
+docker image build -t toskeira:1.0 .
+		
+		
+		
+		
+		
+		
+		
+		
