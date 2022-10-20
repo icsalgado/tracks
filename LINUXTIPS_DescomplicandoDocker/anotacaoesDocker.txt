@@ -1,0 +1,7 @@
+Containers
+	remete a isolamento lógico-namespaces (processos, usuarios, rede, mountpoint) e isolamento fisico-cgroup (CPU, memoria IO)
+	
+	CHROOT foi o precursor do Docker, ele e o LXC
+	
+instalando docker
+	curl -fsSL https://get.docker.com | bash
