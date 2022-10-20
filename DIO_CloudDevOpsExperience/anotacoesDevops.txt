@@ -245,11 +245,52 @@ Docker compose
 	
 	docker-compose up para subir
 			down para descer
+
+
+Cluster
+	aglomerado
+	série de computadores aglomerados trabalhando em conjunto conhecidos como nós
 	
+	Docker Swarm
+		fornece funcionalidades de orquestração de containeirs
+		nós gerenciadores
+			cli é executado deste nó
+			precisa ter no minimo 50% dos gerenciadores on para manter o cluster
+		nós de trabalho
+			deve contero token de inicialização	
 	
-	
-	
-	
+
+
+
+
+Kubernets
+	k8s para orquestração de containers
+	migração do monolitico para microsserviços
+	disponibilidade
+	escalabilidade e alta performance
+	recuperação de desastre	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
