@@ -15,7 +15,7 @@
 
 <a href="https://github.com/icsalgado/tracks/tree/master/LINUXTIPS_DescomplicandoDocker">diretório</a>
 
-- O que é docker, intalação e sintaxes nova - antiga
+- O que é docker, instalação e sintaxes nova x antiga
 - Execução e configuração de containers, configurando CPU e Memória
 - Primeiro Dockerfile
 - ...
