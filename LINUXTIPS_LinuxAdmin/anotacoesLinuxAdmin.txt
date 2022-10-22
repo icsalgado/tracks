@@ -578,30 +578,268 @@ Comandos diversos
 			inicio incremento final
 		seq -w
 			utiliza 01 02 ...		
+	chattr
+		permite alterar atributos de um sistema de arquivos
+		trabalha em conjunto com lsattr
 		
+			padrão ---e--- extense padrão no ext4
+		chattr +i teste
+			imutavel, não permite alterações no arquivo
+			nem o root pode 
+			
+			-i teste
+				remove o atributo
+				
+		chattr +a teste
+			permite adicionar apenas conteudo no final do arquivo e impede a remoção
+			para diretórios ele impede apenas que os arquivos sejam removidos	
+			
+		chattr =aie * 
+			para atribuir a vários
 		
+		chattr +c
+			faz a compactação em algumas distros
+			
+		chattr +s
+			remoção segura, os blocos são zerados e dificulta a recuperação. Mas esta caindo em desuso principalmente por causa do journaling
+		chattr +S
+			sync imediato para arquivos
+			+D
+				sync imediato para diretórios
+		chattr +d
+			não serão incluidos no backup do Dump
+			
+	cut
+		corta um pedaço do arquivo para exibir apenas parte dele
+	cmp arquivo1 arquivo2
+		para comparar um arquivo indicando o byte diferente
+	diff arquivo1 arquivo2		
+		compara mostrndo a diferença mais legivel
+		diff -u
+			unificado fica mais legivel
+		diff -r
+			compara diretórios
 		
+	apt-get patch
+		patch -p1 -N </caminho
+			p1 signica o nível da pasta para comparação
+			significar aplicar as diferenças entres arquivos e diretórios
+		patch -p1 -R
+			reverte um patch aplicado
+	whereis
+		localiza pagina de manual do sistema	
+	which 
+		localiza o binário do comando
+	jobs
+		programas em segundo plano
 		
+	fg 1
+		passa o programa rodando em background para primeiro plano
+	bg 1
+		passa para segundo depois de um ctrl z que serve para parar
+	kill 
+		encerra um processo
+	
+	; 	
+		permite executar comandos em sequencia
 		
+	sleep 2
+		pausa por 2 segundos
+	ps
+		exibe processos em execução no teminal altual 
+		ps -a
+			em todos terminais
+		ps -ax
+			com terminal associado ou não, e em todos usuarios
+		ps -aux
+			listagem com filtro de usuario
+			coluna stat
+				s soneca não interrompivel
+				D io de disco
+				I ocioso
+				R rodando
+				Z zumbi, perde a referencia de um processo pai
+				X processo morto
+		ps -axm
+			memoria de cada processo
+		ps -a -x -f = ps -axf
+			listagem em modo de arvore
+		ps -e
+			variaveis de ambiente utilizada no comando
+		ps -w
+			exibe linhas longas
+	pidof
+		retorna a pid de um processo especificado pelo nome
+		-s
+			retorna o primeiro processo
+	pstree
+		exibe a arvore de processos
+		-A
+			usando caracteres
+		-c
+			mostra incluindo processos pai
+		-h
+			processos pai e antecessores
+		-p
+			exibe o pid
+		-H 433
+			exibe o processo 433 em destaque
+	kill
+		mata um processo
+		por padrão usa o -15 ou kill -TERM
+			são chamado de sinal - pede para o programa finalizar de forma amigavel
+		kill -9 ou kill -KILL
+			mata o processo sem perguntar nada
+		kill -HUP ou kill -1
+			releitura dos arquivos de configuração sem finalizar
+		kill %1
+			matar conforme o comando jobs
+			
+	pgrep -u
+		grep de processos
+	pkill
+		mata processos atraves do nome
+	killall
+		mata processo de acordo com nome
+	killall5
+		esse mata todos os procesos
+		perde inclusive o acesso remoto
 		
+	nohup
+		impede que o programa seja afetado por um sinal de interrupção
+	top
+		status da execução dos processos em tempo real
+		horario da maquina
+		uptime da maquina
+		load average
+			quantidade de carga e fila de processamento a ser executado, de acordo com a quantidade de cpu
+		tarefas 
+			total, executando, sleep, parada, zumbis
+		uso de cpu
+			uso de cpu us, uso do sistema sy, nice ni, idle id, waiting wa, tempo para interrupção de hardware hi, tempo interrupção de software si, tempo roubado pela vm pelo hypervisor st 
+		memoria
+		memoria swap
 		
+		se apertar m dentro do top, muda a exibição da memoria
+		se apertar 1 muda a forma de exibição das cpus
 		
+		colunas do top
+			PID
+			usuario
+			PR
+				prioridade agendada
+			NI
+				nice - prioridade para executar no sistema os processo
+			VIRT
+				tamanho virtual do processo
+			RES
+				o que esta residente em memoria
+			SHR
+				memoria compartilhada entre os programas
+			S
+				stat como no ps
+			%CPU
+			%MEM
+			
+		shift + m
+			classifica por uso de memoria
+		apertando f
+			mostra tela descritiva de campos
+			a rola para baixo w rola para cima
+			q retorna na ordenação escolhida
+		apertando k
+			manipilação de processos com kill
+		apertando d
+			muda o delay
+		shift + w
+			salva as configurações customizadas
+		apertando i
+			ignora zumbis
+			
+		top -i
+			ignora processos zumbi
+		top -c
+			linha de comando completa da linha de parametros de completa
 		
+	nice
+		determina prioridade de execução de um programa ou comando
+			varia de -20 maior a 19 menor 
+			prioridade abaixo de zero apenas o root configura
+		nice -n 10 sleep 1000
+			-n indica um numero inteiro
+		renive -n 10 -p 597
+			atualiza o nice do processo usando o pid com -p
+			-u ou -g atualiza para usuarios ou grupos
+	tload
+		monitora os processos de forma mais gráfica
+	vmstat
+		tempo de utilização dos parametros do sistema linha a linha
+		vmstat 1
+			atualiza a cada um segundo
+
+
+multiplexador de terminal
+	screen
+		ctrl a
+			troca terminais
+		ctrl a w
+			mostra as screens
+		ctrl a c
+			cria nova screen
+		ctrl a 0
+			vai para a screen do numero
+			
+		ctrl a d
+			desconecta dp screen
+			
+			
+	screen -ls
+		mostra screens em execução 
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	screen -x
+		reconecta na screen
+
+	TMUX
+		tmux new
+			ctrl+b c (aperta ctrl+b e solta depois o c)
+				para criar nova tela
+			ctrl+b 0
+				vai para tela do numero
+			ctrl+b d
+				desconecta
+			exit fecha a tela do tmux
+			
+			tmux attach
+				reconecta na sessão criada
+				
+			ctrl+b shift "
+				divide a tela na horizontal
+			ctrl+b shift %	
+				divide a tela na vertical
+			ctrl+b setas direcionais
+				para alternar entre as divisões
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		
 		
