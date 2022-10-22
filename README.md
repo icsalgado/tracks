@@ -11,6 +11,18 @@
 > This repository is divided into the lines of knowledge I’ve been practicing. In addition to those I’m doing at the moment, some have already been completed and others are on standby for various reasons. I want to keep practicing in different areas and share it all.
 
 #
+# <a href="https://beta.linuxtips.io"><img src="./.badtux.png" width="100px"></a> Descomplicando Docker - LinuxTips
+
+<a href="https://github.com/icsalgado/tracks/tree/master/LINUXTIPS_DescomplicandoDocker">diretório</a>
+
+- O que é docker, intalação e sintaxes nova - antiga
+- Execução e configuração de containers, configurando CPU e Memória
+- Primeiro Dockerfile
+- ...
+
+> EM ANDAMENTO<br>_O curso ficou liberado gratuitamente na nova plataforma da Linuxtips, além disso existem vários novos projetos do Jeferson como o Podcast e a Newsletter<br>
+<a href="https://www.youtube.com/watch?v=3dkJKBWsUqE">Confere aqui</a> o Jeferson explicando <br>O podcast está disponível la no <a href="https://open.spotify.com/show/34roOqJbemfSOAqBn868fx?si=aVNsjbveRQOcysE9hG4raQ"><img src="https://raw.githubusercontent.com/icsalgado/assets/master/spotify.png" width="50px"></a>
+#
 # <a href="https://web.dio.me/track/cloud-devops-experience-banco-carrefour"><img src="./.dio.svg" width="70px"></a> Cloud DevOps Experience - Banco Carrefour
 
 <a href="https://github.com/icsalgado/tracks/tree/master/DIO_CloudDevOpsExperience">diretório</a>
@@ -23,7 +35,8 @@
     - Redes
     - Docker File, imagens personalizadas
     - DockerHub e Registry
-    - ....
+    - Introdução ao Docker Swarm e AWS EC2
+    - ...
 
 > EM ANDAMENTO 101hrs<br>_O Cloud DevOps Experience - Banco Carrefour veio com uma trilha inédita de 101 horas para profissionais que já atuam na área e querem evoluir ou estão começando a estudar sobre DevOps. Com uma formação completa, o bootcamp completo sobre Linux, Docker, Kubernetes e Google Cloud Platform. As pessoas que concluírem o bootcamp poderão participar do Tech Day, uma oportunidade de desenvolver e apresentar um projeto para o time de tecnologia do Banco Carrefour.
 
@@ -39,6 +52,9 @@
 - Comandos Internos e Externos
 - Manipulação de diretórios e arquivos
 - Editores de texto de linha de comando
+- Principais comandos para o gerênciamento de um sistema Linux
+- Gerenciamento e execução de processos
+- Multiplexadores de terminais
 - ...
 
 > EM ANDAMENTO<br>_O treinamento foi elaborado para ajudar estudantes e profissionais Linux a atuarem no mercado de trabalho de forma efetiva, além de preparar o aluno para o exame LPIC1 da LPI e o exame LFD301 da Linux Foundation.<br>Após o treinamento, o aluno será capaz de instalar e manter uma estação de trabalho Linux, bem como sua configuração. Será capaz de usar os comandos Linux e ficar familiarizado com o ambiente em modo texto do Linux e seu sistema de arquivos, acesso ao acesso e questões básicas de segurança do Linux.<br>Será capaz ainda de realizar manutenções no sistema, como gerenciamento dos usuários e pacotes, backup, reinicialização do sistema e muito mais.
