@@ -53,6 +53,135 @@ docker container update
 
 docker image build -t toskeira:1.0 .
 		
+	
+Volumes
+	permite armazenar os dados em outro local fora do container
+		
+		tipo bind
+			montar um diretório especifico dentro do container
+			--mount tupe=bind,src-/root/giropops,dst=/giropops
+		
+	docker volume ls
+		lista os volumes
+	docker volume create giropops
+		cria um volume
+	docker volume inspect giropops
+		
+		docker container run -ti --mount type=volume,src=giropops,dst=/giropops debian
+		
+		docker container inspect idcontainer
+		
+		
+	Sintaxes antigas
+		docker container create -v /root/giropops/:/giropops --name dbos centos
+
+		docker run -d -p 5432:5432 --name pgsql1 --volumes-from dbos -e POSTGRESQL_USER=docker -e POSTGRESQL_PASS=docker -e POSSTGRESQL_DB=docker kamui/postgresql
+
+	criar um backup
+		docker container run -ti --mount type=volume,src=dbos,dst=/data --mount type=bind,src=/root/bkp/,dst=/bkp debian tar -cvf /bkp/_bkpbanco.tar /data
+
+	
+Dockerfile criando imagens
+	FROM debian
+
+	RUN ap-get update && apt-get install -y apache2 && apt-get clean
+
+	ENV APACHE_LOCK_DIR="/var/lock"
+	ENV APACHE_PID_FILE="/var/run/apache2.pid"
+	ENV APACHE_RUN_USER="www-data"
+	ENV APACHE_RUN_GROUP="www-data"
+	ENV APACHE_LOG_DIR="/var/log/apache2"
+
+	LABEL description="Webserver"
+
+	VOLUME /var/www/html/
+
+	EXPOSE 80
+	
+no container run -P
+	o -P vai pegar o expose do dockerfile e usar uma porta aleatória para comunicação com a do dockerfile
+	
+	docker image build -t meuapache:1.0 .
+	
+	ENTRYPOINT
+		principal processo
+		modo exec ou listas
+			
+			ENTRYPOINT ["/usr/sbin/apachectl"]
+			CMD ["-D", "FOREGROUND"]
+
+	se não quiser usar cache no build --no-cache
+	
+	
+	difetença entre COPY e ADD
+		o ADD explode arquivos tar e pega tbm aquivos da web 
+	
+	WORKDIR
+		é onde o container vai abrir
+	
+multistage
+	é como um pipline, trabalhando uma parte primeiro e copiando o resultado para outro from
+	
+FROM golang AS buildando
+
+WORKDIR /app
+
+ADD . /app
+
+ENV GO111MODULE=off
+
+RUN go build -o meugo
+
+FROM alpine
+
+WORKDIR /giropops
+
+COPY --from=buildando /app/meugo /giropops
+
+
+ENTRYPOINT ./meugo
+
+
+DOCKERHUB
+	docker login
+	
+docker container rm -f $(docker ps -q)
+
+REGISTRY
+	armazenamento local ou fora do dockerhub
+	curl localhost:5000/v2/meuapache/_catalogexit
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

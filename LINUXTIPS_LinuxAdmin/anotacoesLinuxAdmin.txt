@@ -819,28 +819,141 @@ multiplexador de terminal
 			ctrl+b setas direcionais
 				para alternar entre as divisões
 
+Discos e partições
 
+	fidsk -l
+		lista discos
+	fdisk -l /dev/sdb
+		lista partições desse disco
+	fdisk /dev/sdb
+		entra no fdisk
+		p
+			partições criadas e rotulo de disco (esquema de particionamento)
+				g
+					para usar esquema gpt
+				o
+					esquema dos
+				s	
+					esquema sun
+				G? 
+					ives?
+		n 
+			nova partição - 1 a 4 primarias 5 a 68 swap
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				+400M para indicar o tamanho da partição
+		t
+			alterar tipo da particao
+		w 
+			salvar alterações
+	mkfs.ext3 /dev/sdb1
+		para formatar partição linux
+	mkswap /dev/sda2
+		para formatar partição como swap
+	wipefs -a /dev/sdb
+		destroi dados de partições criadas e apagar o que foi feito no discp
 		
+	gdisk /dev/sdb
+		entrar no gdisk
+		o
+			partição gpt
+			i
+				detalhes da partição
+			n
+				criar partições 1 a 128 partições
+		w
+			listar partições
+		b
+			backup
+	        v
+	        	verificação do disco
+	        x
+	        	modo expert
+	        	c
+	        		alterar esquema de disco
+	        	d
+	        		valor de alinhamento
+	        	s
+	        		resize
+	        	z
+	        		destroi estruturas gpt do disco
+	
+	parted /dev/sdb
+		entrar no parted
+		print
+			mostrar partições
+		mklabel msdos
+			criar partição tipo msdos
+		mkpart
+			para criar partição
+		set 1 boot on
+			setaa como boot a partição
+		rm
+			para remover
+			
+	cfdisk /dev/sdb
+		para entrar
+		t
+			lista de partições
+	
+no msdos o maior tamanho de partição é de TB
+no gpt o maior tamanho é de 1 ZB
+
+BIOS
+	feito em assembly na eprom da maquina
+	incializva uma tela e teclado básicos e procurava o sistema mbr para boot - POST power on self test
+	precisa de uma partição abaixo do cilindro 1024 para dar boot
+	
+UEFI - evolução do BIOS
+	programas de inicialização escritos em C (MS APPLE IBM ...)
+	roda programas de diagnostico dentro do efi
+	boot seguro
+	pode inicializar a rede no boot da maquina
+
+	Criar layout de particionamento usando uefi
+	
+	precisa ser criado como gpt
+		partição de compatibilidade de 1M para grub obrigatória
+		tipo Sistema EFI
+		
+	formatar as unidades menos o BIOS
+		apt install dosfstools
+			para usar o mkfs.vfat
+		mkfs.vfat /dev/sda2
+			essa partição efi precisa ser em vfat
+			
+Planejamento de disco
+	disco 1TB
+	
+	desktop
+	/ 20GB
+	/usr 15GB
+	/var 10GB
+	/home 500GB
+	swap 8GB
+	
+	
+	alternativo
+	/ 50GB
+	/home 930GB
+	swap 8GB
+	
+	servidor de e-mail
+	/ 20GB
+	/var 900GB
+	/home 5GB
+	swap 16Gb
+	
+	servidor de arquivos
+	/ 20GB
+	/home 5GB
+	/data 900GB
+	swap 8GB
+	
+	Servidor Web
+	/ 20GB
+	/home 5GB
+	/var 950GB
+	swap 8GB
 		
 		
 		
