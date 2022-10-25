@@ -82,12 +82,26 @@ Gestão de identidade
 		Gerenciamento centralizado os usuários e grupos
 			
 			
+https://workspace.google.com/gcpidentity/signup/welcome
+
+admin.google.com
+
+cloud.google.com
+		
+console.cloud.google.com
+
+draw.io
+
+cloud.google.com/docs/terraform
+	iniciar o uso do terraforme para automação
+	a automatização evita erros humanos criando processos
 			
+Terraform
+	terraform plan
+	
+	terraform apply
 			
-			
-			
-			
-			
+https://github.com/digitalinnovationone/trilha-gcp-fundations-terraform-adminconsole.git
 			
 			
 			
