@@ -1,0 +1,103 @@
+Github - Otávio Reis
+	
+	Branches > Ramificações
+	
+		main x master
+			
+		checkout
+			serve para se movimentar entre s branches
+			
+			git checkout -b nova_branch
+				muda para branch criada com o -b
+			git checkout main
+				move para a branch main
+				
+		merge
+			primeiro vai para a branch que seria a principal depois pede para juntar outra branch nela
+			
+			git merge nova_branch			
+			
+		git branch
+			mostra as branches e a atual
+		git branch -m novonome_branch
+			muda o nome da branch dentro dela
+		git branch nova_branch novonome_brnch
+			mida o nome de qualquer branch
+		git branch -d nova_branch
+			remove a branch
+			
+		stash
+			funciona como array, serve para deixar a branch limpar sem dados de outras, o mais recentes sempre ficam na 0
+				
+			git stash save "comentario"
+				salva no index o contecto
+			git stash list
+				lista o array
+			git stash pop 1
+				pega os dados do index 1 do stach para continuar trabalhando nele 
+			git stash clear
+				limpa o array
+				
+	LOG
+		git log
+			historico de commits 
+		git log diretorio
+			commits das alterações dentro desse diretorio
+		git log readme
+			commits do arquivo	
+		git log --oneline
+			logs resumidos
+		git log --graph
+			forma grafica no cli
+			
+	gitk
+		forma grafica com logspara windows que fica melhor
+		
+	Revertendo
+		usa a hash do commit, também pode usar a head~1
+			variações flag
+				--soft
+				--mixed
+				--hard
+		ideal para uso local
+		
+		git reset --soft
+			volta ao ponto do git add antes do commit, voltam os arquvios para o staging/index
+		git reset --mixed HEAD~1
+			é o default, volta para antes do git add, volta ao working dir
+		git reset --hard
+			remove os arquivos do commit, deleta o que foi commitado
+		
+		git revert HEAD~1
+			move a head para o commit selecionado e cria um commit reverso, reverte modificação ou criação	
+			
+			
+	git config --global core.editor		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

@@ -102,6 +102,9 @@ Terraform
 	terraform apply
 			
 https://github.com/digitalinnovationone/trilha-gcp-fundations-terraform-adminconsole.git
+
+
+Gestão de acessos e segurança
 			
 			
 			
