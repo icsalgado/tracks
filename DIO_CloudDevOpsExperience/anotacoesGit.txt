@@ -1,4 +1,21 @@
 Github - Otávio Reis
+
+
+	Atualização acesso com SSH
+		ssh-keygen -t ed25519 -C email@email.com
+			no diretorio criado
+				cat id_ed25519.pub
+				
+			adicionar essa chave no github
+				
+		eval $(ssh-agent -s)
+		
+		ssh-add id_ed25519
+			dentro da pasta do ssh, passar a chave privada
+			
+	Token de acesso
+		
+
 	
 	Branches > Ramificações
 	
