@@ -243,7 +243,8 @@ Docker compose
 	
 	depois de criar o docker-compose.yml
 	
-	docker-compose up para subir
+	docker-compose up -d
+		 para subir - d em segundo plano
 			down para descer
 
 

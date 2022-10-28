@@ -1,0 +1,94 @@
+body{
+    background-color: lightcyan;
+}
+
+.main{
+    /*border: solid 1px black;/*para ver o bloco*/
+    margin: 100px 50px;
+}
+
+header{
+    /*border: solid 1px black;/*para ver o bloco*/
+    margin: 20px;
+    display: flex;/*dispõe os itens horizontalmente*/
+    align-items: center;/*ajusta os itens no centro horizontal*/
+    justify-content: space-around;/*define um espaçamento igual entre os itens e a borda*/
+}
+
+header h1{
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.profile{
+    width: 10%;
+    border-radius: 300px;
+}
+
+.link-redes img{
+    width: 40px;
+    display: flex;
+}
+
+section{
+    /*border: solid 1px black;/*para ver o bloco*/
+    margin: 20px 150px;
+    border-radius: 30px;
+    background-color: azure;
+}
+
+section h2{
+    text-align: center;
+}
+
+.flexcontainer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.cs{
+    display: flex;
+}
+
+.center{
+    height: 800px;
+}
+
+.xp{
+    display: flex;
+}
+
+.item-left{
+    width: 300px;
+    height: 170px;
+    padding: 0px 0px;
+}
+
+.item-right{
+    width: 300px;
+    height: 170px;
+    padding: 0px 0px;
+    text-align: right;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    width: 100px;
+}
+
+footer{
+    /*border: solid 1px black;/*para ver o bloco*/
+    margin: 20px;
+    text-align: center;
+}
