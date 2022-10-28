@@ -1,3 +1,6 @@
+AWS
+	VPC
+	
 
 Cluster
 	aglomerado
@@ -13,7 +16,7 @@ Cluster
 	
 Docker swarm
 		NODE1 - manager
-		docker swam init
+		docker swarm init
 		ou
 		docker swarm init --advertise-addr 192.168.122.25
 		
@@ -29,10 +32,10 @@ Docker swarm
 		docker service ls
 			lista os serviços		
 		docker service create --name web-server --replicas 5 -p 80:80 httpd
-			criar um serviço com apacher
+			criar um serviço com apache
 		docker service ps web-server
 			verificar onde foi replicado o serviço		
-		docker node update --availability drain node1icsalgado
+		docker node update --availability drain node1
 			remove os containers do node1 e redistribui
 		docker service rm web-server
 			mata o serviço e depois do comando acima, se for criado novamente ele vai ignorar o node1

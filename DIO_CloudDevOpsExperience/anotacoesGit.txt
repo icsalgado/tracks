@@ -91,6 +91,9 @@ Github - Otávio Reis
 			
 	git config --global core.editor		
 			
+Git Organizations
+	pull request
+		forma de contribuir em projetos
 			
 			
 			
