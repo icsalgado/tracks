@@ -1,7 +1,3 @@
-AWS
-	VPC
-	
-
 Cluster
 	aglomerado
 	série de computadores aglomerados trabalhando em conjunto conhecidos como nós
@@ -50,16 +46,3 @@ Docker swarm
 		docker service create --name app --replicas 2 -dt -p 80:80 --mount type=volume,src=app,dst=/usr/local/apache2/htdocs/ httpd
 				
 				
-				
-
-Kubernets
-	k8s para orquestração de containers
-	migração do monolitico para microsserviços
-	disponibilidade
-	escalabilidade e alta performance
-	recuperação de desastre	
-
-
-Minikube
-	utilizado para executar o kubernets na maquina local
-

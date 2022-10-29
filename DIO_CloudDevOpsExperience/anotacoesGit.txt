@@ -95,8 +95,13 @@ Git Organizations
 	pull request
 		forma de contribuir em projetos
 			
+	criar um fork
+		fork é uma cópia de um projeto para o seu github
 			
-			
+Git merge
+	cria um commit para integrar duas branches
+git rebase
+	reescreve a arvore deixando-a linear, recomendando em repositorio local
 			
 			
 			

@@ -1,0 +1,12 @@
+Kubernetes
+	k8s para orquestração de containers
+	migração do monolitico para microsserviços
+	disponibilidade
+	escalabilidade e alta performance
+	recuperação de desastre	
+
+
+Minikube
+	usado para criar vm com kubernetes
+Kubectl
+	ferramenta de linha de comando do kubernetes
