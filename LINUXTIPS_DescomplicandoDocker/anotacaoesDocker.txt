@@ -1,3 +1,5 @@
+### DAY 1
+
 Containers
 	remete a isolamento lógico-namespaces (processos, usuarios, rede, mountpoint) e isolamento fisico-cgroup (CPU, memoria IO)
 	
@@ -53,13 +55,15 @@ docker container update
 
 docker image build -t toskeira:1.0 .
 		
+
+### DAY 2
 	
 Volumes
 	permite armazenar os dados em outro local fora do container
 		
 		tipo bind
 			montar um diretório especifico dentro do container
-			--mount tupe=bind,src-/root/giropops,dst=/giropops
+			--mount type=bind,src-/root/giropops,dst=/giropops
 		
 	docker volume ls
 		lista os volumes
