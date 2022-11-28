@@ -1,0 +1,55 @@
+
+Renan Oliveira
+Objetivo - compartilhar o conhecimento e contribuir para a comunidade
+Explorar a área de artigos da DIO
+
+Neuroassociação
+	associação entre eventos externos e estados emocionais
+Brainstorming
+	Tempestade de ideias
+	Tentar filtrar 5 palavras para relaciona-las
+Conectar ideias de forma ludica
+	associar uma linha de pensamento com outra mais popular
+Headline
+	chamar a atenção
+	"Entenda de uma vez por todas"
+	"Guia definitivo"
+	1º gerar um desejo - por que alguem precisa saber o que você vai falar
+	2º usar gatilhos mentais - "você va conseguir"
+	3º Explorar resultados e não processos - "Domine", "saiba como"
+	4º transmitir segurança - ser assertivo e sem ideias vagas
+	5º Dar uam solução definitiva - começo e fim de uma ideia - definir um público ou nicho
+Muita pesquisa
+	usar referências para ter autoridade
+	curiosidades
+	de onde veio, quem criou, quem usa, qual o futuro, sua opinião
+StoryTelling
+	contar uma história
+	remeter associações
+Tornar ludico
+	Imagens, ilustração, gif, video, bloco de código, emoji, animação
+Escrever
+	fazer muitos arquivos
+	começar e terminar
+	ser objetivo e com escopo claro
+	não abrir muito o leque
+Validar e revisar
+	ortografia, gramática, etc
+	texto de no máximo 3000 palavras
+	titulo com captalize - primeiras letras maiusculas
+	
+Materiais Complementares
+ 
+Nossos materiais complementares e de apoio têm como objetivo apresentar informações para facilitar e enriquecer a sua jornada de aprendizado. Para isso, links úteis (como slides, repositórios e páginas oficiais) serão disponibilizados, além de dicas sobre como se destacar na DIO e no mercado de trabalho 😉
+ 
+Slide
+Transformando seu Conhecimento em Artigos Técnicos.pptx
+ 
+Dicas/Links Úteis
+ 
+Por fim, disponibilizamos alguns links úteis para que você possa se desenvolver ainda mais através de referências oficiais das tecnologias, páginas de documentação e/ou fóruns de discussão relevantes. Nesse contexto, seguem algumas sugestões:
+
+    Artigos/Fórum: você pode compartilhar conteúdos técnicos através de Artigos (visíveis globalmente na plataforma da DIO), além de conquitas e dúvidas usando os Fóruns (que são específicos para cada experiência educacional na DIO, como um Bootcamp por exemplo). Além disso, você pode pesquisar por termos-chave e encontrar o que precisa de forma rápida e efetiva;
+    Rooms: caso você esteja inscrito(a) em uma experiência educacional na DIO (como um Bootcamp, por exemplo) você terá acesso ao Rooms. O Rooms é uma ferramenta de bate-papo em tempo real onde todos os inscritos podem interagir, compartilhando dúvidas e dicas (que podem conter imagens e snippets de código-fonte);
+    Pesquise na Web: pode parecer óbvio, mas é importante frisar a importância das engines de busca no dia-a-dia de um profissional de TI. Caso não encontre o que procura dentro da DIO, pesquise sobre o assunto (conceito, dúvida, erro etc) na Internet, pois na maioria das vezes você será levado à páginas incríveis como o StackOverflow que salvarão o seu dia 😎
+
