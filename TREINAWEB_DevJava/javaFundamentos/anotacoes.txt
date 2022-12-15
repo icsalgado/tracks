@@ -4,3 +4,10 @@ Depois de instalado o Eclipse para java EE
 
 no Project Explorer
 	click direito > new > project > java project
+
+Não é recomendado criar código dentro do defauld package (src)
+	src > new > package
+		os packages devem ser nomeados com dominio reverso + um qualificador (.main)
+Criar uma classe
+	br.com.treinaweb.main > new > class
+		metodo public static void main
