@@ -1,0 +1,3 @@
+Download e instalação JDK
+Download e instalação Java Coding Pack para usar no vscode
+	já instala tando o jdk como o vscode
