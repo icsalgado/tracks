@@ -1,1 +1,6 @@
 TREINAWEB Desenvolvedor java - JAVA Fundamentos
+
+Depois de instalado o Eclipse para java EE
+
+no Project Explorer
+	click direito > new > project > java project
