@@ -11,3 +11,14 @@ Não é recomendado criar código dentro do defauld package (src)
 Criar uma classe
 	br.com.treinaweb.main > new > class
 		metodo public static void main
+
+.java > compilador javac > Bytecode(linguagem intermediaria .jar) > JRE (JITC) > Binário
+	JavaDOC
+	JavaDebugger
+	JRE >> JVM
+	/\ JDK - tudo isso acima é o conjunto de desenvolvimento	
+
+System.out.println
+	System > classe
+		out > propriedade
+			println > metodo
