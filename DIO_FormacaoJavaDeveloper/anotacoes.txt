@@ -1,3 +1,24 @@
+https://glysns.gitbook.io/java-basico/
+
 Download e instalação JDK
 Download e instalação Java Coding Pack para usar no vscode
 	já instala tando o jdk como o vscode
+
+Java - Anatomia das classes
+	ctrl + shift + p > Java: Create Java Project > No build tools
+		forma do nome do projeto: java-anatomia-classes
+		forma do nome de classe: PascalCase
+
+	o nome da classe deve ser igual ao nome do arquivo (MinhaClasse.java >> public class MinhaClasse {})
+
+		variaveis são camelCase
+			variaveis que nunca vão ter o valor alterado devem ser em UpperCase ex: final String BR = "Brasil";
+				o final traz a garantia da imutabilidade mas o programador deve saber que não  deve ser alterada
+		variaveis podem ter ou iniciar _ , $ ou letras 
+
+	Java é fortemente tipado e o valor da variavel pode ser atribuido no momento da declaração ou depois
+	
+	Metodos:
+		TipoDeRetorno NomeNoInfinitivo Parametros()
+			ex: int somar (int num1, int num2)
+				pode receber parametros de diferentes tipos e retornar um outro tipo
