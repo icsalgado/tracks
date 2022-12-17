@@ -37,3 +37,13 @@ Java - Anatomia das classes
 		estruturação de escrita proposta pela comunidade
 		Variaveis sempre no singular, com idioma único, evitar abreviação do sentido
 		Metodos devem ser nomeados como verbo ex: somar, somarInteiros
+
+Tipos e Variaveis
+	tipos primitivos (valores brutos não armazenados na pila de memoria)
+		int (-2147483648 a 2147483647), byte (-128 a 127), short (-32768 a 32767), long (8 bytes), float, double, boolean, char
+	Peculiaridades, valores inteiros que começam com zero, talvez precise usar uma string
+		float prefisa encerrar o valor com um F e o long com L
+		cuidado com valores com precisão maior atribuidos a variaveis de precisão menor
+	constantes
+		escritas em UPPER CASE
+			final tipo-da-variavel nome-da-variavel ex: final float PI = 3.14F;
