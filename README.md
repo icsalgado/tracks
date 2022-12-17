@@ -3,49 +3,67 @@
 <!--linkedin-->
 ### You can find me on <a href="https://www.linkedin.com/in/icsalgado/" target="_blank">Linkedin <img src="https://raw.githubusercontent.com/icsalgado/assets/master/.lkn.png" width="20px"></a>
 
-#### Here are my development tracks in different technologies
+##### Special thanks to kinghost who invested in my hard & softskils and where I have my professional experience, Linuxtips which also supports my development with free training and the amazing DIO and Treinaweb technology communities.
 
-<table border=1>
+<table border=1 align=center>
+    <tr>
+        <th><div align=center>TREINAWEB</div></th>
+    </tr>
     <tr>
         <td>
-            <p align=center></p>
-        </td>
-        <td>
-            <p align=center><img src="https://raw.githubusercontent.com/icsalgado/assets/fc8a083ec57a917ecf40a1eb06776b28518fb1c3/.phplogo.svg" width="50px"/></p>
-        </td>
-        <td>
-            <p align=center><img src="https://raw.githubusercontent.com/icsalgado/assets/fc8a083ec57a917ecf40a1eb06776b28518fb1c3/.javalogo.svg" width="70px"/></p>
-        </td>
-        <td>
-            <p align=center><img src="https://raw.githubusercontent.com/icsalgado/assets/fc8a083ec57a917ecf40a1eb06776b28518fb1c3/.csharplogo.svg" width="30px"/></p>
+            <table border=1 align=center>
+                <tr>
+                    <th><div>PHP</div></th>
+                </tr>
+                <tr>
+                    <td>PHP Developer - Training with more than 68 hours of content, fundamentals of object-oriented programming with PHP, database integration, Composer dependency manager, BDD and advanced programming without the use of CMSs and Frameworks</td>
+                </tr>
+            </table>
         </td>
     </tr>
     <tr>
         <td>
-            <p align=center><img src="https://raw.githubusercontent.com/icsalgado/assets/fc8a083ec57a917ecf40a1eb06776b28518fb1c3/.treinaweb.svg" width="150px"/></p>
+            <table border=1 align=center>
+                <tr>
+                    <th><div>JAVA</div></th>
+                </tr>
+                <tr>
+                    <td>Formação php asdfakdjsfakljsd ajsdf iájsd adkljfaskd adfkjla sija sdklfjadkfasdj faklsdjfaí sdfa;mdmnsf</td>
+                </tr>
+            </table>
         </td>
+    </tr>
+    
+</table>
+
+
+<table border=1 align=center>
+    <tr>
+        <th><div align=center>DIO</div></th>
+    </tr>
+    <tr>
         <td>
-            Desenvolvedor PHP
-        </td>
-        <td>
-            Desenvolvedor Java
-        </td>
-        <td>
-            Desenvolvedor C# e ASP.NET
+            <table border=1 align=center>
+                <tr>
+                    <th><div>PHP</div></th>
+                </tr>
+                <tr>
+                    <td>Formação php asdfakdjsfakljsd ajsdf iájsd adkljfaskd adfkjla sija sdklfjadkfasdj faklsdjfaí sdfa;mdmnsf</td>
+                </tr>
+            </table>
         </td>
     </tr>
     <tr>
         <td>
-            <p align=center><img src="https://raw.githubusercontent.com/icsalgado/assets/b9b0e1c1669c9b492549d5047addd070bddb5147/.dio.svg" width="100px"/></p>
-        </td>
-        <td>
-            Not yet
-        </td>
-        <td>
-            Java Developer
-        </td>
-        <td>
-            .NET Developer
+            <table border=1 align=center>
+                <tr>
+                    <th><div>JAVA</div></th>
+                </tr>
+                <tr>
+                    <td>Formação php asdfakdjsfakljsd ajsdf iájsd adkljfaskd adfkjla sija sdklfjadkfasdj faklsdjfaí sdfa;mdmnsf</td>
+                </tr>
+            </table>
         </td>
     </tr>
+    
 </table>
