@@ -22,3 +22,13 @@ Java - Anatomia das classes
 		TipoDeRetorno NomeNoInfinitivo Parametros()
 			ex: int somar (int num1, int num2)
 				pode receber parametros de diferentes tipos e retornar um outro tipo
+	
+	Packages > diretórios para organização
+		dominio reverso
+			ex: edu.iuri.aula
+		No vscode
+			criar o pacote um nível por vez
+				edu
+					iuri
+						aula
+			E aí então pode ser movida a classe para dentro do aula
