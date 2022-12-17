@@ -27,6 +27,11 @@ public class main {
 		
 		System.out.println(primeiroNumero);
 		
+		System.out.println("Informe um numero");
+		int segundoNumero = scanner.nextInt();
+		
+		System.out.println(segundoNumero);
+		
 		scanner.close();
 	}
 
