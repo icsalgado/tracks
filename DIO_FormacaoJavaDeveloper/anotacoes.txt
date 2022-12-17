@@ -32,3 +32,8 @@ Java - Anatomia das classes
 					iuri
 						aula
 			E aí então pode ser movida a classe para dentro do aula
+
+	Java Beans:
+		estruturação de escrita proposta pela comunidade
+		Variaveis sempre no singular, com idioma único, evitar abreviação do sentido
+		Metodos devem ser nomeados como verbo ex: somar, somarInteiros
