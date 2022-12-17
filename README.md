@@ -5,65 +5,90 @@
 
 ##### Special thanks to kinghost who invested in my hard & softskils and where I have my professional experience, Linuxtips which also supports my development with free training and the amazing DIO and Treinaweb technology communities.
 
-<table border=1 align=center>
-    <tr>
-        <th><div align=center>TREINAWEB</div></th>
-    </tr>
+<img src="https://github.com/icsalgado/assets/blob/master/.badtux.png?raw=true" width="200px"/>
+
+<table>
     <tr>
         <td>
-            <table border=1 align=center>
-                <tr>
-                    <th><div>PHP</div></th>
-                </tr>
-                <tr>
-                    <td>PHP Developer - Training with more than 68 hours of content, fundamentals of object-oriented programming with PHP, database integration, Composer dependency manager, BDD and advanced programming without the use of CMSs and Frameworks</td>
-                </tr>
-            </table>
+            Linux Admin
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/LINUXTIPS_LinuxAdmin"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
         </td>
     </tr>
     <tr>
         <td>
-            <table border=1 align=center>
-                <tr>
-                    <th><div>JAVA</div></th>
-                </tr>
-                <tr>
-                    <td>Formação php asdfakdjsfakljsd ajsdf iájsd adkljfaskd adfkjla sija sdklfjadkfasdj faklsdjfaí sdfa;mdmnsf</td>
-                </tr>
-            </table>
+            Descomplicando Docker
         </td>
-    </tr>
-    
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/LINUXTIPS_DescomplicandoDocker"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
+        </td>
 </table>
 
+<img src="https://raw.githubusercontent.com/icsalgado/assets/b9b0e1c1669c9b492549d5047addd070bddb5147/.dio.svg" width="100px"/>
 
-<table border=1 align=center>
-    <tr>
-        <th><div align=center>DIO</div></th>
-    </tr>
+<table>
     <tr>
         <td>
-            <table border=1 align=center>
-                <tr>
-                    <th><div>PHP</div></th>
-                </tr>
-                <tr>
-                    <td>Formação php asdfakdjsfakljsd ajsdf iájsd adkljfaskd adfkjla sija sdklfjadkfasdj faklsdjfaí sdfa;mdmnsf</td>
-                </tr>
-            </table>
+            Formação Java Developer
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/DIO_FormacaoJavaDeveloper"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
         </td>
     </tr>
     <tr>
         <td>
-            <table border=1 align=center>
-                <tr>
-                    <th><div>JAVA</div></th>
-                </tr>
-                <tr>
-                    <td>Formação php asdfakdjsfakljsd ajsdf iájsd adkljfaskd adfkjla sija sdklfjadkfasdj faklsdjfaí sdfa;mdmnsf</td>
-                </tr>
-            </table>
+            Formação .Net Developer
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/DIO_Formacao.NetDeveloper"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
         </td>
     </tr>
-    
+</table>
+
+<img src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.treinaweb.svg" width="200px"/>
+
+<table>
+    <tr>
+        <td>
+            Desenvolvedor PHP
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/TREINAWEB_DevPHP"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Desenvolvedor Java
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/TREINAWEB_DevJava"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Desenvolvedor C# e ASP.NET Framework Full-Stack
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/TREINAWEB_DevC%23AspNet"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th colspan=3><div align=center>BOOTCAMPS <img src="https://raw.githubusercontent.com/icsalgado/assets/b9b0e1c1669c9b492549d5047addd070bddb5147/.dio.svg" width="40px"/></div></th>
+    </tr>
+    <tr>
+        <td>Orange Tech +<br><div align=right><img src="https://hermes.digitalinnovation.one/tracks/59417914-c4ce-4bf8-b802-f1c1985a07fa.png" width="80px"/></div></td>
+        <td>Javascript<br>ReactJS<br>Softskills</td>
+    </tr>
+    <tr>
+        <td>Cloud Devops Experience - Banco Carrefour<br><div align=right><img src="https://hermes.digitalinnovation.one/tracks/4c1c9e04-857e-4683-ba5b-4b0eafcd4d2c.png" width="80px"/></div></td>
+        <td>Linux<br>Docker - Armazenamento de dados<br>Docker - Processamento, logs e rede<br>Docker File, Compose, Swarm<br>Load balancer<br>Cluster Swarm com Vagrant<br>Kubernetes<br>Cluster K8s em nuvem<br>Pods K8s<br> Git, Github e Gitlab<br>Deployment e Rollback K8s<br>CI-CD K8s<br>Visão geral GCP</td>
+    </tr>
+    <tr>
+        <td>Linux Experience<br><div align=right><img src="https://hermes.digitalinnovation.one/tracks/606823c2-8a73-4655-947d-d41b991baf12.png" width="100px"/></div></td>
+        <td>Instalação<br>Acesso Remoto<br>Manipulação de Arquivos<br>Gerenciamento de Pacotes e Usuários<br>Manipulação de Processos<br>Gerenciamento de discos<br>Scripts de automação<br>Servidores de arquivos<br>Servidor Web<br>Servidor de Banco de Dados<br>Introdução ao Docker</td>
+    </tr>
 </table>
