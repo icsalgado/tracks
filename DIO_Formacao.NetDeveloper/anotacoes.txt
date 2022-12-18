@@ -1,5 +1,6 @@
 DIO - Formação .net Developer
 
 no terminal do vscode
+	.net cli
 	dotnet new console - ele cria o projeto na pasta
 	dotnet run - para executar o código dentro da pasta
