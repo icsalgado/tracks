@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\icsalgado\\Documents\\tracks\\DIO_Formacao.NetDeveloper\\DIO_Formacao.NetDeveloper.csproj",
-      "projectName": "DIO_Formacao.NetDeveloper",
-      "projectPath": "C:\\Users\\icsalgado\\Documents\\tracks\\DIO_Formacao.NetDeveloper\\DIO_Formacao.NetDeveloper.csproj",
+      "projectUniqueName": "C:\\Users\\icsalgado\\Documents\\tracks\\DIO_Formacao.NetDeveloper\\SintaxeEtipos\\SintaxeEtipos.csproj",
+      "projectName": "SintaxeEtipos",
+      "projectPath": "C:\\Users\\icsalgado\\Documents\\tracks\\DIO_Formacao.NetDeveloper\\SintaxeEtipos\\SintaxeEtipos.csproj",
       "packagesPath": "C:\\Users\\icsalgado\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\icsalgado\\Documents\\tracks\\DIO_Formacao.NetDeveloper\\obj\\",
+      "outputPath": "C:\\Users\\icsalgado\\Documents\\tracks\\DIO_Formacao.NetDeveloper\\SintaxeEtipos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\icsalgado\\AppData\\Roaming\\NuGet\\NuGet.Config",

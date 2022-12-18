@@ -1,6 +1,16 @@
 DIO - Formação .net Developer
 
 no terminal do vscode
-	.net cli
 	dotnet new console - ele cria o projeto na pasta
 	dotnet run - para executar o código dentro da pasta
+
+Sintaxe e tipos de dados em C#
+	program.cs > é a classe 
+	.csproj > arquivo de projeto do c# - informações descritivas do projeto, xml com metadados
+		output type se é um executavel ou bibliotecas
+		target framework versão do .net usada [é possível mudar a versão]
+			no cli > dotnet --info > informa as versões instaladas mas uma versão nova pode quebrar o projeto
+		os demais são referentes a como o projeto deve se comportar
+	
+	diretorio obj > maior parte dos arquivos são referentes ao debugger e compilação, raramente é preciso manipula-la
+	diretorio bin > os binários dll, exe, pdb(podem ser usados para debug)
