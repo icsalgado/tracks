@@ -32,10 +32,12 @@ public class main {
 		
 		System.out.println("Informe a operacao");
 		char operacao = scanner.next().charAt(0);//.next.charAt vai capturar o caractere na posição indicada
-		
+		//o nextLine considera ate o enter e o next considera o space
 		System.out.println(operacao);
 		
 		scanner.close();
+		
+		System.out.println(String.format("operacao: %d %c %d", primeiroNumero, operacao, segundoNumero));
 	}
 
 }

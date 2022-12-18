@@ -22,3 +22,6 @@ System.out.println
 	System > classe
 		out > propriedade
 			println > metodo
+
+Tipagem forte a ponto de 
+	char != string > 'a' != "a"
