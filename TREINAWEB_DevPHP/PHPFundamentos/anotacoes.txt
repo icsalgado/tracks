@@ -1,0 +1,15 @@
+Ambiente linux
+
+    xampp instalado em /opt/lampp
+
+    subir o xampp 127.0.0.1
+
+    aplicação em 127.0.0.1/PHPFundamentos para rodar no navegador
+        /opt/lampp/htdocs/PHPFundamentos
+
+    depois de concluir as aulas copiar os arquivos para o diretório de backup e subir no github
+
+Recomendações:
+    nunca deixar o phpinfo na raiz e com esse nome, é uma falha de segurança
+
+    
