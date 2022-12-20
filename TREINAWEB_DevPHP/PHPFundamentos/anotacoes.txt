@@ -12,4 +12,15 @@ Ambiente linux
 Recomendações:
     nunca deixar o phpinfo na raiz e com esse nome, é uma falha de segurança
 
+Tag PHP
+
+    <?php
     
+    ?>
+
+O interpretador do navegador não entende PHP apenas mostra o retorno dele como html
+
+
+
+
+TW-FormaçaoDevPHP - Formas de usar um arquivo php e tags php dentro do html - Exercicios unidade 2 iniciando com PHP
