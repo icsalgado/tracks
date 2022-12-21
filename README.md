@@ -44,6 +44,14 @@
             <a href="https://github.com/icsalgado/tracks/tree/master/DIO_Formacao.NetDeveloper"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
         </td>
     </tr>
+    <tr>
+        <td>
+            Formação Go Developer
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/DIO_FormacaoGoDeveloper"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
+        </td>
+    </tr>
 </table>
 
 <img src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.treinaweb.svg" width="200px"/>
