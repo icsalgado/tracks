@@ -1,0 +1,9 @@
+
+Preparando ambiente no linux
+sudo snap install pycharm-community --classic
+
+Tipagem dinâmica
+
+Os blocos de código são definidos pela identação
+
+TW-DesenvolvedorPython - Duas formas de concatenação, f strings ou forma comum - imprimindo variaveis
