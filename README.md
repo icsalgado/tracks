@@ -52,6 +52,14 @@
             <a href="https://github.com/icsalgado/tracks/tree/master/DIO_FormacaoGoDeveloper"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
         </td>
     </tr>
+    <tr>
+        <td>
+            Formação Python Developer
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/DIO_FormacaoPythonDeveloper"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
+        </td>
+    </tr>
 </table>
 
 <img src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.treinaweb.svg" width="200px"/>
@@ -81,6 +89,14 @@
             <a href="https://github.com/icsalgado/tracks/tree/master/TREINAWEB_DevC%23AspNet"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
         </td>
     </tr>
+    <tr>
+        <td>
+            Desenvolvedor Python
+        </td>
+        <td>
+            <a href="https://github.com/icsalgado/tracks/tree/master/TREINAWEB_DevPython"><img align=center src="https://raw.githubusercontent.com/icsalgado/assets/9c1c7335772d02ffc245a2fb25bf35a9552c84c3/.folder.svg" width="30px"/></a>
+        </td>
+    </tr>
 </table>
 
 <table>
@@ -93,10 +109,10 @@
     </tr>
     <tr>
         <td>Cloud Devops Experience - Banco Carrefour<br><div align=right><img src="https://hermes.digitalinnovation.one/tracks/4c1c9e04-857e-4683-ba5b-4b0eafcd4d2c.png" width="80px"/></div></td>
-        <td>Linux<br>Docker - Armazenamento de dados<br>Docker - Processamento, logs e rede<br>Docker File, Compose, Swarm<br>Load balancer<br>Cluster Swarm com Vagrant<br>Kubernetes<br>Cluster K8s em nuvem<br>Pods K8s<br> Git, Github e Gitlab<br>Deployment e Rollback K8s<br>CI-CD K8s<br>Visão geral GCP</td>
+        <td>Linux<br>Docker<br>Cluster Swarm com Vagrant<br>Cluster K8s em nuvem<br>Git, Github e Gitlab<br>Visão geral GCP</td>
     </tr>
     <tr>
         <td>Linux Experience<br><div align=right><img src="https://hermes.digitalinnovation.one/tracks/606823c2-8a73-4655-947d-d41b991baf12.png" width="100px"/></div></td>
-        <td>Instalação<br>Acesso Remoto<br>Manipulação de Arquivos<br>Gerenciamento de Pacotes e Usuários<br>Manipulação de Processos<br>Gerenciamento de discos<br>Scripts de automação<br>Servidores de arquivos<br>Servidor Web<br>Servidor de Banco de Dados<br>Introdução ao Docker</td>
+        <td>Instalação e Acesso Remoto<br>Manipulação de Arquivos e processos<br>Gerenciamento de Pacotesm usuários e discos<br>Scripts de automação<br>Servidores<br>Introdução ao Docker</td>
     </tr>
 </table>
