@@ -6,4 +6,6 @@ Tipagem dinâmica
 
 Os blocos de código são definidos pela identação
 
-TW-DesenvolvedorPython - Duas formas de concatenação, f strings ou forma comum - imprimindo variaveis
+O input sempre captura uma string, então para alterar o tipo precisa ser feita a  int(input("digite a idade"))
+
+TW-DesenvolvedorPython - finalizada unidade 3 Primeiros passos com Python
