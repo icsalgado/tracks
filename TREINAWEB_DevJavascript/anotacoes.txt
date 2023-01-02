@@ -1,0 +1,17 @@
+TREINAWEB Formação Desenvolvedor Javascript
+
+Repositorio JS Fundamentos: https://github.com/treinaweb/treinaweb-javascript-fundamentos
+
+Recomenda-se usar o javasript em um arquivo externo e chamar o script no final do body html
+
+V8 é o motor de interpretação do javascript no Google Chrome
+
+
+
+
+
+
+
+
+
+TW - Finalizado Conhecendo o Javascript - JS Fundamentos
