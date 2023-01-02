@@ -1,20 +1,20 @@
-DIO - Formação .net Developer
+DIO - FormaÃ§Ã£o .net Developer
 
 no terminal do vscode
 	dotnet new console - ele cria o projeto na pasta
-	dotnet run - para executar o código dentro da pasta
+	dotnet run - para executar o cï¿½digo dentro da pasta
 
 Sintaxe e tipos de dados em C#
-	program.cs > é a classe 
-	.csproj > arquivo de projeto do c# - informações descritivas do projeto, xml com metadados
-		output type se é um executavel ou bibliotecas
-		target framework versão do .net usada [é possível mudar a versão]
-			no cli > dotnet --info > informa as versões instaladas mas uma versão nova pode quebrar o projeto
-		os demais são referentes a como o projeto deve se comportar
+	program.cs > ï¿½ a classe 
+	.csproj > arquivo de projeto do c# - informaï¿½ï¿½es descritivas do projeto, xml com metadados
+		output type se ï¿½ um executavel ou bibliotecas
+		target framework versï¿½o do .net usada [ï¿½ possï¿½vel mudar a versï¿½o]
+			no cli > dotnet --info > informa as versï¿½es instaladas mas uma versï¿½o nova pode quebrar o projeto
+		os demais sï¿½o referentes a como o projeto deve se comportar
 	
-	diretorio obj > maior parte dos arquivos são referentes ao debugger e compilação, raramente é preciso manipula-la
-	diretorio bin > os binários dll, exe, pdb(podem ser usados para debug)
-		esses dois diretórios são gerados com > dotnet build > podem ser ignoradas para novas compilações
+	diretorio obj > maior parte dos arquivos sï¿½o referentes ao debugger e compilaï¿½ï¿½o, raramente ï¿½ preciso manipula-la
+	diretorio bin > os binï¿½rios dll, exe, pdb(podem ser usados para debug)
+		esses dois diretï¿½rios sï¿½o gerados com > dotnet build > podem ser ignoradas para novas compilaï¿½ï¿½es
 
 	Conceito de Classe:
 		New folder > new C2 file > class
@@ -23,24 +23,24 @@ Sintaxe e tipos de dados em C#
 				para criar um novo metodo
 					public void Apresentar(){}
 
-			o namespace não necessáriamente representa o caminho físico, é uma boa prática usar identificações relevantes e relacionadas
-			O @ pode identificar o uso de uma palavra reservado para uma outra finalidade mas não é indicado. Ex: string @class
+			o namespace nï¿½o necessï¿½riamente representa o caminho fï¿½sico, ï¿½ uma boa prï¿½tica usar identificaï¿½ï¿½es relevantes e relacionadas
+			O @ pode identificar o uso de uma palavra reservado para uma outra finalidade mas nï¿½o ï¿½ indicado. Ex: string @class
 			
-			ao instanciar a pessoa dentro do Program é preciso indicar o namespace onde está a classe pessoa
-				instanciar é criar uma variavel, um objeto do tipo da classe desejada. é constuido o objeto com a base da classe
+			ao instanciar a pessoa dentro do Program ï¿½ preciso indicar o namespace onde estï¿½ a classe pessoa
+				instanciar ï¿½ criar uma variavel, um objeto do tipo da classe desejada. ï¿½ constuido o objeto com a base da classe
 				Ex: using SintaxeEtipos.Models
-				também é possível instanciar usando o namespace porém ficará mais verboso
+				tambï¿½m ï¿½ possï¿½vel instanciar usando o namespace porï¿½m ficarï¿½ mais verboso
 					ex: SintaxeEtipos.Models.Pessoa pes = new SintaxeEtipos.Models.Pessoa
 	Cases
-		padrões para escrita - camelCase, PascalCase, snake_case, spinal-case
+		padrï¿½es para escrita - camelCase, PascalCase, snake_case, spinal-case
 		classes > PascalCase
 		propriedades > PascalCase
 		metodo > PascalCase
 		variavel > camelCase
 	Escrita de nomes
-		sem abreviações
+		sem abreviaï¿½ï¿½es
 		nome da classe deve ser o mesmo do nome do arquivo.cs
 		sem caracteres especiais, exceto _ 
 
 
-DIO-Formacao.NetDeveloper - O conceto de classe e convenções
+DIO-Formacao.NetDeveloper - Finalizado Sintaxe e tipos de dados e DateTime
