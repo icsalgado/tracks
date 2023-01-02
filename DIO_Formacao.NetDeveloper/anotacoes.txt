@@ -42,5 +42,10 @@ Sintaxe e tipos de dados em C#
 		nome da classe deve ser o mesmo do nome do arquivo.cs
 		sem caracteres especiais, exceto _ 
 
+Tipo Decimal é recomendado para uso em valores monetários
 
+<<<<<<< HEAD
 DIO-Formacao.NetDeveloper - Finalizado Sintaxe e tipos de dados e DateTime
+=======
+DIO-Formacao.NetDeveloper - O conceto de classe e convenções
+>>>>>>> 03e0329bfc48028173332f477c3f41cd5d96ea03
