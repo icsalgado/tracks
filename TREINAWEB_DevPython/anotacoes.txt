@@ -8,4 +8,10 @@ Os blocos de código são definidos pela identação
 
 O input sempre captura uma string, então para alterar o tipo precisa ser feita a  int(input("digite a idade"))
 
-TW-DesenvolvedorPython - finalizada unidade 3 Primeiros passos com Python
+A atribuição multipla permite em uma linha atribuir diferentes valores a diferentes variaveis
+
+
+
+
+
+TW-DesenvolvedorPython - Atribuicao multipla, tipos e split - 4 Operadores de Atribuicao
