@@ -20,7 +20,52 @@ Tag PHP
 
 O interpretador do navegador não entende PHP apenas mostra o retorno dele como html
 
+O PHP tem tipagem dinâmica - não precisa declarar o tipo
+		Tipagem fraca - o tipo pode ser alterado
+	o nome da variavel começa com $
+	
+Recomendado para constantes usar upper case
+	define("ESCOLA", "Treinaweb");
+	const CURSO = "PHP"; //só funciona no escopo global
+	
+Tipos de dados escalares
+	strings - $nome = "Iuri";
+	inteiro - $idade = 31;
+	float/double - $preço = 39.90;
+	booleano - $resultado = true;
+	
+	gettype($nome) - para verificar o tipo
+	var_dump($nome) - usado para debugar
+	
+Tipos de dados compostos
+	armazena uma sequencia de dados
+	
+	arrays - $linguagens = ["PHP", "JavasScript"];
+	
+	Sintaxe antiga - $linguagens = array("PHP", "JavaScript");
+	
+	arrays associativos
+	
+	$curso = ["nome_curso" => "PHPfundamentos", "versao" => 7.4, "carga_horaria" => 40, "status" => true];
+	
+	arrays multidimensionais
+	
+	$numeros = [[1, 2, 3 , 4], [6, 7, 8, 9], ["dez", "onze", "doze"]];
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
-
-TW-FormaçaoDevPHP - Formas de usar um arquivo php e tags php dentro do html - Exercicios unidade 2 iniciando com PHP
+TW-FormaçaoDevPHP -  - 3 variaveis e constantes
