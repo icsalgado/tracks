@@ -83,7 +83,7 @@ public class main {
 		
 		String entradaHistorico = String.format("historico", resultado);
 		
-		historico.add(entradaHistorico); //colocado dentro do historico
+		historico.add(entradaHistorico); //colocado dentro do array do historico
 		
 		scanner.close();
 		
