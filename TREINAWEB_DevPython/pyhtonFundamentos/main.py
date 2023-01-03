@@ -26,3 +26,6 @@ print(partes[0])
 print(partes[1])
 print(partes[2])
 print(partes[3])
+
+soma_idades = idade + novaIdade;
+print(soma_idades)
