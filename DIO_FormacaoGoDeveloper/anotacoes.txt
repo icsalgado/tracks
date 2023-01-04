@@ -4,6 +4,27 @@ go build hello.go
 
 go run hello.go
 
+Go eh estaticamente ou fortemente tipada
+
+Tipos numericos
+	inteiros
+		sem sinal
+		com sinal
+	ponto flutuante
+	
+Strings
+	len descobre o tamanho da string
+	[2] acessa um caractere especifico e retorna o unicode
+	+ concatena duas strings
+	
+Booleanos
+	true false
+	&& AND
+	|| OR
+	! NOT
+
+Inferencia de tipos
+	Não é preciso declarar a variavel com o seu tipo
 
 
 
@@ -18,5 +39,4 @@ go run hello.go
 
 
 
-
-DIO-FormacaoGoDeveloper - Hello World - Intro ao GO - Primeiros passos com GO
+DIO-FormacaoGoDeveloper - Inferencia de tipo - Fundamentos de GO - Primeiros passos com GO
