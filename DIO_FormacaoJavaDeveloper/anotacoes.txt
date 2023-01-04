@@ -47,3 +47,17 @@ Tipos e Variaveis
 	constantes
 		escritas em UPPER CASE
 			final tipo-da-variavel nome-da-variavel ex: final float PI = 3.14F;
+
+Operadores
+	= usado para atribuição ou alteração de valor a uma variável
+	! operador unário lógico de negação
+	Ternário
+		<condicional> ? <verdadeira> : <falsa>;
+
+	.equals vai comparar o conteúdo entre duas variáveis
+
+
+
+
+
+DIO-FormacaoJavaDeveloper - Operadores > Aprendendo a sintaxe - Fundamentos da Plataforma
