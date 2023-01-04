@@ -1,17 +1,27 @@
-TREINAWEB Formação Desenvolvedor Javascript
+TREINAWEB Formacao Desenvolvedor Javascript
 
 Repositorio JS Fundamentos: https://github.com/treinaweb/treinaweb-javascript-fundamentos
 
 Recomenda-se usar o javasript em um arquivo externo e chamar o script no final do body html
 
-V8 é o motor de interpretação do javascript no Google Chrome
+V8 eh o motor de interpretacao do javascript no Google Chrome
+
+undefined e null são tipos primitivos usados para definir que algo ainda nao tem valor
+
+o tipo number e usado para definir tipos numericos
+
+a notacao cientifica pode ser usada como 2.998e8 sendo o e representando a multiplicacao de 10 seguido de 8 zeros
+
+infinity e -infinity sao usados
+
+NaN significa not a number
+
+tanto faz o uso de '' ou "" para strings
+	recomenda-se o uso de apenas um dos dois no codigo, o mais comum sao as aspas simples. As aspas duplas ou simples podem circundar suas opostas dentro da string
+	
+a ` ` pode ser usada com quebras de linha
+
+O symbol eh unico e imutavel como uma constante e são usados como identificadores
 
 
-
-
-
-
-
-
-
-TW - Finalizado Conhecendo o Javascript - JS Fundamentos
+TW-FormacaoDevJavaScript - 3. Tipos primitivos - JS Fundamentos
