@@ -5,4 +5,7 @@ Cuidado também com o dynamic que usa mais memória
 
 Não esquecer de referenciar um objeto que está instanciado dentro da sua propria classe
 
-TW-FormacaoCsharp - Tipos de dados - Exercicios de variaveis e operadores
+Concatenação de strings gera um alto processamento, para evitar usa-se o StringBuilder
+	o metodo .Append adiciona algo ao buffer do StringBuilder
+
+TW-FormacaoCsharp - StringBuilder - 5 Strings

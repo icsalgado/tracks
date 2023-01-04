@@ -1,0 +1,14 @@
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\bin\Debug\netcoreapp3.1\EstudandoStrings.exe
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\bin\Debug\netcoreapp3.1\EstudandoStrings.deps.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\bin\Debug\netcoreapp3.1\EstudandoStrings.runtimeconfig.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\bin\Debug\netcoreapp3.1\EstudandoStrings.runtimeconfig.dev.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\bin\Debug\netcoreapp3.1\EstudandoStrings.dll
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\bin\Debug\netcoreapp3.1\EstudandoStrings.pdb
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.csproj.AssemblyReference.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.AssemblyInfoInputs.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.AssemblyInfo.cs
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.csproj.CoreCompileInputs.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.dll
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.pdb
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudandoStrings\obj\Debug\netcoreapp3.1\EstudandoStrings.genruntimeconfig.cache
