@@ -14,7 +14,17 @@ A atribuição multipla permite em uma linha atribuir diferentes valores a difer
 % é o operador para retornar o resto da divisão inteira
 ** é uma exponenciação
 
+if ():
+
+elif ():
+
+else:
 
 
 
-TW-DesenvolvedorPython - Finalizado Operadores Aritméricos - 5 Operadores Aritmeticos
+
+
+
+
+
+TW-DesenvolvedorPython - 6 Estruturas de condicao - Python Fundamentos

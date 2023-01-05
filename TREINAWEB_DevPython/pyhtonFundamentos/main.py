@@ -29,3 +29,12 @@ print(partes[3])
 
 soma_idades = idade + novaIdade;
 print(soma_idades)
+
+valor = int(input("Informe um numero"))
+
+if (valor > 10):
+    print("O valor eh maior que 10")
+elif (valor < 5):
+    print("O valor eh menor que 5")
+else:
+    print("O valor esta entre 5 e 10")
