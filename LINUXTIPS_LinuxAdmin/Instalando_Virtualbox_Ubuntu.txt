@@ -1,0 +1,11 @@
+Para instalar o Virtualbox no Debian / Ubuntu
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+# Se for Ubuntu, substituir 'buster' pela release do Ubuntu (trusty, 
+echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian buster contrib" >/etc/apt/sources.list.d/virtualbox.list
+
+apt-get update
+apt-get install make gcc libncurses5-dev linux-headers-$(uname -r)
+apt-get install virtualbox-6.1
