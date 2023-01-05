@@ -10,5 +10,20 @@ Python não é recomendado para mobile
 
 Ambiente linux com VScode
 
+dir() retorna o conjunto de metodos
+help() sistema de ajuda integrado
 
-DIO-FormacaoPythonDeveloper - - 
+Constantes são escritas em upper case - não existe o tipo constante portanto eh preciso cuidado com essas variaveis
+
+Convencionado que se usa o snake_case para nomes de variaveis
+
+// retorna a parte inteira
+% resto da divisão inteira
+
+is e is not verificam se variaveis ocupam ou nao a mesma regição de memoria, respectivamente
+
+in e not in verificam se uma string esta presente em uma variavel
+
+
+
+DIO-FormacaoPythonDeveloper - Tipos de Operadores + Conhecendo a linguagem de programacao python - Fundamentos de Python
