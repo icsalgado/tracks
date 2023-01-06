@@ -1,7 +1,6 @@
 Instrutora Tenile Martins
 
 go build hello.go
-
 go run hello.go
 
 Go eh estaticamente ou fortemente tipada
@@ -26,17 +25,38 @@ Booleanos
 Inferencia de tipos
 	Não é preciso declarar a variavel com o seu tipo
 
+Palavras Reservadas
+	observar a lista
+
+Expressoes e comandos
+	entendendo o que e quais são
+
+Variaveis
+	nomes e tipos
+
+Blocos e Escopos
+	globais e locais
+	
+Arrays Fatias e mapas
+	array de tipo unico com sequencia numerada e tamanho fixo
+	fatia é parte do array e tem tamanho variavel
+	mapa busca um valor de acordo a uma palavra associada - tabela hash, dicionario ou array associativo
+	
+Abstração
+	esconde detalhes menos importantes
+
+Parametros
+	valor proveniente de uma variavel ou expressao e pode ser passado para uma função
+	
+Objetos e classes
+	Go não tem objetos e classes, Estruturas guarda um estado e nao tem comportamento
+
+Sistemas de tipos
+	conjunto de regras que atribuem uma propriedade chamada de tipo para as varias contrucoes
+
+Interfaces e excecoes
+	interface define um comportamento de um tipo e go não possui excecoes
 
 
 
-
-
-
-
-
-
-
-
-
-
-DIO-FormacaoGoDeveloper - Inferencia de tipo - Fundamentos de GO - Primeiros passos com GO
+DIO-FormacaoGoDeveloper - Fundamentos de GO - Primeiros passos com GO
