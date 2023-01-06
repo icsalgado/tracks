@@ -22,7 +22,7 @@ O interpretador do navegador não entende PHP apenas mostra o retorno dele como 
 
 O PHP tem tipagem dinâmica - não precisa declarar o tipo
 		Tipagem fraca - o tipo pode ser alterado
-	o nome da variavel começa com $
+	o nome da variavel começa com $ e usa-se snake_case
 	
 Recomendado para constantes usar upper case
 	define("ESCOLA", "Treinaweb");
@@ -53,8 +53,17 @@ Tipos de dados compostos
 	$numeros = [[1, 2, 3 , 4], [6, 7, 8, 9], ["dez", "onze", "doze"]];
 	
 	
+Operador de comparacao
+	<> e != sao o operador diferente
+	!== diferente incluindo o tipo
+	== comparador de igualdade
+	=== comparador de igualdade inclusive o tipo
 	
+Operador de concatenacao
+	$nome_completo = $nome . " " . $sobrenome;
 	
+" " permite o uso de algum interpolacao dentro da string como o uso do conteudo de uma variavel
+' ' quando não for usar uma string sem nada a ser interpretado, eh considerada uma micro otimização
 	
 	
 	
@@ -68,4 +77,4 @@ Tipos de dados compostos
 	
 
 
-TW-FormaçaoDevPHP - Realizados desafios e exercicio - 3 variaveis e constantes
+TW-FormaçaoDevPHP - 4 Operadores - PHP Fundamentos
