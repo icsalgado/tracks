@@ -23,5 +23,14 @@ a ` ` pode ser usada com quebras de linha
 
 O symbol eh unico e imutavel como uma constante e são usados como identificadores
 
+A concatenacao de strings é feita com o +
 
-TW-FormacaoDevJavaScript - 3. Tipos primitivos - JS Fundamentos
+typeof retorna o tipo da variavel
+
+operador ternario
+	condicao ? verdadeiro : falso
+
+
+
+
+TW-FormacaoDevJavaScript - 4 Operadores - JS Fundamentos
