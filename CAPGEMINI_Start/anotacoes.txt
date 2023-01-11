@@ -3,6 +3,6 @@ Trilha introdutória
 	*Boas Vindas
 	*Perguntas Frequentes
 	*Introdução a lógica
-	Lógica e algoritmos 1
-	Lógica e algoritmos 2
-	Lógica e algoritmos 1
+	*Lógica e algoritmos 1
+	*Lógica e algoritmos 2
+	Lógica e algoritmos 3
