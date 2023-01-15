@@ -1,0 +1,10 @@
+Capgrmini Start
+
+Java LP3
+
+Netbeans
+	Gerenciador de dependencias
+		Gradle
+			https://giordanolins.com/instalando-e-configurando-o-gradle-no-windows/
+	Comentário de documentação
+		/** */
