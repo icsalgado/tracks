@@ -20,11 +20,15 @@ elif ():
 
 else:
 
+while
+else
+
+for
+else #usado para indicar o fim do bloco, está em desuso
 
 
 
 
 
 
-
-TW-DesenvolvedorPython - 6 Estruturas de condicao - Python Fundamentos
+TW-DesenvolvedorPython - 7 Estruturas de Repeticao - Python Fundamentos
