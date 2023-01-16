@@ -31,12 +31,13 @@ variaveis criadas dentro do metodo static void main precisam ser inicializadas
 O switch é recomendado para testes com apenas uma variavel e uma possibilidade por vez
 
 
+Uma expressão lambida ( -> ) a partir do java 8 é como um método oculto
+	a intenção é reduzir a verbosidade
 
 
 
 
-
-TW-FormacaoDevJava - Arraylist - 4 Estruturas de decisao e repeticao
+TW-FormacaoDevJava - 4 Estruturas de decisao e repeticao
 
 
 
