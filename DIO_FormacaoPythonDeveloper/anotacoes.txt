@@ -24,6 +24,10 @@ is e is not verificam se variaveis ocupam ou nao a mesma regição de memoria, r
 
 in e not in verificam se uma string esta presente em uma variavel
 
+O codigo precisa ser identado para funcionarem os blocos
+	é indicado usar 4 espaços em branco
+
+# indica um comentário
 
 
-DIO-FormacaoPythonDeveloper - Tipos de Operadores + Conhecendo a linguagem de programacao python - Fundamentos de Python
+DIO-FormacaoPythonDeveloper - Estruturas Condicionais e de repeticao - Fundamentos de Python
