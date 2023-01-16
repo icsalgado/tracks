@@ -56,8 +56,11 @@ Operadores
 
 	.equals vai comparar o conteúdo entre duas variáveis
 
+Métodos, parâmetros e visibilidade
+	uma classe é definida por atributos e métodos, que são ações ou sub-rotinas
+	-Deve ser nomeado como verbo
+	-camelCase
+	Não existem metodos globais, devem ser definidos sempre em uma classe
 
 
-
-
-DIO-FormacaoJavaDeveloper - Operadores > Aprendendo a sintaxe - Fundamentos da Plataforma
+DIO-FormacaoJavaDeveloper - Metodos > Aprendendo a sintaxe - Fundamentos da Plataforma
