@@ -2,19 +2,19 @@ DIO - Formacao .net Developer
 
 no terminal do vscode
 	dotnet new console - ele cria o projeto na pasta
-	dotnet run - para executar o c�digo dentro da pasta
+	dotnet run - para executar o codigo dentro da pasta
 
 Sintaxe e tipos de dados em C#
-	program.cs > � a classe 
-	.csproj > arquivo de projeto do c# - informa��es descritivas do projeto, xml com metadados
-		output type se � um executavel ou bibliotecas
-		target framework vers�o do .net usada [� poss�vel mudar a vers�o]
-			no cli > dotnet --info > informa as vers�es instaladas mas uma vers�o nova pode quebrar o projeto
-		os demais s�o referentes a como o projeto deve se comportar
+	program.cs > eh a classe 
+	.csproj > arquivo de projeto do c# - informacoes descritivas do projeto, xml com metadados
+		output type se eh um executavel ou bibliotecas
+		target framework versao do .net usada [eh possivel mudar a versao]
+			no cli > dotnet --info > informa as versoes instaladas mas uma versao nova pode quebrar o projeto
+		os demais sao referentes a como o projeto deve se comportar
 	
-	diretorio obj > maior parte dos arquivos s�o referentes ao debugger e compila��o, raramente � preciso manipula-la
-	diretorio bin > os bin�rios dll, exe, pdb(podem ser usados para debug)
-		esses dois diret�rios s�o gerados com > dotnet build > podem ser ignoradas para novas compila��es
+	diretorio obj > maior parte dos arquivos sao referentes ao debugger e compilacao, raramente eh preciso manipula-la
+	diretorio bin > os binarios dll, exe, pdb(podem ser usados para debug)
+		esses dois diretorios sao gerados com > dotnet build > podem ser ignoradas para novas compilacoes
 
 	Conceito de Classe:
 		New folder > new C2 file > class
@@ -71,5 +71,5 @@ Casting de variaveis
 
 
 
-DIO-FormacaoDotNetDeveloper - Operadores de atribuicao e casting > Tipos de operadores em Csharp - Fundamentos DotNet
+DIO-FormacaoDotNetDeveloper - Operadores Logicos > Tipos de operadores em Csharp - Fundamentos DotNet
 

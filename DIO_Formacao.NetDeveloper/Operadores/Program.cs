@@ -35,3 +35,40 @@ int.TryParse(valor, out outroValor); //tenta converter, se não der certo imprim
 
 Console.WriteLine(outroValor);
 
+//Operadores condicionais
+
+int quantidadeEmEstoque = 10;
+
+int quantidadeComprada = 4;
+
+bool possivelVenda = quantidadeComprada > 0 && quantidadeEmEstoque >= quantidadeComprada;
+
+if(possivelVenda)
+{
+    Console.WriteLine("Venda realizada");
+}
+else if(quantidadeComprada == 0)
+{
+    Console.WriteLine("Venda zerada");
+}
+else
+{
+    Console.WriteLine("Sem estoque suficiente");
+}
+
+Console.WriteLine("Informe uma letra");
+string novaLetra = Console.ReadLine();
+
+switch(novaLetra)
+{
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("eh uma vogal");
+        break;
+    default:
+        Console.WriteLine("Nao eh uma vogal");
+        break;
+}
