@@ -19,7 +19,9 @@ NaN significa not a number
 tanto faz o uso de '' ou "" para strings
 	recomenda-se o uso de apenas um dos dois no codigo, o mais comum sao as aspas simples. As aspas duplas ou simples podem circundar suas opostas dentro da string
 	
-a ` ` pode ser usada com quebras de linha
+a ` ` pode ser usada com quebras de linha (template strings)
+	`seu nome é ${nome}`
+		template string considera as quebras de linha na hora de mostrar o resultado
 
 O symbol eh unico e imutavel como uma constante e são usados como identificadores
 
@@ -30,7 +32,29 @@ typeof retorna o tipo da variavel
 operador ternario
 	condicao ? verdadeiro : falso
 
+A tipagem é dinâmia
+
+Declaração de variaveis
+	var novaVariavel = 10;
+	let outraVariavel; //impede a dupla declaração
+	const CONSTANTE_PI = 3.14;
+	
+concatenação usa o +
+
+recomendado usar o inglês
+
+Undefined é uma varivel que não tem valor
+Null é para representar que uma variavel ainda não tem nem zero
 
 
 
-TW-FormacaoDevJavaScript - 4 Operadores - JS Fundamentos
+
+
+
+
+
+
+
+
+
+TW-FormacaoDevJavaScript - 5 Declaração de Variáveis - JS Fundamentos
