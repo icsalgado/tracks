@@ -8,4 +8,27 @@ Não esquecer de referenciar um objeto que está instanciado dentro da sua propr
 Concatenação de strings gera um alto processamento, para evitar usa-se o StringBuilder
 	o metodo .Append adiciona algo ao buffer do StringBuilder
 
+Metodos com params //para receber argumentos indefinidos
+
+	int Somar(params int[] numeros) //consjunto de dados recebidos, array numeros, o params deve ser sempre o último argumento
+	{
+		int resultado = 0;
+
+		foreach (int numero in numeros)//varrer o array de numeros
+		{
+			resultado += numero; //somatorio de cada numero dentro do array numeros
+		}
+
+		return resultado;	
+	}
+
+
+
+
+
+
+
+
+
+
 TW-FormacaoCsharp - 8 Metodos, 9 Escopo, 10 debug - Csharp Basico
