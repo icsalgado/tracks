@@ -72,3 +72,22 @@ switch(novaLetra)
         Console.WriteLine("Nao eh uma vogal");
         break;
 }
+
+bool maiorDeIdade = false;
+bool autorizacaoResponsavel = false;
+
+if (maiorDeIdade || autorizacaoResponsavel){
+    Console.WriteLine("Maior de idade");
+}else{
+    Console.WriteLine("Menor de idade");
+}
+
+if (maiorDeIdade && autorizacaoResponsavel){
+    Console.WriteLine("Maior de idade");
+}else{
+    Console.WriteLine("Menor de idade");
+}
+
+if(!maiorDeIdade){
+    Console.WriteLine("Não maior de idade");
+}

@@ -56,6 +56,10 @@ Casting de variaveis
 		double suporta int
 		long suporta int
 
+Operadores lógicos
+	&& and
+	|| or
+	! not
 
 
 
@@ -70,6 +74,5 @@ Casting de variaveis
 
 
 
-
-DIO-FormacaoDotNetDeveloper - Operadores Logicos > Tipos de operadores em Csharp - Fundamentos DotNet
+DIO-FormacaoDotNetDeveloper - Finalizados tipos de operadores - Fundamentos DotNet
 
