@@ -34,16 +34,22 @@ O switch é recomendado para testes com apenas uma variavel e uma possibilidade p
 Uma expressão lambida ( -> ) a partir do java 8 é como um método oculto
 	a intenção é reduzir a verbosidade
 
+##Depuração
+	marcar um break point
+		debug as
+			java application
+	f5 STEP INTO - debugar dentro de uma função
+	f6 STEP OVER - seguir para proxima linha
+
+##Erros
+	são chamados de exception
+		stack trace no Eclipse é exibido do código mais interno até o nosso código desenvolvido
+			Ou se seja, deve ser lido de baixo para cima, a última linha descrecreve onde esta o erro no código
+
+	usado o try e catch para tratar os erros na sessão crítica
 
 
 
-TW-FormacaoDevJava - 4 Estruturas de decisao e repeticao
 
 
-
-
-
-
-
-
-
+TW-FormacaoDevJava - Conclusao do curso Java Fundamentos com Debug e Tratamento basico de erros

@@ -1,6 +1,7 @@
 package br.com.treinaweb.main;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class main {
@@ -24,14 +25,28 @@ public class main {
 
 		Scanner scanner = new Scanner(System.in);
 		int acao = 1;// 0 sair, 1 operação, 2 historico
+
 		ArrayList<String> historico = new ArrayList<String>();// usa um Generics e um operador diamante e o construtor
 																// new
 
-		while (acao > 0) {
+		while (acao != 0) {
 			if (acao == 1) {
 
 				System.out.println("Informe um numero");
-				int primeiroNumero = Integer.parseInt(scanner.nextLine());// casting para inteiro
+
+				int primeiroNumero = 0;// para tirar a variavel do escopo do try
+				try {
+					primeiroNumero = scanner.nextInt();// sessão critica
+				} catch (InputMismatchException e) { //tratamento do erro
+					System.out.println(String.format("Ocorreu um erro de formato: %s. Primeiro numero vai ser 1", e.getMessage()));
+					scanner.nextLine();//para limpar buffer
+					primeiroNumero = 1;
+				} catch (Exception e ) {//tratamento de erro genérico
+					System.out.println("Erro desconhecido");
+				}
+
+				// int primeiroNumero = Integer.parseInt(scanner.nextLine());// casting para
+				// inteiro
 
 				// System.out.println(primeiroNumero);
 
@@ -86,7 +101,8 @@ public class main {
 					break;
 				}
 
-				String entradaHistorico = String.format("historico", resultado);
+				String entradaHistorico = String.format("historico: %d %c %d = %d", primeiroNumero, operacao,
+						segundoNumero, resultado);
 
 				historico.add(entradaHistorico); // colocado dentro do array do historico
 
@@ -97,9 +113,10 @@ public class main {
 				historico.forEach(itemHistorico -> System.out.println(itemHistorico));// expressão lambda que reduz a
 																						// verbosidade de um for por
 																						// exemplo
-				/*for (int i = 0; i < historico.size(); i++) {
-					System.out.println(historico.get(i));
-				}*/
+				/*
+				 * for (int i = 0; i < historico.size(); i++) {
+				 * System.out.println(historico.get(i)); }
+				 */
 			}
 			System.out.println("O que voce deseja fazer? 0 para sair, 1 calculadora, 2 historico");
 			acao = scanner.nextInt();
