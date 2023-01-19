@@ -62,5 +62,22 @@ Métodos, parâmetros e visibilidade
 	-camelCase
 	Não existem metodos globais, devem ser definidos sempre em uma classe
 
+Escopo
+	Ambiente onde uma variável pode ser acessada, onde ela foi declarada
 
-DIO-FormacaoJavaDeveloper - Metodos > Aprendendo a sintaxe - Fundamentos da Plataforma
+Palavras Reservadas
+	Java tem 52 palavras reservads e sempre em letra minuscul
+Javadoc
+	TAGS
+		Dados relevantes para uma classe
+		@autor
+		@version
+		...
+	javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ../docs src/*.java
+
+Terminal e argumentos
+	
+github.com/digitalinnovationone/trilha-java-basico
+
+
+DIO-FormacaoJavaDeveloper - Finalizado Aprendendo sintaxe Java - Fundamentos da Plataforma
