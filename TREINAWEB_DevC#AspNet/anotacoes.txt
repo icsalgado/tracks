@@ -8,4 +8,4 @@ Não esquecer de referenciar um objeto que está instanciado dentro da sua propr
 Concatenação de strings gera um alto processamento, para evitar usa-se o StringBuilder
 	o metodo .Append adiciona algo ao buffer do StringBuilder
 
-TW-FormacaoCsharp - 6 Conversao de dados 7 Operadores aritmeticos
+TW-FormacaoCsharp - 8 Metodos, 9 Escopo, 10 debug - Csharp Basico
