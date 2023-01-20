@@ -26,9 +26,23 @@ else
 for
 else #usado para indicar o fim do bloco, está em desuso
 
+#POO
+
+class Usuario:
+    def __init__(self, nome, idade, sobrenome): #metodo construtor
+        self.nome = nome
+        self.idade = idade
+        self.sobrenome = sobrenome
+
+from usuario import Usuario #para importar um metodo do arquivo usuario
+
+#import usuario #importa todos os metodos do arquivo
+
+usuario = Usuario("Iuri", 31, "Salgado") #instanciar
+
+print(f"{usuario.nome} {usuario.sobrenome}, {usuario.idade}")
 
 
 
 
-
-TW-DesenvolvedorPython - 7 Estruturas de Repeticao - Python Fundamentos
+TW-DesenvolvedorPython - Finalizado Python Fundamentos com POO, modulos, listas e tratamento de erro - Python Fundamentos
