@@ -35,3 +35,71 @@ switch($variavelA){
     default:
         echo "Não é 20 nem 30 \n";
 }
+
+$variavelControle = 0;
+
+while($variavelControle < 10){
+    echo $variavelControle, " ";
+    $variavelControle++;
+}
+
+echo "\n";
+
+for($i  = 0; $i < 10; $i++){
+    echo $i, " ";
+}
+
+echo "\n";
+
+$numeros = [1, 2, 3, 4, 5];
+
+foreach ($numeros as $valor){
+    echo $valor, " ";
+}
+
+echo "\n";
+
+$curso = [
+    "PHP" => [
+        "nome_curso" => "PHPfundamentos", 
+        "versao" => 7.4, 
+        "carga_horaria" => 40, 
+        "status" => true
+    ],
+    "Java" => [
+        "nome_curso" => "Javafundamentos", 
+        "versao" => 6, 
+        "carga_horaria" => 40, 
+        "status" => false
+    ],
+];
+
+foreach ($curso as $linguagem){
+    echo $linguagem['nome_curso'];
+    echo " - ", $linguagem['status'];
+    echo "\n";
+}
+
+echo "\n";
+
+foreach ($curso as $linguagem){
+    echo $linguagem['nome_curso'];
+    if($linguagem['status'] == 1){
+        continue;
+    }
+    echo " - ", $linguagem['status'];
+    echo "\n";
+}
+
+echo "\n";
+
+foreach ($curso as $linguagem){
+    echo $linguagem['nome_curso'];
+    if($linguagem['status'] == 1){
+        break;
+    }
+    echo " - ", $linguagem['status'];
+    echo "\n";
+}
+
+echo "\n";

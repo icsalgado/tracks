@@ -66,15 +66,52 @@ Operador de concatenacao
 ' ' quando não for usar uma string sem nada a ser interpretado, eh considerada uma micro otimização
 	
 	
+É recomendados que os arquivos PHP tenham somente declarações ou apenas saídas
 	
 	
+PHP-FIG - PSRs - php-fig.org
+	padrões Framework interop group
+		php standards recommendations
+			Os status:
+			rascunho
+			aceita
+			descontinuada
+			abandonada
+			
+			Recomendação
+			MUST, REQUIRED, SHALL - obrigatóro
+			MUST NOT, SHALL NOT - Proibido
+			SHOULD, RECOMMENDED - Recomendado
+			SHOULD NOT, NOT RECOMMENDED - não recomendado
+			MAY, OPTIONAL - Opcional
 	
-	
-	
-	
-	
-	
-	
+PSR-1
+	Codificação Básica
+	MUST - tags - <?php ?> e <?= ?>
+	MUST - charset - UTF-8 sem BOM
+	SHOULD - arquivos com apenas declarações ou apenas saídas
+	entre outros
+PSR-12 substituiu a PSR-2
+	Estilo de código
+	MUST - PSR-1
+	MUST - LF no final da linha  e não inserir nova linha no final
+	MUST - não deve fechar a tag ?>
+	MUST - linhas com menos de 120 caracteres
+	SHOULD NOT - mais 80 caracteres na linha
+	MUST NOT - duas instruções ou mais por linha
+	MUST NOT - inserir caractere em branco no final da linha
+	MAY - adicionar linhas em branco para legibilidade
+	MUST - 4 espaços no tab para identação
+	MUST - palavras reservadas em minusculo
+	MUST NOT - espaço apos o nome da função
+	MUST - chaves dos blocos de funções deve estar sozinhas numa linha
+	MUST NOT - espaço depois dos parenteses das funções
+	entre outros
 
 
-TW-FormaçaoDevPHP - 5 condicionais - PHP Fundamentos
+
+
+
+
+
+TW-FormaçaoDevPHP - PHP Fundamentos finalizado com condicionais, repeticao, funcoes, erros e tratamentos, importacao de arquivos e padroes
