@@ -30,4 +30,8 @@ O codigo precisa ser identado para funcionarem os blocos
 # indica um comentário
 
 
-DIO-FormacaoPythonDeveloper - Estruturas Condicionais e de repeticao - Fundamentos de Python
+
+
+
+
+DIO-FormacaoPythonDeveloper - Finalizado Manipulacao de Strings - Fundamentos de Python
