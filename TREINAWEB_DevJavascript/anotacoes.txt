@@ -57,4 +57,4 @@ Null é para representar que uma variavel ainda não tem nem zero
 
 
 
-TW-FormacaoDevJavaScript - 5 Declaração de Variáveis - JS Fundamentos
+TW-FormacaoDevJavaScript - 6 Decisao, 7 Repeticao, 8 Funcao - JS Fundamentos
