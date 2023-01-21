@@ -46,6 +46,9 @@ recomendado usar o inglês
 Undefined é uma varivel que não tem valor
 Null é para representar que uma variavel ainda não tem nem zero
 
+JSON.stringfy(objeto)//trasforma em string
+
+JSON.parse(JSON.stringfy(objeto))// transforma em objeto
 
 
 
@@ -56,5 +59,4 @@ Null é para representar que uma variavel ainda não tem nem zero
 
 
 
-
-TW-FormacaoDevJavaScript - 6 Decisao, 7 Repeticao, 8 Funcao - JS Fundamentos
+TW-FormacaoDevJavaScript - 6 Decisao, 7 Repeticao - JS Fundamentos
