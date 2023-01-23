@@ -19,6 +19,21 @@ Herança
 	Observar a sentença "essa classe é um tipo de: "
 
 
+Interface gráfica
+	jframe
+
+		Swing 
+			interface mais amigavel
+		Awt
+			tela mais parecida com o windows 98
+	Swing
+		tabbed pane
+			serve para criar abas
+			Pane
+				nova aba
+		programação orientada a eventos
+			
+		Responsividade
 
 
 
@@ -26,5 +41,4 @@ Herança
 
 
 
-
-CAPGEMINI-Start - POO herança Aulas 4 w x y - LP3 JAVA
+CAPGEMINI-Start - Aula 7 completa, Interface Grafica - LP3 JAVA
