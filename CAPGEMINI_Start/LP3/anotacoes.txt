@@ -36,9 +36,44 @@ Interface gráfica
 		Responsividade
 
 
+Definição do projeto
+
+	básico
+		Aplicação para gerenciamento de projetos e tarefas
+		entidades
+			projetos
+				nome
+				data de criação
+				descição
+				data de atualização
+			tarefas
+				nome
+				descrição
+				status
+				observações
+				prazo
+				data de criação
+				data de atualização
+		
+	requisitos
+		crud de projeto e crud de tarefa dentro de um projeto
+	
+	regras de negocio
+		não precisa de login
+		toda tarefa percence a um projeto
+		
+	definição da tecnologia
+		Java
+			MVC
+				criar as classes de modelo
+				
+		Mysql
+			primeiro criar as tabelas 
+			relacionamentos
 
 
 
 
 
-CAPGEMINI-Start - Aula 7 completa, Interface Grafica - LP3 JAVA
+
+CAPGEMINI-Start - Criação do banco de dados do projeto, models e conexão com o banco - Aula 10F - LP3 JAVA
