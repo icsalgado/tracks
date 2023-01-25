@@ -32,6 +32,10 @@ public class Tasks {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
+    
+    public Tasks(){
+        this.createdAt = new Date();
+    }
 
     public int getId() {
         return id;
@@ -73,7 +77,7 @@ public class Tasks {
         this.notes = notes;
     }
 
-    public boolean isIsCompleted() {
+    public boolean isCompleted() {
         return isCompleted;
     }
 
