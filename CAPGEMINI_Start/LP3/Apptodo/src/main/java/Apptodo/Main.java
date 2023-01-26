@@ -5,7 +5,9 @@
 package Apptodo;
 
 import assets.ConnectionFactory;
+import controler.ProjectController;
 import java.sql.Connection;
+import model.Project;
 
 /**
  *
@@ -20,9 +22,17 @@ public class Main {
         // TODO code application logic here
         
         
-        Connection c = (Connection) ConnectionFactory.getConnection();
+//        Connection c = (Connection) ConnectionFactory.getConnection();
+//        
+//        
+//        ConnectionFactory.closeConnection((com.mysql.jdbc.Connection) c);
+
+        ProjectController projectController = new ProjectController();
         
-        ConnectionFactory.closeConnection((com.mysql.jdbc.Connection) c);
+        Project project = new Project();
+        project.setName("Projeto Teste");
+        project.setDescription("Teste");
+        projectController.save(project);
         
     }
     
