@@ -1,16 +1,19 @@
 let precos = [2, 4, 5];
 
-precos.push(1);
-precos.unshift(3);
+precos.push(1);//insere no final do array
+precos.unshift(3);//insere no inicio do array
 console.log(precos);
 precos.pop();//remove o ultimo
 precos.shift();//remove o primeiro
-precos.splice(0, 0, 'a');//apaga posição, quantidade, insere
+precos.splice(0, 0, 'a');//apaga posição, quantidade, insere na posição
 precos.splice(1, 1);//apaga posição, quantidade
 
 
 console.log(precos);
 console.log(precos.length);
+
+let [valor1, valor2] = precos;
+console.log("Forma de declarar variavel", valor1, valor2);
 
 let [preco1, ...preco2] = precos; //spread operator
 

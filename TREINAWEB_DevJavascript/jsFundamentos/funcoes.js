@@ -26,6 +26,7 @@ let minhaFuncao = () => {
 
 tabuada();
 tabuadaNova(5);
-console.log(funcaoAnonima(7));
 
-console.log(minhaFuncao);
+funcaoAnonima(7);
+
+minhaFuncao();

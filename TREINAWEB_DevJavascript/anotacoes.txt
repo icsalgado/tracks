@@ -46,17 +46,36 @@ recomendado usar o inglês
 Undefined é uma varivel que não tem valor
 Null é para representar que uma variavel ainda não tem nem zero
 
+
+Quando uma função anônima é chamada dentro de outra chamada de função ela é um callback
+
+quando uma arrow function só recebe um parametro/argumento pode ser omitido os () e quando só tem um return na função pode também omitir o return e as {}
+	let dobro = numero => numero * 2;
+
+constantes no JS não podem ser reatribuidas, mas as propriedades de um objeto podem ser alteradas
+
+javascript object notation
+
 JSON.stringfy(objeto)//trasforma em string
 
 JSON.parse(JSON.stringfy(objeto))// transforma em objeto
 
+Variaveis com tipo primitivo
+	na passagem para outra variavel utiliza dois espaços de memoria e atribui o valor da primeira
+	
+Objetos
+	na passagem para outro objeto ele utiliza uma referência ao local de memoria do primeiro objeto.
+	para clonar um objeto
+		objeto2 = JSON.parse(JSON.stringfy(objeto1));
+		let lapis2 = {...lapis1}
+	para comparar dois objetos
+		JSON.stringfy(objeto1) === JSON.stringfy(objeto1)
+
+Symbols
+	são únicos e são acessiveis por uma variável
+	não aparede no Object.keys
+	não pode ser alterado facilmente
 
 
 
-
-
-
-
-
-
-TW-FormacaoDevJavaScript - 6 Decisao, 7 Repeticao - JS Fundamentos
+TW-FormacaoDevJavaScript - Finalizado com projeto jogo da velha no console do navegador e no nodejs - JS Fundamentos
