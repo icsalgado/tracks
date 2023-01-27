@@ -45,4 +45,4 @@ print(f"{usuario.nome} {usuario.sobrenome}, {usuario.idade}")
 
 
 
-TW-DesenvolvedorPython - Finalizado Python Fundamentos com POO, modulos, listas e tratamento de erro - Python Fundamentos
+TW-DesenvolvedorPython - 1 Escopos e namespaces - Python POO
