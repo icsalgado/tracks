@@ -1,35 +1,36 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
 import java.util.Date;
+import java.util.List;
+import java.util.logging.Logger;
 
 /**
  *
- * @author icsalgado
+ * @author Marcio Michelluzzi
  */
 public class Project {
+
     private int id;
     private String name;
     private String description;
+    private List<Tasks> tasks;
     private Date createdAt;
     private Date updatedAt;
+    private static final Logger LOG = Logger.getLogger(Project.class.getName());
 
-    public Project(int id, String name, String description, Date createdAt, Date updatedAt) {
+    public Project(int id, String name, String description, List<Tasks> tasks, Date createdAt, Date updatedAt) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.tasks = tasks;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
 
     public Project() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.createdAt = new Date();
+        this.updatedAt = new Date();
     }
-
-    
 
     public int getId() {
         return id;
@@ -55,6 +56,14 @@ public class Project {
         this.description = description;
     }
 
+    public List<Tasks> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(List<Tasks> tasks) {
+        this.tasks = tasks;
+    }
+
     public Date getCreatedAt() {
         return createdAt;
     }
@@ -70,13 +79,10 @@ public class Project {
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
-    
-    //metodo para retornar uma string com o nome do atributo e o valor em uma classe
+
     @Override
     public String toString() {
-        return "Project{" + "id=" + id + ", name=" + name + ", description=" + description + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
+        return name;
     }
-    
-    
-    
+
 }
