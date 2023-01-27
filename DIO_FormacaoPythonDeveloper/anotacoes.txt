@@ -29,7 +29,7 @@ O codigo precisa ser identado para funcionarem os blocos
 
 # indica um comentário
 
-
+len(texto) para ver o tamanho da string
 
 
 

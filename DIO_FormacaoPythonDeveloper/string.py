@@ -30,7 +30,7 @@ print(f"Olá {nome} seu curso é {curso}") #Esse é o mais recomendado
 
 PI = 3.14159
 
-print(f"Valor de PI: {PI:.2f}") #:.2f para formata a saida do floar(constante PI) com duas casas decimais
+print(f"Valor de PI: {PI:.2f}") #:.2f para formata a saida do float(constante PI) com duas casas decimais
 
 #Fatiamento de strings
 
