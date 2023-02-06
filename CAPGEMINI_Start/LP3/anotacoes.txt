@@ -76,4 +76,5 @@ Definição do projeto
 
 
 
-CAPGEMINI-Start - Testes ok, proximo passo é contruir a interface grafica - Aula 11L - LP3 JAVA
+
+CAPGEMINI-Start - GUI até aula 12D - LP3 JAVA
