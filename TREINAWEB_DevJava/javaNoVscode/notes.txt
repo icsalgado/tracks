@@ -1,0 +1,10 @@
+Extensões
+Extension Pack for Java
+
+Para spring
+Spring Boot Extension Pack
+
+    botão direito
+        Source Action
+            getters and setters
+            constructor
