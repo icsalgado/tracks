@@ -1,4 +1,4 @@
-package br.com.treinaweb.main;
+scanpackage br.com.treinaweb.main;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
