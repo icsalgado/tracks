@@ -79,15 +79,15 @@
         </td>
         <td>
             <!--DIO-->
-            <a href="hhttps://www.dio.me/en/catalog?search=linux&skill=fa90d9c3-dd68-420a-9fb0-37000b46e811"><img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="40px" align="center"> <b>Linux do Zero - ~44hrs</b></a> ___ <a href="https://github.com/icsalgado/tracks/tree/master/DIO_LinuxDoZero"><img src="https://cdn-icons-png.flaticon.com/512/8481/8481952.png" width="20px"></a>
+            <a href="hhttps://www.dio.me/en/catalog?search=linux&skill=fa90d9c3-dd68-420a-9fb0-37000b46e811"> <img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="40px" align="center"> <b>Linux do Zero - ~44hrs</b></a> ___ <a href="https://github.com/icsalgado/tracks/tree/master/DIO_LinuxDoZero"><img src="https://cdn-icons-png.flaticon.com/512/8481/8481952.png" width="20px"></a>
             <br>
-            <a href="hhttps://www.dio.me/en/catalog?search=linux&skill=fa90d9c3-dd68-420a-9fb0-37000b46e811"><img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="40px" align="center"> <b>Linux Experience - ~42hrs</b></a> _ <a href="https://www.dio.me/certificate/68F781C3"><img src="https://cdn-icons-png.flaticon.com/512/1064/1064671.png" width="20px"></a> _ <a href="https://github.com/icsalgado/tracks/tree/master/DIO_LinuxExperience"><img src="https://cdn-icons-png.flaticon.com/512/8481/8481952.png" width="20px"></a>
+            <a href="hhttps://www.dio.me/en/catalog?search=linux&skill=fa90d9c3-dd68-420a-9fb0-37000b46e811"> <img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="40px" align="center"> <b>Linux Experience - ~42hrs</b></a> _ <a href="https://www.dio.me/certificate/68F781C3"><img src="https://cdn-icons-png.flaticon.com/512/1064/1064671.png" width="20px"></a> _ <a href="https://github.com/icsalgado/tracks/tree/master/DIO_LinuxExperience"><img src="https://cdn-icons-png.flaticon.com/512/8481/8481952.png" width="20px"></a>
             <br>
-            <a href="hhttps://www.dio.me/en/catalog?search=linux&skill=fa90d9c3-dd68-420a-9fb0-37000b46e811"><img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="40px" align="center"> <b>Linux Fundamentals - ~23hrs</b></a> _ <a href="https://www.dio.me/certificate/ECCEC4B9"><img src="https://cdn-icons-png.flaticon.com/512/1064/1064671.png" width="20px"></a> _ <a href="https://github.com/icsalgado/tracks/tree/master/DIO_LinuxFundamentals"><img src="https://cdn-icons-png.flaticon.com/512/8481/8481952.png" width="20px"></a>
+            <a href="hhttps://www.dio.me/en/catalog?search=linux&skill=fa90d9c3-dd68-420a-9fb0-37000b46e811"> <img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="40px" align="center"> <b>Linux Fundamentals - ~23hrs</b></a> _ <a href="https://www.dio.me/certificate/ECCEC4B9"><img src="https://cdn-icons-png.flaticon.com/512/1064/1064671.png" width="20px"></a> _ <a href="https://github.com/icsalgado/tracks/tree/master/DIO_LinuxFundamentals"><img src="https://cdn-icons-png.flaticon.com/512/8481/8481952.png" width="20px"></a>
         </td>
     </table>
 
-<!--Linux-->
+<!--DEVOPS-->
 > <img src="https://img.shields.io/badge/DEVOPS-SRE--CLOUD--SECURITY-GREEN" width="200" alt="Linux" /><table align="center">
         <td>
             <!--LINUXTIPS-->
