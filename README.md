@@ -106,13 +106,4 @@
     </td>
 </table>
 
-<a href="https://king.host/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/KingHost-logo.svg/512px-KingHost-logo.svg.png" width="100px" align="center"></a>
-
-
-<a href="https://www.linuxtips.io/home"><img src="https://lwfiles.mycourse.app/633c72fac8c963ec854a3950-public/4bd40f95b2194780fb1fcc79b4aea790.png" width="100px" align="center"></a>
-
-<a href="https://www.treinaweb.com.br/"><img src="https://www.treinaweb.com.br/assets/images/treinaweb-logo@2x.webp" width="100px" align="center"></a>
-
-<a href="https://www.dio.me/sign-in"><img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="50px" align="center"></a>
-
-<a href="http://capgeminischool.brazilsouth.cloudapp.azure.com/login/"><img src="https://www.capgemini.com/br-pt/wp-content/themes/capgemini-komposite/assets/images/logo.svg" width="100px" align="center"></a>
+<a href="https://king.host/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/KingHost-logo.svg/512px-KingHost-logo.svg.png" width="100px" align="center"></a>  <a href="https://www.linuxtips.io/home"><img src="https://lwfiles.mycourse.app/633c72fac8c963ec854a3950-public/4bd40f95b2194780fb1fcc79b4aea790.png" width="100px" align="center"></a> <a href="https://www.treinaweb.com.br/"><img src="https://www.treinaweb.com.br/assets/images/treinaweb-logo@2x.webp" width="100px" align="center"></a> <a href="https://www.dio.me/sign-in"><img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" width="50px" align="center"></a> <a href="http://capgeminischool.brazilsouth.cloudapp.azure.com/login/"><img src="https://www.capgemini.com/br-pt/wp-content/themes/capgemini-komposite/assets/images/logo.svg" width="100px" align="center"></a>
