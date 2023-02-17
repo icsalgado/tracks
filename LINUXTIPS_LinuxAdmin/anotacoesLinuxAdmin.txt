@@ -14,6 +14,11 @@ cat /etc/debian_version
 	
 	ctrl + d sai do shell
 	
+	bash - born again shell
+		um dos recursos é usar a seta para cima
+		
+	partindo do / indica-se um caminho absoluto
+	
 LSB - linux standard base
 	FHS -  Filesystem Hierarchy Standard
 		/bin
@@ -37,8 +42,10 @@ LSB - linux standard base
 				
 			Existem dois tipos de devices
 				Bloco - armazenamento
+					representado pelo b 
 					HD por exemplo
 				Caractere - transferencia de informação
+					representado pelo c	
 					Terminal por exemplo
 						tty
 		/etc
@@ -53,7 +60,7 @@ LSB - linux standard base
 				libdiscover.so por exemplo
 			/lib/modules/5.10.0-18-amd64/kernel/drivers
 				driveis do sistema
-					modulos de kerner = driver
+					modulos de kernel = driver
 						vrs.ko por exemplo
 		/lost+found
 			para recuperar perdidos por falhas
