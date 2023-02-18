@@ -77,7 +77,9 @@ LSB - linux standard base
 			home do root
 		/run
 			tudo que está rodando desde o último boot
+			Informações dos processos
 			tmpfs temporary filesystem
+			antigo /var/run mudou na FHS3
 		/sbin	
 			super user binaries
 		/srv
@@ -87,14 +89,21 @@ LSB - linux standard base
 		/tmp
 			usado por apps para dados temporários
 		/usr
+			Como se fosse a segunda hierarquia de diretorios
+			Tudo que não é essencial para o linux e instalado depois da instalação dele
 			segunda hierarquia de diretórios do linux
 			/bin
 				binarios não essenciais para o sistema
 			as bibliotecas vão ser locais
 			/local
 				terceira hierarquia de diretórios do linux
+				coisas da maquina, não compartilhadas no servidor
 		/var
-			variaveis, logs, backups, cache	
+			variaveis, logs, backups, cache
+				lock
+					para que não execute a mesma coisa duas vezes
+				spool
+					coisas aguardando processamento
 						
 						
 	desligar a maquina
@@ -102,8 +111,10 @@ LSB - linux standard base
 		poweroff
 		shutdowb -h now
 		shutdown -h 18:00
-		agutdown -h +30 "mensagem para os users"
+		shutdown -h +30 "mensagem para os users"
 		shutdown -r now >> reinicia
+			shutdown -r +30 "Reboot in 30 min"
+			shutdown -c "Reboot canceled"
 		reboot
 		init 0 >> desliga
 		init 6 >> reinicia
@@ -967,6 +978,5 @@ Planejamento de disco
 						
 						
 						
-						
-				
+LinuxTips-LinuxAdmin - Day 2 FHS, diretorios e desligando a maquina
 				

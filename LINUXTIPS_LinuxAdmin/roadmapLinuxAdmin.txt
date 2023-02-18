@@ -1,0 +1,15 @@
+Day1
+	Linux
+	GNU
+	BSD
+	Licenças
+	DFSG
+	Instalação Oracle VB
+	Instalação debian
+
+Day 2
+	ssh
+	shell
+	diretório
+	FHS
+	desligando e reiniciando
