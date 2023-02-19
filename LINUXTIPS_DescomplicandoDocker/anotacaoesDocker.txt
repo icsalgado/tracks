@@ -1,17 +1,69 @@
 ### DAY 1
 
 Containers
-	remete a isolamento lógico-namespaces (processos, usuarios, rede, mountpoint) e isolamento fisico-cgroup (CPU, memoria IO)
+	remete a isolamento lógico-namespaces (processos, usuarios, rede, mountpoint) e isolamento fisico-cgroup (CPU, memoria, IO)
 	
-	CHROOT foi o precursor do Docker, ele e o LXC
+	O isolamento é entre containers, ou seja, um não enxerga os processos do outro
+	
+	O docker é um gerenciador de containers como:
+	CHROOT foi o precursor do Docker, ele e o LXC, openVZ
+		LXC - linux container
+			cgroups, namespaces e chroot
+		openVZ - parallels -> colocou o virtuoso open o que difundiu as VPSs
+
+Imagem de containers
+	composta de camadas
+		cada instrução vai ter uma camada
+	Somente na última camada é possível escrever, as camadas abaixo são ro
+		Se for preciso alterar um arquivo em outra camada, vai ser criada uma cópia para que seja feita a alteração (copy on write)
+	O ideal é executar as instruções necessárias juntas com o && em um unico RUN
+	Vários containers podem usar a mesma imagem ro
+	
+	O container utiliza o Kernel do host para um melhor gerênciamento de recursos
+		por exemplo um prédio com 10 apartamentos e cada apartamento com um porteiro
+			isso é o que ocorre nas VMS
+		módulos do kernel para comunicação dos containers
+			netfilter
+				iptables é o comando para interagir no netfilter
+			namespaces
+				pid namespaces
+				net namespaces
+				mnt namespaces
+			cgroups
+				cpu, memoria, network e disco
+			netlink
+			entre outros
+			
 	
 instalando docker
+	docs.docker.com/install
+		ce - community edition - free
+		ee - enterprise edition
+		
+	redhat - não roda o docker ce
+
 	curl -fsSL https://get.docker.com | bash
+		é um shellscript e o | bash vai abrir no shell para instalar
+		
+	Docker client
+		o que vai rodar os comandos do docker na maquina - cli
+	Docker server
+		vai gerenciar os containers, para controle remoto
+		
+docker ps
+	nova sintaxe - docker container ls
 	
-docker container run -ti
+docker container ls -a
+	vai mostrar os containers que já foram executados e terminados também
+
+docker container run -ti 
 	terminal e interatividade
+	já vai entrar no container
+		cat /etc/issue - vai mostrar a versão no container do ubuntu
+		cat /etc;/redhat-release - vai mostrar a versão no container do centos
+		
 	ctrl d 
-		sai do container como exit ou logout e mata o container
+		sai do container como exit ou logout e mata o container - mata o entrypoint(bash no caso do ubuntu)
 	ctrl pq 
 		sai do container e deixa ele rodando
 docker container attach IDCONTAINER
@@ -19,10 +71,14 @@ docker container attach IDCONTAINER
 	
 um servidor web sempre precisa rodar em primeiro plano num container
 	deve rodar com -d para ser executado com daemon
+		ou seja, não pode ser executado como -ti por que o entrypoint do nginx por exemplo não é um bash
 	
 	docker container exec -ti COONTAINERID bash
 		vai abrir o bash do container
-		
+	docker container exec CONTAINERID ls
+		vai listar arquivos	
+	
+	
 docker container stop CONTAINETID
 		
 docker container start CONTAINETID
@@ -40,6 +96,7 @@ docker container rm CONTAINERID
 	rm -f
 		força se em execução
 docker container logs CONTAINERID
+	docker container logs -f CONTAINERID
 
 docker container stats CONTAINERID
 		
@@ -53,8 +110,11 @@ docker container run -d -m 128M nginx
 			
 docker container update 
 
+docker image ls
+	listar as imagens baixadas
+
 docker image build -t toskeira:1.0 .
-		
+	docker container run -d toskeira:1.0
 
 ### DAY 2
 	
@@ -162,34 +222,5 @@ REGISTRY
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+LinuxTips-DescomplicandoDocker - 
 		
