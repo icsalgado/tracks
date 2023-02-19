@@ -57,6 +57,7 @@ Sistemas de tipos
 Interfaces e excecoes
 	interface define um comportamento de um tipo e go não possui excecoes
 
+While não existe em go, se usa o FOR
 
 
-DIO-FormacaoGoDeveloper - Finalizado Trabalhando com Variaveis - Primeiros passos com GO
+DIO-FormacaoGoDeveloper - Estruturas em Go
