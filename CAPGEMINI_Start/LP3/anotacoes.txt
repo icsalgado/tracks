@@ -71,10 +71,10 @@ Definição do projeto
 			primeiro criar as tabelas 
 			relacionamentos
 
+O 
 
 
 
 
 
-
-CAPGEMINI-Start - GUI até aula 12D - LP3 JAVA
+CAPGEMINI-Start - GUI View de cadastro de projetos e tarefas até aula 12j - LP3 JAVA
