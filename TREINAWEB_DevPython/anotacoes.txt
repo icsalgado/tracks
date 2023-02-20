@@ -45,4 +45,4 @@ print(f"{usuario.nome} {usuario.sobrenome}, {usuario.idade}")
 
 
 
-TW-DesenvolvedorPython - 1 Escopos e namespaces - Python POO
+TW-DesenvolvedorPython - 2 Classes e objetos
