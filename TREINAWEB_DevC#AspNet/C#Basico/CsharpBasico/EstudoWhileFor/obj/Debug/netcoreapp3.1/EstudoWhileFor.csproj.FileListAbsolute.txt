@@ -1,0 +1,16 @@
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\bin\Debug\netcoreapp3.1\EstudoWhileFor.exe
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\bin\Debug\netcoreapp3.1\EstudoWhileFor.deps.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\bin\Debug\netcoreapp3.1\EstudoWhileFor.runtimeconfig.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\bin\Debug\netcoreapp3.1\EstudoWhileFor.runtimeconfig.dev.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\bin\Debug\netcoreapp3.1\EstudoWhileFor.dll
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\bin\Debug\netcoreapp3.1\EstudoWhileFor.pdb
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.csproj.AssemblyReference.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.frmEstruturasRepetição.resources
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.csproj.GenerateResource.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.AssemblyInfoInputs.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.AssemblyInfo.cs
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.csproj.CoreCompileInputs.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.dll
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.pdb
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\EstudoWhileFor\obj\Debug\netcoreapp3.1\EstudoWhileFor.genruntimeconfig.cache

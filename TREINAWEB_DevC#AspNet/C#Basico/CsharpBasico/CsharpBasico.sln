@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstudandoStrings", "Estudan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxingVsUnboxing", "BoxingVsUnboxing\BoxingVsUnboxing.csproj", "{04D17CAA-D0B3-4DA6-89A5-75975BFC790B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperadoresAritmeticos", "OperadoresAritmeticos\OperadoresAritmeticos.csproj", "{56B71EFE-CC1D-4ACE-B3DB-4CE5B387D128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperadoresAritmeticos", "OperadoresAritmeticos\OperadoresAritmeticos.csproj", "{56B71EFE-CC1D-4ACE-B3DB-4CE5B387D128}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstudoIfElse", "EstudoIfElse\EstudoIfElse.csproj", "{1C03449B-C59D-49A1-862E-D7CDED76A2F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstudoSwitch", "EstudoSwitch\EstudoSwitch.csproj", "{7845C24A-7C37-4DC9-88F5-E4945098933A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstudoWhileFor", "EstudoWhileFor\EstudoWhileFor.csproj", "{CEA7CCC2-FF0B-4A35-BF87-D56F09C1D877}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{56B71EFE-CC1D-4ACE-B3DB-4CE5B387D128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56B71EFE-CC1D-4ACE-B3DB-4CE5B387D128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56B71EFE-CC1D-4ACE-B3DB-4CE5B387D128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C03449B-C59D-49A1-862E-D7CDED76A2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C03449B-C59D-49A1-862E-D7CDED76A2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C03449B-C59D-49A1-862E-D7CDED76A2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C03449B-C59D-49A1-862E-D7CDED76A2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7845C24A-7C37-4DC9-88F5-E4945098933A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7845C24A-7C37-4DC9-88F5-E4945098933A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7845C24A-7C37-4DC9-88F5-E4945098933A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7845C24A-7C37-4DC9-88F5-E4945098933A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA7CCC2-FF0B-4A35-BF87-D56F09C1D877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA7CCC2-FF0B-4A35-BF87-D56F09C1D877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA7CCC2-FF0B-4A35-BF87-D56F09C1D877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA7CCC2-FF0B-4A35-BF87-D56F09C1D877}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
