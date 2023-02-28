@@ -14,6 +14,6 @@ class Cliente
     public function comprar()
     {
         echo "Realizada compra\n";
-    }
+    }   
 }
 

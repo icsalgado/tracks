@@ -109,8 +109,11 @@ PSR-12 substituiu a PSR-2
 	entre outros
 
 
+PHP POO 1
 
-
+	sandbox.onlinephpfunctions.com
+	
+	O conceito de refência ( & ) indica o mesmo lugar de memoria onde estão armazenados os dados
 
 
 

@@ -33,3 +33,18 @@ $cliente1->endereco = "Sao Paulo";
 $cliente1->telefone = '(11) 99999-9999';
 
 $cliente1->comprar();
+
+echo "Instanciamento de forma dinâmica\n";
+$nomeClasse = "Produto"; //para instanciar dinâmicamente
+$instancia = new $nomeClasse;
+var_dump($instancia);
+
+echo "Criar um objeto sem clonar outro\n";
+$cliente2 = new $cliente1;
+var_dump($cliente1);
+var_dump($cliente2);
+
+echo "Outra forma parecida\n";
+$nomeClasse2 = get_class($cliente1); //parecido com o $cliente2 = new $cliente1;
+$cliente3 = new $nomeClasse2;
+var_dump($cliente3);
