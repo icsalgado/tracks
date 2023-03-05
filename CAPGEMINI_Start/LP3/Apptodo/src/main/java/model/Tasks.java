@@ -112,7 +112,7 @@ public class Tasks {
     //metodo para retornar uma string com o nome do atributo e o valor em uma classe
     @Override
     public String toString() {
-        return "Tasks{" + "id=" + id + ", name=" + name + ", idProject=" + idProject + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
+        return "Tasks{" + "id=" + id + ", name=" + name + ", idProject=" + idProject + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "}";
     }
     
     

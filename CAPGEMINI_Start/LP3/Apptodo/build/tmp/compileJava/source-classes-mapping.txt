@@ -1,15 +1,31 @@
-controler/TaskController.java
- controler.TaskController
-model/Tasks.java
- model.Tasks
+model/Project.java
+ model.Project
+view/ProjectDialogScreen.java
+ view.ProjectDialogScreen
+ view.ProjectDialogScreen$1
+ view.ProjectDialogScreen$2
+ view.ProjectDialogScreen$3
+ view.ProjectDialogScreen$3$1
 assets/ConnectionFactory.java
  assets.ConnectionFactory
 Apptodo/Main.java
  Apptodo.Main
 controler/ProjectController.java
  controler.ProjectController
-model/Project.java
- model.Project
+model/Tasks.java
+ model.Tasks
 view/MainScreem.java
  view.MainScreem
  view.MainScreem$1
+ view.MainScreem$2
+ view.MainScreem$3
+ view.MainScreem$4
+ view.MainScreem$5
+view/TasksDialogScreen.java
+ view.TasksDialogScreen
+ view.TasksDialogScreen$1
+ view.TasksDialogScreen$2
+ view.TasksDialogScreen$3
+ view.TasksDialogScreen$3$1
+controler/TaskController.java
+ controler.TaskController

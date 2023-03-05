@@ -21,12 +21,12 @@ import model.Tasks;
 public class TaskController {
     public void save(Tasks tasks){
         
-        String sql = "INSERT INTO tasks (idProject, "
-                + "name, "
-                + "description, "
-                + "notes, completed, "
-                + "notes, "
-                + "deadline, "
+        String sql = "INSERT INTO tasks (idProject,"
+                + "name,"
+                + "description,"
+                + "completed,"
+                + "notes,"
+                + "deadline,"
                 + "createdAt,"
                 + "updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         
@@ -40,7 +40,7 @@ public class TaskController {
             
             statement.setInt(1, tasks.getIdProject());
             statement.setString(2, tasks.getName());
-            statement.setString(2, tasks.getDescription());
+            statement.setString(3, tasks.getDescription());
             statement.setBoolean(4, tasks.isCompleted());
             statement.setString(5, tasks.getNotes());
             statement.setDate(6, new Date(tasks.getDeadline().getTime()));
