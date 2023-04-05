@@ -110,11 +110,47 @@ PSR-12 substituiu a PSR-2
 
 
 PHP POO 1
-
+	
+	Dentro de um mesmo arquivo podem ser declaradas quantas classes desejar mas a PSR recomenda uma classe em seu arquivo próprio
+	
+	constantes são nomeadas em caixa alta e sem $
+	
+	para instanciar é preciso primeiro importar o aquivo da classe
+	
+	new é o operador para instaciar a classe
+	-> chama um atributo da classe
+	
+	O instanciamento dinâmico pode gerar erros caso não se tenha atenção com as chamadas de métodos ou parametros nas trocas de classe
+	
+	copiar um objeto sem clona-lo pode ser útil para criar um novo objeto sem saber a classe que da origem a ele
+	
 	sandbox.onlinephpfunctions.com
 	
 	O conceito de refência ( & ) indica o mesmo lugar de memoria onde estão armazenados os dados
+		$a = 1
+		$b = $a
+		$b = 2
+		
+		não vai mudar a variavel a
+		
+		$a = 1
+		$b = &$a //passagem por referencia
+		$b = 2
+		
+		ambas variáveis serão alteradas
+	
+	Declaração em tempo de execução pode ser perigosa por que pode acessar propriedades não definidas, ou seja, gera baixa confiabilidade do objeto por que insere propriedades fora do esperado no inicio do tipo de dado
 
 
 
-TW-FormaçaoDevPHP - PHP Orientação a Objeto 1
+
+
+
+
+
+
+
+
+
+
+TW-FormaçaoDevPHP-POOparte1 revisando até Propriedades em tempo de execução (Goking)
