@@ -142,7 +142,9 @@ PHP POO 1
 	Declaração em tempo de execução pode ser perigosa por que pode acessar propriedades não definidas, ou seja, gera baixa confiabilidade do objeto por que insere propriedades fora do esperado no inicio do tipo de dado
 
 
+stdClass é um classe vazia e sem metodos e propriedades, é generica e pose ser usada por exemplo para transporte de dados entre outros - podem ser usadas propriedades dinâmicas - o PHP usa essa classe para converter um array para um objeto
 
+classe anônima - pode ser usada para enviar um objeto para outro lugar
 
 
 

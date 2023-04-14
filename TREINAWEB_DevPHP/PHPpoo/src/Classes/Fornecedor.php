@@ -8,5 +8,16 @@ class Fornecedor
 
     public $razaoSocial;
     public $nomeFantasia;
-    public $cnpj
+    public $cnpj;
+
+    //para exemplificar classes anônimas
+    public function autorizar($usuario)
+    {
+        if ($usuario->nome == "joao" && $usuario->senha == "123456"){
+            echo "\nAutorizado\n";
+        }else{
+            echo "\nBloqueado\n";
+        }
+    }
+
 }
