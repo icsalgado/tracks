@@ -146,13 +146,14 @@ stdClass é um classe vazia e sem metodos e propriedades, é generica e pose ser
 
 classe anônima - pode ser usada para enviar um objeto para outro lugar
 
-
-
-
-
-
-
-
+...
 
 
 TW-FormaçaoDevPHP-POOparte1 revisando até Propriedades em tempo de execução (Goking)
+
+Adiantando MySQL Desenvolvedor para o DEV na Prática
+
+
+
+
+
