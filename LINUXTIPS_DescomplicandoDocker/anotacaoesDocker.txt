@@ -236,11 +236,160 @@ REGISTRY
 	
 ### DAY 3	
 
+DOCKERMACHINE
+	precisa ser instalado no desktop para gerenciar as vms rodando docker
+	
+docker swarm init
+	no node manager
+docker swarm join --token SWMTKN-1-2lytmxq0c2pn7hp8yutf5amv6d96zecd7zwa083djfr3pnjnqx-3o9clsp7qvi2cqvu5v6l9alnp 192.168.1.8:2377
+	nos nodes criados
+	
+docker node promote node2
+	o node foi promovido para manager como Reachable
+docker node demote node2 
+	remove a promoção
+docker swarm leave
+	para o node sair do clister, caso ele seja manager precisa do -f
+docker node rm -f node1
+	para remover o node do cluster
+
+lembrar que com mais interfaces de rede precisa especificar em qual sera o ip
+	docker swarm init --advertise-addr 192.168.0.1
+	
+docker swarm join-token worker
+			manager
+	para pegar o token novamente para adicionar no cluster
+	
+docker swarm join-token --rotate manager
+	altera o token do manager, é importante para segurança
+	
+docker node inspect node1
+	traz informações do node
+	
+node update --availability pause node1
+	pausa a disponibilidade do node
+	
+docker service create --name webserver --replicas 3 -p 8080:80 nginx
+	cria um serviço com 3 replicas
+docker service ps webserver
+	para saber onde está rodando
+	
+docker service scale webserver=10
+	aumenta a quantidade de containers
+	
+docker node --availability drain node2
+	remove o node do serviço
+	quando reativar o node após uma manutenção por exemplo vai ser preciso dar um scale down depois um scale
+		docker service scale webserver=3
+docker service rm webserver
+	remove o serviço
+	
+Services
+	pode ser uma forma de ter resiliência nos containers e escalabilidade
+	forma de ter diversos containers respondendo ao mesmo serviço, são as replicas ou tasks
+	cria todas as replicas e disribui no cluster
+	faz um balanceamento de carga no estino round robbin 
+	
+	docker service ls
+		id e nome
+		mode
+			replicado
+			global
+		replicas
+			3/3
+				pediu 3 e 3 estão disponíveis
+		imagens e portas
+	docker service inspect giropops --pretty
+		pretty mostra a saida mais bonitinha
+		
+	docker service scale giropops=10
+		scale up
+	docker service scale giropops=3
+		scale down
+	docker service logs -f giropops
+		logs de todos os nodes
+		
+	docker service create --name giropops --replicas 3 -p 8080:80 --mount type=,src=giropops,dst=/usr/share/nginx/html/ nginx
+		o primeiro index foi alterado mas nos nodes não, por default o docker não faz o sync do conteúdo entre os volumes
+		para isso funcionar precisaria ter outro recurso como um plugin (flocker, cloud storm ..)
+			se usava antigamente o nfs-server e nfs-common -> nos nodes - apenas para linux mas não é o indicado. Para o linux pode usar o cluster fs, e em cloud tem opções de cada player 
+		--hostname
+			vai definir o nome do container
+		--limit-cpu 0.25 --limit-memory 64M
+		
+### DAY4
+
+Secrets só funcionam em swarm
+
+Secrets por linha de comando
+	echo -n "GIROPOPS STRIGUS GIRUS" | docker secret create jeferson -
+		
+	docker secret ls
+	
+	docker secret inspect jeferson
+Secrets por aquivo
+	echo -n "GIROPOPS STRIGUS GIRUS" > teste.txt
+	
+	docker secret create jeferson-arquivo teste.txt
+	
+docker service create --name giropops -p 8080:80 --secret jeferson-arquivo nginx
+
+	o secret fica em /run/secrets dentro do container
+	
+	docker service update --secret-add jeferson giropops
+		para adiconar
+	docker service update --secret-rm jeferson giropops
+		para remover
+			vai atualizar as 3 instâncias
+			
+Compose
+	a partir da versão 3 passou a ter possibilidade de usar com service
+	
+	root@ubtserver:~/composes/primeiro# cat docker-compose.yml 
+	version: "3.7"
+	services:
+	  web:
+	    image: nginx
+	    deploy:
+	      replicas: 5
+	      resources:
+		limits:
+		  cpus: "0.1"
+		  memory: 50M
+	      restart_policy:
+		condition: on-failure
+	    ports:
+	    - "8080:80"
+	    networks:
+	    - webserver
+	networks:
+	  webserver:
+	root@ubtserver:~/composes/primeiro# 
+
+	docker stack deploy -c docker-compose.yml giropops
+		-c é por que vai ser um compose file
+		
+	docker stack ls
+	
+	docker stack ps giropops
+	
+	docker stack services giropops
+	
+dockerfile é para criar a imagem e o docker compose é para imagem pronta para deploy
 	
 	
+	placement no docker-compose
+		escolher onde a imagem vair ser colocado
 	
+	docker node update --label-add dc=UK ubtserver
+		para atualizar a label do node
+		
+	O visualizer é uma forma gráfica para exibir os containers no navegador	
 	
+		
+		
+		
+		
 	
-	
-LinuxTips-DescomplicandoDocker - 
+LinuxTips-DescomplicandoDocker - Revisar docker swarm parte e docker swarm service e network
 		
