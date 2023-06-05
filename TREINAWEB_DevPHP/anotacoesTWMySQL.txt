@@ -1,0 +1,8 @@
+MySQL - Desenvolvedor
+
+em unix o mysql é case sensitive
+
+CREATE DATABASE
+	e
+CREATE SCHEMA
+	Sao equivalentes para criar bases de dados
