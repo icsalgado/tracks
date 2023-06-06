@@ -1,0 +1,76 @@
+
+
+
+Tratamento de excecões
+	InvalidArgumentException
+		quando tem uma entrada de tipo não esperado
+		
+	throw
+		lançar
+	try
+		tentar
+	catch
+		captura
+	finally
+		exibir informação por exemplo
+		
+ctrl g no vscode permite indicar a linha para debugar
+
+Debug
+	warning e notice, não interrompem a execução do sistema
+	Parse error - erros de sintaxe
+	Fatal error - tentativas de uso de funções e classes não definidas
+	
+	para exibir no pho.ini
+		display_errors: ON
+		error_reporting: E_ALL
+		
+	Reprodução > Diagnóstico > Correção > Reflexão
+	
+	tracing : echo, var_dump()
+	
+	XDebug 
+
+Hierarquia
+	Throwable
+       /\       /\
+   Error	Exception
+   		/\     /\
+   	1RuntimeEx	2LogicEx > SPL = Standard PHP Library
+   
+   1 UnexpectedValueException
+   	quando um valor não corresponde a um conjunto de valores
+   1 UnderFlowException
+   	tentativa de acessar um valor de um recipiente que está vazio
+   1 RandeException
+   	erros de aritmética
+   1 OverFlowException
+   	tentativa de inserir elementos em um recipiente cheio
+   1 OutOfBoundsException
+   	chave inválida
+   2 OutOfRangeException
+   	indices inválidos
+   2 LengthException
+   	tamanhos inválidos
+   2 InvalidArgumentException
+   	argumento não é do tipo esperado
+   2 DomainException
+   	dados que não correspondem ao domínio
+   2 BadFunctionCallException
+   	problemas na chamada da função como parametros ausentes ou não definida
+   	2 BadMethodCallException
+   		argumentos ou metodos não definidos
+   		
+   		
+GitHub
+
+Todo código-fonte desenvolvido durante o curso foi versionado no GitHub, nos seguintes endereços:
+
+https://github.com/roseneidesantos 
+
+https://github.com/roseneidesantos/dio-aulas-excecoes.git 
+
+https://github.com/roseneidesantos/dio-aulas-tratamento-de-excecoes.git
+
+Bons estudos 😉
+	
