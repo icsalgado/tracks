@@ -44,6 +44,14 @@ instalando docker
 
 	curl -fsSL https://get.docker.com | bash
 		é um shellscript e o | bash vai abrir no shell para instalar
+	sudo usermod -aG docker $[[[USER]]]
+		cofigurar user
+		se der errado id -nG
+		verificar se o grupo está configurado
+			grep docker /etc/group
+		permissões devem ser 666
+			ls -l /var/run/docker.sock
+			chmod 666 /var/run/docker.sock
 		
 	Docker client
 		o que vai rodar os comandos do docker na maquina - cli
