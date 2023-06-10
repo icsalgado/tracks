@@ -90,7 +90,10 @@ Composer
 	reutilização de implementações
 	Instalação 
 		https://getcomposer.org/download/
-	
+			php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+			php composer-setup.php
+			php -r "unlink('composer-setup.php');"
+			sudo mv composer.phar /usr/local/bin/composer
 	composer init
 		vai criar arquivo de configuração
 			composer.json
@@ -131,3 +134,134 @@ Composer
 	
 	
 	http://github.com/lafraga93/composer-dio
+	
+Orientação a objetos:
+	Abstracao:
+		para entender quais os componentes que compoem a solução na vida real
+		
+	Classes e objetos
+		Classes são sempre iniciadas com letra maiuscula
+		
+	Namespaces
+		configuração do autoload
+		é como o nome de um diretório ou pacote
+		
+	Atributos e metodos
+		<?php //ContaBancaria.php
+
+		declare(strict_types=1); //quando o arquivo for interpretado pelo php, vai ser considerado o tipo
+
+		namespace App;
+
+		class ContaBancaria
+		{
+			//atributos
+			public string $banco = "Bradesco";
+			public string $nomeTitular = "Paulo Plinio";
+			public string $numeroAgencia = "8244";
+			public string $numeroConta = "57354-10";
+			public float $saldo = 0;
+	
+			//metodos
+			public function exibirDadosDaConta(): array
+			{
+				return [
+					'banco' => $this->banco,
+					'nomeTitular' => $this->nomeTitular,
+					'numeroAgencia' => $this->numeroAgencia,
+					'numeroConta' => $this->numeroConta,
+					'saldo' => $this->saldo,
+				];
+			}
+		}
+		
+		<?php //objetoContaBancaria.php
+
+		require __DIR__ . '/../vendor/autoload.php';
+
+		use App\ContaBancaria;
+
+		$conta = new ContaBancaria();
+
+		var_dump($conta->exibirDadosDaConta());
+
+		
+		Exibindo apenas $conta no var_dump
+		root@2ae77ef17d61:/home/composer# php debug/objetoContaBancaria.php 
+		object(App\ContaBancaria)#4 (5) {
+		  ["banco"]=>
+		  string(8) "Bradesco"
+		  ["nomeTitular"]=>
+		  string(12) "Paulo Plinio"
+		  ["numeroAgencia"]=>
+		  string(4) "8244"
+		  ["numeroConta"]=>
+		  string(8) "57354-10"
+		  ["saldo"]=>
+		  float(0)
+		}
+		root@2ae77ef17d61:/home/composer# vim ./debug/objetoContaBancaria.php
+		Exibindo o array
+		root@2ae77ef17d61:/home/composer# php debug/objetoContaBancaria.php 
+		array(5) {
+		  ["banco"]=>
+		  string(8) "Bradesco"
+		  ["nomeTitular"]=>
+		  string(12) "Paulo Plinio"
+		  ["numeroAgencia"]=>
+		  string(4) "8244"
+		  ["numeroConta"]=>
+		  string(8) "57354-10"
+		  ["saldo"]=>
+		  float(0)
+		}
+		
+	Encapsulamento
+		restringir o acesso a implementação da classe
+		Visibilidade
+			publica - normalmente usado para métodos
+				public function exibirDadosDaConta(): array 
+				{
+				}
+			protegida - usado em classes herdeiras
+				protected float $saldo = 0;
+			privada - normalmente para atributos
+				private string $nomeTitular = "Paulo Plinio";
+					acessivel apenas pelo metodo dentro da classe
+					
+	Getter e Setters
+		assim como não se pode obter diretamente atributos privados também não é possível defini-los
+		setter permitem alterar o valor de um atributo
+		getter permitem acessar o valor de um atributo
+		
+	Metodo contrutor
+		faz o set de todos os atibutos de uma só vez
+		public function __construct(atributos){como no set}
+		
+	Herança
+		Objetos tem a possibilidade de herdar comportamento e atributo de outros
+		pode existir uma classe abstrata base e outras que são herdeiras
+	
+	Polimorfismo
+		um mesmo objeto que herda algo de uma classe base pode ter um comportamento diferente
+		Contratos
+			interface OperacoesConta {}
+				
+				na classe base
+					abstract class ContaBancariaBase implements OperacoesConta {}
+					
+				no objeto
+					function executarOperacao(OperacoesConta, $conta): void	
+
+	https://github.com/lafraga93/php-oo-dio
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
