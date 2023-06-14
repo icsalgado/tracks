@@ -254,13 +254,96 @@ Orientação a objetos:
 					function executarOperacao(OperacoesConta, $conta): void	
 
 	https://github.com/lafraga93/php-oo-dio
+
+Orientação a objetos e baco de dados
+	paradigmas: procedural/estruturada, funcional, orientada a objetos
 	
+	Classes
+		representação do objeto
+		
+		<?php
+		
+		class NomeDaClasse
+		{
+		
+		}
+		
+	Objeto
+		uma instância da classe
+		
+		<?php
+		
+		$nomeDoObjeto = new NomeDaClasse();
 	
+	Propriedades / atributos
+		Tudo que a classe possui
+		
+		<?php
+		
+		class NomeDaClasse
+		{
+			$atributo1;
+			$segundoAtributo;
+		}
+	Visibilidade
+		Modificadores de acesso: define a visibilidade dos elementos da classe (public, private, protected)
 	
+		<?php
+		
+		class NomeDaClasse
+		{
+			public $atributo1;
+			private $segundoAtributo;
+		}
+	Acesso
+		<?php
+		
+		var_dump($nomeDoObjeto->segundoAtributo);
+	Metodos / ações / funções
+		<?php
+		
+		class NomeDaClasse
+		{
+			public function executarMetodo()
+			{
+				return "Metodo executado";
+			} 
+		}
+		
+		var_dump($nomeDoObjeto->executarMetodo());
+		
+		Metodo construtor
+			sempre executado quando instancia a classe, ele vai receber os atributos passados quando instanciada a classe
+			
+			public function __construct($atributoPassado)
+			{
+				$this->atributo1 = $atributoPassado;
+			}
+			
+		$nomeDoObjeto = new NomeDaClasse('Atributo Passado');
 	
-	
-	
-	
+	Tipagem
+		<?php
+		
+		declare(strict_types=1);
+		
+		class NomeDaClasse
+		{
+			/**
+			* @var string
+			**/
+			public $atributo1;
+			
+			private string $segundoAtributo; //a partir do php 7.4
+		
+			public function __construct(string $atributoPassado): string
+			{
+				$this->atributo1 = $atributoPassado;
+			}
+		
+		}
+		
+		
 	
 	
 	
