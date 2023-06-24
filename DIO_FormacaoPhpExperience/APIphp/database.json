@@ -1,0 +1,26 @@
+[
+    {
+        "user_id":1,
+        "username":"Verstappen",
+        "user_email":"max@f1.com",
+        "user_status":0
+    },
+    {
+        "user_id":2,
+        "username":"Perez",
+        "user_email":"sergio@f1.com",
+        "user_status":1
+    },
+    {
+        "user_id":3,
+        "username":"Hamilton",
+        "user_email":"lewis@f1.com",
+        "user_status":1
+    },
+    {
+        "user_id":4,
+        "username":"Russel",
+        "user_email":"george@f1.com",
+        "user_status":1
+    }
+]
