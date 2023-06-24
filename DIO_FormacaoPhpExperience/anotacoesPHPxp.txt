@@ -343,8 +343,135 @@ Orientação a objetos e baco de dados
 		
 		}
 		
+	Datas
+		<?php
 		
+		date('d/m/Y'); //forma primitiva
+		
+		$data = new DateTime(); //data com a classe
+		var_dump($data);
+		
+		$data->format('d-m-Y'); //data formatada
+		$data->format('d-m-Y H:i:s'); //com horas
+		
+		$intervalo = new DateInterval('PT5M'); // definição do periodo P periodo, T tempo, 5M minutos. P5Y 5 anos
+		$data->add($intervalo); //adiciona o intervalo a data atual ->sub retira
+		
+	Exceções
+		<?php
+		
+		throw new Exception("Exceção");
+		
+		echo "não vai ser executado";
+		
+		
+		<?php
+		
+		try{ 
+			//vai testar se gera uma exceção
+		} catch (Exception $e) {
+			echo $e->getMessage; //metodo da classe Exception
+			die();
+		} finally {
+		
+	Banco de dados
+		mysqli X PDO 
+		
+		
+Introdução a APIs e REST com PHP
+	Composer
+		Gerenciador de biblitecas do projeto
+	Xampp
+		pacote com servidores de código aberto - mysql php apache pearl
+	Postman
+		testes de api - requisições http
+		
+	API
+		
+		
+	HTTP - camada de aplicação - protocolo sem estado
+		Arquitetura REST - representational state transfer
+		
+		Verbos HTTP - indicar uma ação desejada - metodos de requisição utilizados para acessar endpoinsts de APIs REST
+		    POST - enviar um conteúdo que será manipulado por algo que já existe no servidor (ex: dados de um fomulario)
+		    GET - recuperar recursos, padrão para requisição pela url
+		    PUT/PATCH - envia assim como o POST mas pode fazer uma atualização por exemplo, sobrescrevendo a informação, no POST é criado um novo registro a cada interação
+		    DELETE - remove um recurso
 	
+		Status Code - na linha inicial da requisição
+		    1xx - informação
+		    	reuquisição recebido e em processamento
+		    2xx - sucesso
+		    	requisição recebida, entendida e aceita pelo servidor
+		    3xx - redirecionamento
+		    	outra ação será tomada
+		    4xx - Erro no cliente
+		    	requisição incorreta ou incompleta
+		    5xx - Erro Servidor
+		    	servidor falhou ao receber a requisição aparentemente válida
+		
+		
+	Preparação para o desenvolvimento
+		Padrão MVC
+			Arquitetura de software em camadas
+				Model - gerenciar os dados e logica de negocio
+					ligado a tabelas do banco
+				View - layout e exibição
+					como os dados vão ser exibidos
+				Controller - gerencia os eventos das interfaces, utilizando os metodos da camada Model
+					O controller vai intermediar a View e a Model
+					Atualizar o modelo ou a resposta da entrada no usuário
+	Estrutura do projeto
+		github.com/laiquesantana/DIO-API-REST
+		.
+		├── Config
+		│   └── config.php
+		├── Controller
+		│   └── API
+		│       ├── BaseController.php
+		│       └── UserController.php
+		├── database.json
+		├── index.php
+		└── Model
+		    ├── Database.php
+		    └── UserModdel.php
 	
-	
+	Laravel
+		Framework PHP MVC
+		Taylor B Otwel
+		laracast.com - cursos
+		
+		composer.json >
+		.env > variaveis de ambiente
+		
+	Materiais de Apoio
+		https://github.com/laiquesantana/DIO-PHP
+
+
+Desenvolvimento Avançado em PHP
+	Composer
+		Reaproveitamento de código
+		.phar - é o equivalente a um executavel como o jar do Java
+		
+		getcomposer.org/download/
+		
+		ele pode ficar apenas no diretorio do projeto, o ideal em ambiente de desnvolvimento é colocar em um ambiente acessivel que qualquer lugar /usr/local/bin/composer
+		
+		packagist.org/ repositorio publico de pacotes json
+		
+	Testes unitários
+		TDD - desenvolvimento guiado aos testes
+			o PHPUnit não significa que o densenvolvimento é orientado a testes
+			para ser TDD o teste tem que vir primeiro
+			
+		https://phpunit.de/
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
