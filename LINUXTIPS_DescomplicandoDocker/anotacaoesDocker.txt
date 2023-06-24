@@ -44,6 +44,7 @@ instalando docker
 
 	curl -fsSL https://get.docker.com | bash
 		é um shellscript e o | bash vai abrir no shell para instalar
+		
 	sudo usermod -aG docker $[[[USER]]]
 		cofigurar user
 		se der errado id -nG
