@@ -1,0 +1,25 @@
+{
+    "name": "icsalgado/php-avancado",
+    "description": "Busca de cep online",
+    "license": "MIT",
+    "autoload": {
+        "psr-0":{
+            "Search": "src/"
+        },
+        "psr-4": {
+            "Icsalgado\\PhpAvancado\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "icsalgado",
+            "email": "icsalgado@icloud.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    }
+}

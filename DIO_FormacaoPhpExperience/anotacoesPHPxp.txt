@@ -465,8 +465,24 @@ Desenvolvimento Avançado em PHP
 			para ser TDD o teste tem que vir primeiro
 			
 		https://phpunit.de/
+			➜ composer require --dev phpunit/phpunit ^10
+
+			➜ ./vendor/bin/phpunit --version
 		
 		
+		A classe de teste precisa ser basicamente um espelho e com a palavra Test ex: SearchTest.php
+		
+		precisa incluir o caso de teste na classe:
+			use PHPUnit\Framework\TestCase;
+		
+		e a função precisa começar com teste, ex: public function testGetAddressFromZipcodeDefaultUsage()
+		
+		para executar o teste
+			vendor/bin/phpunit tests/ --colors=always
+			
+		Gerar relatório de code ceverag
+			vendor/bin/phpunit tests/ --colors=always --testdox-text report-tests.txt
+			vendor/bin/phpunit tests/ --colors=always --testdox-text report-tests.txt --coverage-html=_report --coverage-filter=src/
 		
 		
 		

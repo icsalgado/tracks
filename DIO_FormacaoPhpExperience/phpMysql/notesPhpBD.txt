@@ -1,0 +1,14 @@
+Manipulação de banco de dados com PHP
+    Gustavo Faga
+
+    Documentação: https://www.php.net/manual/pt_BR/refs.database.php
+    Doc. da classe Mysqli: https://www.php.net/manual/pt_BR/class.mysqli.php
+    Doc. PDO: https://www.php.net/manual/pt_BR/book.pdo.php
+
+    Conexão
+    Listagem de registros
+    Inserção
+    Edição 
+    Exclusão
+
+    
