@@ -484,10 +484,32 @@ Desenvolvimento Avançado em PHP
 			vendor/bin/phpunit tests/ --colors=always --testdox-text report-tests.txt
 			vendor/bin/phpunit tests/ --colors=always --testdox-text report-tests.txt --coverage-html=_report --coverage-filter=src/
 		
-		
-		
-		
-		
-		
-		
+PSRs
+	https://www.php-fig.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
