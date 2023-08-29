@@ -7,11 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Esse é um texto em HTML</h1>
-    <?php
-        echo "Esse é um texto PHP";
-    ?>
-
     <p>10 + 10 = <?php echo 10 + 10; ?></p>
     <!-- usando short tags -->
     <p>10 + 10 = <?= 10 + 10 ?></p>
