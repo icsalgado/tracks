@@ -1,0 +1,3 @@
+usar python online
+gitpod.io - tem limite de horas, lembrar de fechar quando sair
+replit.com

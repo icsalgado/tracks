@@ -1,0 +1,19 @@
+
+Relatório de feedback
+Pontuação : 1 / 1
+Qual o comando para executar uma instrução que imprime o resultado de 1 + 1 no terminal?
+   
+
+python -run "print(1 + 1)"
+   
+
+python -execute "1 + 1"
+   
+
+python -c "print(1 + 1)"
+   
+
+python -output "print" --expression "1 + 1"
+Resposta correta
+
+python -c "print(1 + 1)"
