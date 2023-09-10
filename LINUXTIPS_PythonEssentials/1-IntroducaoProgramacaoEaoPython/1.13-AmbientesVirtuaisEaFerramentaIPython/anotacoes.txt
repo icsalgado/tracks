@@ -1,0 +1,23 @@
+python3 -m site
+
+para ver o ambiente onde está o python
+
+para criar um ambiente virtual é copiado o ambiente para um novo diretorio
+
+python3 -m venv .venv
+
+é uma convenção usar o nome do diretorio .venv
+
+para ativar o ambiente
+
+source .venv/bin/activate
+
+which python mostra o caminho que está sendo usado para ao python
+
+pip é um gerenciador de pacotes para o python
+
+python -m pip install --upgrade pip
+
+python -m pip install ipython
+
+o ipython é uma ferramenta para executar python

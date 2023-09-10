@@ -1,0 +1,5 @@
+expression -> 1+1 = 2
+
+statement -> if, else, for, while, pass
+
+assignment -> soma = 1+1, incremento += 1 

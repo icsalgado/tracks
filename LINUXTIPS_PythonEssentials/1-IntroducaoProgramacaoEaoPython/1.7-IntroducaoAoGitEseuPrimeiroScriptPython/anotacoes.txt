@@ -1,0 +1,1 @@
+shebang é um comentario que será interpretado em abinetes unix, normalmente indica a versão da linguagem usada para o script e é usado com #!, por exemplo #!python3

@@ -1,0 +1,2 @@
+ os dois pontos indicam o inicio do escopo de bloco :
+	com isso cem a identação (4 espaços), para o python é o que indica o bloco
