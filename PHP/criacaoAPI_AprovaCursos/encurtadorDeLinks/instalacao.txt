@@ -1,0 +1,8 @@
+É necessário executar esse código SQL no Banco de dados:
+
+CREATE TABLE IF NOT EXISTS 1c_redirecionamento (
+  id varchar(7) collate latin1_general_ci NOT NULL,
+  link varchar(200) collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY link (link)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;

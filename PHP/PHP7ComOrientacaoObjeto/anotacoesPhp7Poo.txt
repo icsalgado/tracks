@@ -1,0 +1,114 @@
+PHP 7 com orientação a objetos
+
+Eduardo Pretel
+	pilares: ABSTRACAO POLIMORFISMO HERANCA ENCAPSULAMENTO
+
+INTRO - 1 Paradigmas
+
+PHP - Procedural ou Orientado a Objeto
+	Procedural - separar o código em funções para serem reutilizas
+	Orientação a objeto - representar objetos do mundo real dentro da progração utilizando estrutura de classes com métodos (que são semelhantes as funções)
+		O objeto é uma variavel definida por uma classe
+		
+INTRO - 2 Elementos Basicos
+
+Cada classe fica em um arquivo (php-fig tem as PSRs)
+	class Numeros
+	{
+		//propriedades
+		public $par;
+		public $impar;
+		public $primos;
+		public $compostos;
+	}
+	
+Arrays e Objetos são tipos compostos de variaveis
+
+	$primeiroNumero = new Numeros(); // uma construcao de objeto, instanciamento da classe
+	
+INTRO - 3 Metodos
+	um metodo de uma classe nunca vai imprimir algo e sim retornar alguma coisa para ser tratada
+	
+	por padrão deve ser definida a visibilidade, apesar de funcionar como public caso não seja definida
+	
+	public function teste()
+    	{
+        	return "metodo teste";
+    	}
+    	
+INTRO - 4 Metodo construtor
+	ate o php 5 era usado assim
+	public function Numeros()
+    	{
+        	return "Este eh o metodo construtor";
+    	}
+    	
+    	Agora eh usado
+    	
+    	public function __construct()
+    	{
+        	echo "Metodo construtor";
+    	}
+    	Esse metodo sempre vai ser executado quando a classe for instanciada, ou seja, quando cosntruir o objeto
+    	
+    	Quando a classe eh instanciada pode ou não ser usado o () porem se o metodo construtor esperar algum parametro ele devera ser passado quando a classe for instanciada
+
+INTRO - 5 Metodo destrutor
+	Esse metodo por exemplo eh usado para encerrar uma conexao com banco de dados criada no construtor, quando a variavel usada liberar a memoria, o interpretador vai buscar na classe o metodo destrutor
+	
+	public function __destruct()
+    	{
+        	echo "Destruido";
+        	echo PHP_EOL;
+    	}
+    	
+    	Ele vai executar no final do script, caso quera destruir antes pode usar um unset($variavel); em qualquer parte do codigo
+	
+INTRO - 6 Visibilidade, herança e Encapsulamento
+	public - pode ser acessado diretamente pelos objetos e por elementos da classe
+	private - Não pode ser acessado diretamente
+		Cannot access private property
+	protected - não pode ser acessado diretamente exceto com herança, ou seja, em classes extendidas ou filhas
+		Cannot access protected property
+
+INTRO - 7 e 8 This, getters e setters
+	$this aponta para o objeto
+	verificações não são permitidas em POO, apenas objetos chamando atributos ou métodos
+
+	a variavel protegida pode ser manipulada em metodos set
+	lembrar que os metodos devem ter responsábilidade única, ou seja, fazer apenas uma coisa
+
+INTRO - 9 Manipulação de arquivos
+	https://www.php.net/manual/pt_BR/function.fopen.php
+	fopen >> vai criar o arquivo caso ainda não exista
+	fwrite >> vai escrever no arquivo
+	fclose($retorno) >> O php já fecha o arquivo por padrão mas é uma boa prática fecha-lo
+	
+INTRO - 10 e 11 Iniciando a classe File, Responsabilidade única
+	ideal para não lidar direto com o resource
+	o arquivo vai ser manipulado com os metodos da classe File
+	Um metodo com a responsabilidade unica de abrir o arquivo e outro de fechar
+
+INTRO - 12 e 13 Ler e escrever no arquivo
+	vão usar esse principio da responsabildiade unica tanto para escrever como para ler, mesmo tendo um metodo nativo do php para ler
+
+INTRO - 14 Finalizando a classe, renomeando ou movendo e removendo
+	segue também a responsabilidade unica
+
+MEMBROS-DA-CLASSE - 1 O que são os membros da classe
+	uma classe é como a planta de uma casa
+	ao trabalhar com os membros da classe, as propriedades e metodos associados a classe, não sendo necessário instanciar a classe, ou seja não é preciso de um objeto.
+
+	palavra reservada static
+
+MEMBROS-DA-CLASSE - 2 Constantes
+	Conteúdo imutável durante a execução do programa
+	Por regra não inicia com $
+	Por padrão usa-se upper case
+
+MEMBROS-DA-CLASSE - 3, 4, 5 Propriedades estaticas, Métodos estaticos, SELF
+	self aponta para a classe
+		também pode ser usado o static, porém esse vai buscar a classe mais próxima
+
+MEMBROS-DA-CLASSE - 6 Trabalhando com membros da classe e objetos
+	padroes de projeto como o registry utilizam registradores para todos os objetos criados em uma página usando um array
