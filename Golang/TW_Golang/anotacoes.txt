@@ -1,0 +1,32 @@
+TREINAWEB Curso Go Básico
+
+Ambiente Linux Ubuntu
+
+Usando VScode
+
+Instalado go da ferramenta ubuntu software
+
+func é um metodo/função
+
+	O Go é um linguagem mista em relação a sua estrutura
+
+rodar o programa
+	go run main.go
+	
+criar uma variavel
+	var [nome da variavel] [tipo da varivael] = [valor da variavel]
+
+tipo int ou uint vai ter precisão dependo da arquitetura do SO, 32 ou 64 bits
+
+Numeros complexos podem ser declarados em variaveis com tipo complex32, complex64, complex128, sendo o float e os números imaginarios 
+
+a tipagem é forte
+
+vetores não são muito utilizados em go, no seu lugar são usados slices
+
+Funcões
+	qualquer metodo é um funcão, tendo ou não retorno
+	não tem procedures
+
+
+TW-GoBasico - 8 funcoes

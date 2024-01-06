@@ -1,0 +1,25 @@
+
+
+Concorrente direto da OutSystems
+	MS Power App
+	
+Agile
+	principios voltados para a metodologia de desenvolvimento 2001
+	
+	principios
+		individuos e interações acima de processos e ferramentas
+		software em funcuionamento acima de documentação extensa
+		colaboração com o cliente acima de negociação de contratos
+		responder a mudanças acima de seguir um plano
+		
+
+Service Studio
+	IDE
+Integration Studio
+	API
+Service Center
+	Testes
+Ecossistema
+Forge
+	Repositorio
+
