@@ -1,0 +1,36 @@
+TW Segurança da informação - OWASP fundamentos
+	Open web application security project
+Top 10 vulnerabilidades
+	injeção; quebra de autenticação;exposição de dados sensiveis; entidades externas de xml XXE; quebra de controles de acessos; configurações de segurança incorretas; cross-site scripting XSS; desserialização insegura; utilização de componentes com vulnerabilidades conhecidas; registro e monitoramento insuficiente
+	
+	https://owasp.org/Top10/pt_BR/
+	https://github.com/OWASP/Top10
+	
+	Injeção: SQL, NoSQL, OS, LDAP, cabeçalhos SMTP, XML, entre outros
+		inserir informações ou comandos no interpretador que o software não estava esperando
+		podem ser campos de pesquisa ou qualquer outro input, exploração considerada fácil, impacto considerado severo
+		entradas devem ser validadas, filtradas ou limpas pela aplicação
+		consultas dinâmicas ou chamadas não aprametrizadas são enviadas ao interpretador sem terem sido procesadas
+		dados hostis são usados como parâmetros de consulta ORM
+	Recomendações:
+		Evitar SQL direto no código por exemplo
+		Utilizar ferramentas de ORM como Entity-Framework e LINQ para .net, Doctrine ORM para PHP e Hibernate para Java.
+		Validação de dados de entrada
+		Usar o Zero-Trust
+		Criptografar dados sensíveis
+		
+https://github.com/treinaweb/treinaweb-owasp-fundamentos-sql-injection-exemplo
+
+	SQL injection
+		WHERE id = 1 or 1=1
+		
+Quebra de autenticação
+	acesso aos privilegios de uma conta de forma ilegitima ou não autênica
+	Identificar:
+	permite força bruta automatizada usando credential stuffing
+	permite senha padrão
+	processo de recuperação de credenciais fracos
+	armazena senhas de texto limpo ou com criptografia ou hash fraco
+	não possui autenticação MFA
+	expoe ids da sessão na url
+	
