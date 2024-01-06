@@ -1,0 +1,629 @@
+
+
+M2U1
+	Present continuous
+		coisas que estão em andamento, acontecendo
+		happening at the moment
+		on going actions or processes
+		
+		é comum usar marcação de tempo como, at the moment, now
+		
+		Affirmatife
+			to be + verb + ing
+			I'm working
+		Negatife
+			I'm not working
+			He isn't working
+	ING após preposições
+		about e in são exemplos, nesse caso não é um gerundio ou em progresso, só tem o ing por que tem uma preposição antes
+		to
+		in
+		on
+		for
+		about
+		at
+		of
+		up 
+		down
+		..
+		Look forward to working ...
+		Apologize for being late
+		insisted on coming do the meeting
+		thinking about travelling abroad
+		reponsible for cleaning the room
+		interested in playing games
+		very good at coding
+		afraid of being alone
+		worry about being late
+		I give up studying this
+M2U2
+	Present Continuous
+		Interrogatife
+			Am I coding now?
+			No I'm not
+			Are you studying now?
+			Yes I'm
+		
+		Imperatife
+			Be yourself
+			Follow up
+			Don't be afraid
+			Do the exercices 
+		Intensifiers
+			so - para adjetivos
+			a little - depois de verbo ou antes de adjetivo
+			a lot - depois de verbo antes de adjetivo
+			very - para adjetivos
+			really - usado com verbos e adjetivos
+			many - coisas contaveis
+			much - coisas não contaveis
+M2U3
+	Simple past - coisas que já aconteceram ou existiram
+		irregular verbs
+			get - got
+			keep - kept
+			understad - understood
+			think - thought
+			...
+		Affirmatife
+			I got
+		Negatife
+			I didn't go
+		Interrogatife
+			Did you go?
+		
+		Yesterday, last week ...(time expressions in the past)
+		
+		Chunks/collocations
+			Look for - procurar
+			text - passar mensagem para alguem
+			This is - em telefonema por ser interpretado como aqui é o ..
+			Look foward to  + ing- não vejo a hora de 
+
+M2U4
+	Verbo modal Would - passado do Will
+		Would travel
+		Would work
+		
+		uma condicional hipotetica 
+			I would travel if I have money
+			Would open the door for me please?
+			Would you like to come here?
+			
+		Pronome pessoal + Would + vebo
+			
+		Would not / wouldn't
+		
+		Would I travel?
+		
+		Yes, I would.
+		
+		Objects Pronouns
+			me, you, him, her, it, us, you, them
+			recebem ou sofrem a ação do verbo
+			
+			I love cooking with my mom.
+			I love cooking with her.
+	@ - at
+	. - dot
+	_ - underscore
+	- - dash
+	/ - forward slash
+	\ - backslash
+	* - asterisk
+	() - parenthesis
+	[] - square brackets
+	{} - curly brackets
+	
+M2U5
+	Comparative
+		short adjectives - terminados em e, y, CVC
+			nice - nicer than
+			large - larger than
+			pretty - pretier than
+			heavy - heavier than
+			hot - hotter than
+			big - bigger than
+			
+			good - better than
+			bad - worse than
+			far - farther than(distancias fisicas) ou further than(ideias)
+		long adjectives
+			expensive - more expensive than
+	Superlative
+		short adjectives
+			nice - the nicest
+			large - the largest
+			easy - the easiest
+			pretty - the prettiest
+			hot - the hottest
+			big - the biggest
+			
+			good - the best
+			bad - the worst
+			far - the farthest, the furthest
+		long adjectives
+			expensive - the most expensives
+	
+	Future
+		To Be com o Going To - coisas decididas ou planejadas para acontecer
+		I'm going to travel on business next week
+		I'm not going to travel ...
+		Am I going to travel?
+		
+	Verbos especiais que podem ser seguidos de outros verbos que podem estar em ING ou infinitivo To+verb
+		coisas no geral
+		Like + verb + ing - I like traveling
+		Love 
+		Hate talking on the phone
+		Enjoy
+		
+		de forma mais pontual
+		Like to + verb - I like to tavel by car
+		Love 
+		Hate 
+	
+	Review
+	Present Continuous 
+		Happening at the moment or On going actions or Processes
+		
+		Affirmative
+			ToBe + verb + ing
+			We're playing
+		Negative
+			He isn't travelling
+		Interrogative
+			Are you living in another country?
+	ING after prepositions
+		I'm interested in finding a remote job
+		Apos uma preposição o verbo precisa ter o ing
+		prepositions:
+			to, in, on, for, about, at, of, up, down ..
+			look foward to working
+			apologize for being late
+			thinking about traveling
+	Imperative
+		Listeto this
+		Be quiet now
+		Don't close the door
+	Intensifier
+		a little, very, a lot
+		very para adjetivos, very big
+			so - também nesse sentido (tão)
+		really para adjtivos ou verbo
+		many, coisas contaveir, many people
+		much, coisas não contaveir, much sugar
+		
+	Simple past, coisas que já aconteceram ou existiram e não fluenciam no presente momento e é acompanhado por marcação de tempo
+		Affirmative
+			I went
+		Negative
+			I didn't go
+		Interrogative
+			Did you go?
+			
+	Chunks/collocations
+		look for - procurar
+		text someone
+		great news
+		hold on
+		this is Iuri - no telefone
+		I look forward to meeting you - não vejo a hora de te conhecer, o verbo sempre vem no ING
+	Would - passado do will
+		uma condicional
+		would open the door please?
+		
+M3U1
+	Present perfect
+		verbo no modo Prticipio
+		used to talk about experiences
+		I have traveled to Lisbon twice
+		
+		to talk about something that started in the past and is still durin in the present
+		I've worked as a backend developer for 3 years
+		
+		to talk about indefined pasts or not important
+		I haven't fixed the computer
+		
+		Affirmative
+		pronoun + have + past participle verb
+		
+		Negative
+		pronoun + haven't/have not + past participle verb
+		
+		Interrogative
+		Have + pronoun + past participle verb
+		
+		He/she/it -> have passa a ser has/hasn't (affirmative, negative, interrogative)
+		
+		ever(alguma vez já teve a experiência) 
+			have/has + pronoun + ever em perguntas
+		never(algo que nunca aconteceu)
+			final da frase
+		already(já aconteceu ou aconteceu antes do esperado)
+			have/has + already + verb
+		yet(negativa-ainda/interrogativa-já)
+			final da frase normalmente 
+		just(passado bem recente)
+			have/has + just + verb
+M2U2
+	to be + going to
+		future plans and intentions
+			we're going to get married
+			I'm going to bo a doctor
+		Predictions when there is an evidence
+			You are going to fail
+	Something - coisa na afirmativa
+		I have something to say to you
+	Anything - negativa - I don't have anything to say to you
+		interrogativa - Do you have anything to say to me?
+	Nothing - estrutura afirmativa com sentido negativo
+		I have nothing to say
+	Somebody / Someone - afirmativa
+	Anyone / anybody - negativa
+	Nobody - estrutura afirmativa mas intensão negativa
+	
+	Job Levels
+		Director
+		Manager
+		Supervisor
+		Senior
+		Junior
+		Intern
+
+M3U3
+	Must - obligations - personal obligations -written obligations / rules
+	Have to - obligations - general / situation obrigations
+	Should - opinion - You should be more organized
+	
+	Possessive with 's
+		ownersip
+		association
+			Jessica's website - people
+			The cat's tail - animals
+			The member's forum - group of people
+			Google's new platform - companies
+	 		
+	 		The girls' dresses - palavras terminadas em s ou no plural
+			Ross's mother is tall / Ross' mother is tall - nome terminado em s
+			Tomorrow's meeting will start early - indica tempo ou periodo de tempo
+			The door of the house - coisa que pertence a outra coisa
+
+M3U4
+	how much - uncountable nouns (qualidades e conceitos, grãos, massas, gases)
+		how much milk do you drink?
+	how many - counable nouns ()
+		how many books do you read?
+	Adverbs of manner - tell us how things happen
+		she drives carefully - como a ação foi feita
+			adiciona o ly normalmente
+			hard - não muda --- hardly é outra coisa, sinifica raramente
+			well - não muda
+			fast - não muda
+			early - não muda
+			late - não muda --- lately, algo que tem acontecido ultimamente
+	Formal language to use in an e-mail
+		Introduction
+			Greeting
+			Dear Mr  - for him
+			Dear Mrs - for her
+			Dear Sir
+			Dear Madam
+			To whom it may concern
+			
+			Introductory sentence
+			I am writing with regard to
+			I am writing in reference to ...job offer... advertisement
+		Body of the text
+			
+			I look forward to hearing from you soon
+			Thank you in advance
+			Thaks for your attention
+		Conclusion
+			Best regards
+			Kind regards
+			Regards
+M3U5 - Verbs followed by gerund or infinitive
+	ING
+		don't mind -  don't mind working in the evening
+		finish - I neve finished reading this book
+		miss - I miss living in NY
+		avoid - Please avoid calling me at night
+		recommend - They recommended buying a new computer
+		
+		I miss not having bills to pay
+	INF
+		plan - I planned to travel this weekend
+		offer - He offered to help
+		decide - We decided to move
+		afford - They can't afford to travel
+		begin - I will begin to code right now
+		learn - I never learned to ride a bike
+
+		We decided not to travel anymore
+	Question words / WH words
+		what - o que / qual
+		when - quando
+		where - onde
+		which - qual dessas
+		who - quem
+		whose - de qum
+		why - porque
+		how - como
+	Ordinal numbers
+		indicate the position of something
+		First 1st 
+		Second 2nd
+		Third 3rd
+		Forth 4th
+		Fifth 5th
+		Sixth 9th
+		Seventh 7th
+		Eighth 8th
+		Ninth 9th
+		Tenth 10th
+		Eleventh 11th
+		Twelfth 12th
+		Thirteenth 13th
+		...
+		Twentieth 20th
+		Twenty-first 21st
+	Dates
+		USA - Month / day / year
+			on November 1st, 2000
+		UK - day / month / year
+			on 13th of march, 1985
+			
+		1985 nineteen ninety-five
+		2000 two thousand
+		1908 nineteen oh eight
+		
+		I was born in february
+		I was born on 2nd of february, 1991 
+		
+M4U1
+	Present perfect continuous - conectar ações do passado com influência no presente
+	PP                               PPC
+	Have/has + past participle       Have/has + been + verb + ing
+					 Haven't been ...
+					 
+	Usado para focar na atividade, no andamento dela, por quanto tempo algo vem acontecendo, atividade que pode continuar, evidencia de atividade recente, também com coisas acontecendo que são temporarias
+	
+	usado com for e since, e na pergunta com how long
+	
+	Possessive pronouns
+		evitarpetição de palavras
+		mine, yours, his, hers, ours, yours, theirs
+M4U2
+	more - less
+	the most - the least
+	
+	Adjectives ending in ED and ING
+		I am excited about the party! - como alguem se sente a respeito de algo
+		The part will be exciting! - descrever algo
+
+M4U3
+	Uses of gerund and infinitive
+		remember
+			remember to do something - I need to remember to call Racher after work
+				I will always remember seeing MJ in person
+			remember doing something - I don't remember closing the door
+		forget
+		try
+			try to do something - I tried to open the window, but it is stuck!
+			try doing something - My internet stopped. I will try turning off and turning on the router again.
+		stop
+			stop to do something - they were driving for hours, so the stopped to eat something
+			stop doing something - I decided stop drinking soda five years ago
+
+	Time sequencers and connectors
+		to join two actions
+			they called me when I was getting home
+		to give reason
+			I dodn't go to work beacause I was sick
+		to show result
+			I wasn't ready to move to another country, so I declined the job offer
+		to show contrast
+			I wanted to go on time, but the bus was late
+			
+		Although - embora
+		And
+		But
+		Because
+		After X days
+		Before
+		So
+		After this
+		Then - então
+		Suddenly - de repente
+		
+M4U4
+	Zero Conditional
+		General truths, rules, instructions
+		Plants die if you don't water them
+		If you see Jessica, tell her I need to see her
+		
+		If/when + present simple, present simple
+		You fell tired if you don't sleep
+	Phrasal verbs with 'up' - depende do contexto inserido
+		verb + preposition 
+		Add up - somar
+		Clean up - limpar
+		Grow up - crescer
+		Heat up - esquentar
+		Warm up - aquecimento
+		Take up - começar
+		Make up - inventar/criar
+		Look up - buscar/pesquisar
+		Show up - ir/aparecer em algum lugar
+		Keep up - continuar
+		End up - acabei/então
+		
+M4U5
+	First Conditional
+		consequencia futura a respeito de algo no presente
+		If you don't study, you will fail the test
+		I will fail the tes if I don't study
+		
+		If + present simple, Future simple
+	Adjectives + prepositions
+		Afraid of
+		Capable of
+		Proud of
+		Aware of
+		Disappointed with
+		Familiar with
+		Satisfied with
+		Responsible for
+		Famous for
+		Thankful for
+		Ready for
+		Accostomed to
+		Similar to
+		Allergic to
+		Excited about
+		Worried about
+		Angry about
+		Happy about
+
+M5U1
+	Second conditional
+		talk about a present of a future situation that is unlikely to happen, things that are not propable to happen in the future
+		IF clause
+			if + sumple past
+			if I had
+			if I didn't have
+		Main clause
+			would + base form verb
+			If I had time, I would travel more
+			If I won the lottery, I would buy a expensive car  
+			
+		IF I/he/she/it -> were taller (remenber - If I were a boy)
+	Word building - Noun Formation
+		Prefixes - usual unusual
+		Sufixes - act actor
+		Conversions - I'm gonna text you.. I am going to text you ... - I'm going to send you a text message (text originalmente era um pronome e é transformado em um verbo) - Google it - converte o nome google em um verbo 
+		Compounding - head + ache - headache
+		I/he/she/it -> would be a super model
+**********     Vocabulary     ************
+
+meaningful - significativo
+surely - certamente/ com certeza
+adviser - conselheiro
+dust - pó/poeira
+accuracy - precisão
+disability - deficiência
+ethnicity - etnia
+coverage - cobertura
+gathering - reunião/encontro/coleta
+weirdness - estranheza 
+quirkly - peculiar
+awkward - embaraçoso/constrangedor	
+hinder - dificltar/atrapalhar
+lend - emprestar
+ assess - avaliar
+conveys - transmite
+tiring - cansativo
+frightening - assustador
+complaining - reclamando
+wage - salario
+Acceptance - aceitação
+worth - vale
+tail - rabo
+widen - ampliar
+like-minded - com ideias semelhantes
+trustworthy - confiavel
+nurture - nutrit/alimentar/cultivar
+stand out - destacar-se
+
+Chores - Tarefas de casa
+Held - ocupar/cumprir cargo
+
+hook up - engatar/conectar
+as well - também
+whether - se/de/quer ex: regardless of whether the company is hiring (independentemente de a empresa estar contratando)
+approach - abordagem
+seek - progurar/buscar
+
+Scouts - coteiros/batedores
+Tying - amarrar
+
+assess - avaliar
+screening - triagem
+traffic jams - engarrafamento
+unadvertised - não divuldada
+aid - ajuda
+
+canned - em conversa
+aware - ciente/saber/conhecimento
+
+savvy - experiente
+
+bothered - incomodado
+depth - profundidade
+beyond - além do esperado
+tradeoff - troca, compensação
+follow-up - seguimento
+scale the application - passar para proxima etapa 
+
+gut feel - intuição 
+
+Blend in - misturar-se
+
+warmly - calorosamente
+properly - corretamente
+
+affirmatife x arfirmatife == afirmação x afirmativo
+negatife x negative == negação x negativo
+throughout == em todo/por todo
+tech fair == feita de tecnologia
+citizen == cidadão
+analyzasde your behavior - analisar seu comportamento
+
+echoed - ecoou
+tons - toneladas
+banging down - bater à /derrubar
+bump into you - esbarrar em você
+ring you up - ligar para você
+stand still - ficar parado/quieto
+dutifully - obedientemente/respeitosamente
+
+courts - tribunal/corte
+word link game
+Mob - multidão/máfia
+bow - arco/proa
+lashes - cilios/chicotadas
+fellow - colega - não é informal
+brethren - irmão de trabalho
+
+**********     E4T Conversation     ************
+
+I can't leave trash behind
+
+https://docs.google.com/document/d/1-zCYh9caEA9yebSshj8e8bA-K87XJWFSQyyuQmoZzyU/edit?usp=sharing
+I have a degree from a vocational school
+I haven't finished yet
+
+this > someone close
+these > plural
+that > someone far
+those > group of people far
+I will going
+Recuiters - professional in charge of finding and hiring people to fill vacancies
+
+1 - https://youtu.be/0x1WRY4fvz4
+2 - https://youtu.be/Pt2ZZBZ4Mow
+3 - https://www.youtube.com/watch?v=naIkpQ_cIt0
+4 - https://www.youtube.com/watch?v=3AgfK3R8Pgs
+5 - https://www.youtube.com/watch?v=JSLhP8i-5U0
+6 - https://youtu.be/ad2qjy5w8BM
+7 - https://www.youtube.com/watch?v=JEJlzFftb44
+8 - https://www.youtube.com/watch?v=bSEsH-Sf3aM
+9 - https://www.youtube.com/watch?v=g3ir7_OlxlI
+10 - https://youtu.be/Uo0KjdDJr1c
+11 - https://youtu.be/phiDj5nlF5c
+12 - All about the company - https://www.youtube.com/watch?v=rhGEX6Ncw4M
+
+Familiarizando-se com a linguagem de missão visão e valores da empresa - https://www.youtube.com/watch?v=wcLvXLtKQwk
+
+16 - https://youtu.be/vXDGMXv9JJs	
