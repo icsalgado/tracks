@@ -8,7 +8,7 @@
         <th>PHP</th>
         <th>Python</th>
         <th>Golang</th>
-        <th>Javascript / Typescript</th>
+        <th>JS / TS</th>
         <th>C# / .net / asp</th>
         <th>Java</th>
     </tr>
@@ -64,7 +64,7 @@
 <table>
     <tr>
         <th>Linux / Git</th>
-        <th>Cloud</th>
+        <th>Cloud / LowCode</th>
         <th>DB / REGEX</th>
         <th>Security</th>
         <th>Containers</th>
