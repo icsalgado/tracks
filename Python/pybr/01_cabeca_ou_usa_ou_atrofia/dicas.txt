@@ -1,0 +1,15 @@
+tutorial, a cabesa ou você usa ou atrofia
+
+https://colab.research.google.com/drive/1vfPL9CBq-KwJPcZ7aHP07Eput7gNm8rp#scrollTo=JWnCU_Kj0Fxh
+
+em python o str(n)[-1] pega o último indice de uma string fazendo o casting, essa estrutura facilita a identificação de padrões sem precisar iteração em uma lista
+
+nums
+
+[x for x in nums if x % 2 == 0] list compreend
+
+sorted(nomes, key=len) para usar uma função na lista
+
+set(n) pega as letras repetirdas
+
+https://calendly.com/fmasanori

@@ -1,0 +1,18 @@
+Raspando dados da internet
+
+scrapy - framework para raspagem de dados, assincrono, código aberto, extensivel
+
+https://github.com/rennerocha/pybr2023-tutorial
+
+
+yield - uma forma de aguardar de forma assincrona a execução para tratar outras tarefas
+
+scrapy shell https://quotes.toscrape.com/
+	para entrar em um terminal para raspar dados
+	response.css('div.quote')
+	
+scrapy runspider exercicio
+
+Replicar o que é feito no script js normalmente, para paginas com scroll infinito, pode evitar o uso do selenium	
+
+livro regex  Aurelio Vargas
