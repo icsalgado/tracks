@@ -1,0 +1,250 @@
+INTRODUÇÃO E LABORATÓRIO VIRTUAL
+
+Links Úteis 
+
+Separamos aqui alguns materiais complementares como artigos, apostilas, apresentações, entre outros. Esses materiais serão úteis para você se aprofundar ainda mais nos principais temas deste Módulo, listados a seguir:
+
+O que são containers? 
+
+https://www.ibm.com/br-pt/cloud/learn/containers
+
+https://www.redhat.com/pt-br/topics/containers
+
+ 
+
+Diferenças entre containers e máquinas virtuais (VMs)
+
+https://www.redhat.com/pt-br/topics/containers/containers-vs-vms
+
+ 
+
+O que é Docker?
+
+https://www.redhat.com/pt-br/topics/containers/what-is-docker
+
+https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/container-docker-introduction/docker-defined
+
+ 
+
+Comandos essenciais 
+
+https://medium.com/xp-inc/principais-comandos-docker-f9b02e6944cd
+
+https://docs.docker.com/engine/reference/commandline/docker/
+
+https://dev.to/soutoigor/docker-imagens-containers-e-seus-principais-comandos-23p6
+
+Bons estudos! wink
+
+
+Na maquina configurar o SSH, caso não tenha instalado o openssh
+	ip a mostra o IP da maquina para acesso user@ip
+	
+	baixando o docker usando curl com script rápido
+	
+	https://hub.docker.com/
+	
+	docker pull hello-world
+	docker images
+	docker run hello-world
+	docker ps >>>> mostra os containers
+		-a >>>> mostra o que foi feito
+		
+	docker pull ubuntu
+	docker run ubuntu >>> entra e sair rapidamente
+	docker run ubuntu sleep 10 >>> umnovo container fica em execução por 0 segundos
+	docker stop "id"
+		ou
+		docer stop "name"
+	
+	docker run -it ubuntu >>> modo interativo e com terminal dentro do container
+		** exite a sintaxe onde existe o comando container depois do docker ex: docker containet ls ou docker container run ubuntu
+		
+	docker run -d ubuntu >>> para rodar em background
+	docker exec -it "id do container" /bin/bash >>> executar o container inicializado e rodando em background
+	
+	docker rm "id do container" >>>> remove o container
+	docker rmi "nome da imagem" >>> remove a imagem
+	
+	docker run -dti --name Ubuntu-A ubuntu >>> para dar nome a um container
+	
+	docker cp "arquivo.txt" Ubuntu-A:/destino >>> do local para o container
+	
+	mysql
+		docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 mysql  >>>p para setar a porta (porta do host:porta do container) e -e para setar variaveis de ambiente
+	
+		docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 --volume=/data/mysql-A:/var/lib/mysql mysql >>> para salvar os arquivos do banco nesse caso em um outro local, nesse caso na maquina local, assim perdendo o container os dados estão preservados
+		
+		docker exec -it mysql-A bash
+		
+		mysql -u root -p --protocol=tcp
+		
+	docker inspect mysql-A
+		item volume tem destination, dentro o container onde o BD é salvo
+	mysql -u root -p --protocol=tcp --port=3306
+		create database aula;
+		use aula;
+		create table alunos (alunois int, nome varchar(50), sobrenome varchar(50), endereco varchar(50), cidade varchar(50));
+		insert into alunos (alunois, nome, sobrenome, endereco, cidade) values (1, 'carlos', 'silva', 'av123', 'nova');
+		
+	Outros tipos de mount - formas de criar um volume de dados no docker
+		bind
+			foi o exemplo acima
+			vincular umdeterminado diretório ou arquivo do host dentro do conainer
+			docker run -v /hostdir:/containerdir mysql
+			
+			
+			docker run -dti --mount type=bind,src=/root/data/debian-A,dst=/data debian
+			
+			docker run -dti --mount type=bind,src=/root/data/debian-A,dst=/data,ro debian >> acrescenta um ro para read only
+			
+			
+		named
+			São volumes que são criados manualmente
+				docker volume create nome_do_volume
+			São criados em /var/lib/docker/volumes e podem ser refenciados apenas pelo nome
+				docker run -v mysql_data:/containerdir mysql
+				
+			docker volume ls
+				para listar os volumes
+			
+			docker volume create data-debian
+			
+			docker run -dti --name debian-B --mount type=volume,src=data-debian,dst=/data debian
+			
+			docker volume rm data-debian
+			
+			docker volume prune >> remove todosos volumes no host que não estão em uso
+				
+			docker em -f centos-A >> para remover o container sem precisar para-lo
+		dockerfile volume
+			criados pela instrução volume criados no mesmo caminho do docker /var/lib/docker/volumes
+			o volume é criado ao executar o container e são uteis para salvar dados persistentes
+	
+	
+	docker container prune >> remove todos containers
+	
+Apache
+	docker pool httpd
+		os arquivos ficam em /var/local/apache2/htdocs
+		
+		docker run --name apache-A -d -p 80:80 --volume=/root/data/apache-A:/usr/local/apache2/htdocs httpd
+		
+php
+	docker pull php:7.4-apache
+	
+	docker run --name php-A -d -p 8080:80 --volume=/root/data/php-A:/var/www/html php:7.4-apache
+	
+
+docker stats php-A
+	para verificar cpu e memoria ulizada
+	
+	docker update php-A -m 128M --cpus 0.2 >> para limitar a memoria e usar 20% da CPU
+		No meu não funcionou, tive que atualizar também o swap
+		docker update php-A --memory 128M --memory-swap 128M --cpus 0.2
+	docker run --name ubuntu-C -dti -m 128M --cpus 0.2 ubuntu
+	
+	docker exec -it ubuntu-C bash
+		apt update
+		apt -y install stress
+			para estressar a maquina
+		stress --cpu 1 --vm-bytes 50m --vm 1 --vm-bytes 50m
+	
+
+docker info
+	informação do servidor
+docker logs php-a
+	logs por container
+docker top ubuntu-C
+	processos em execução
+
+
+ip a
+	possível identificar a rede virtual do docker e IP
+docker network ls
+	lista as redes disponíveis
+doccker network inspect bridge
+	verifica os container conectados nessa rede
+
+o ping não vem mais instalado
+	apt-get install -y iputils-ping 
+
+docker network create minha-rede
+
+docker run -dti --name ubuntu-A --network minha-rede ubuntu
+
+docker network rm minha-rede
+
+
+DEFINIÇÃO E CRIAÇÃOD E UM DOCKER FILE
+
+docker run -dti --name ubuntuPython ubuntu
+docker exec -it ubuntuPython bash
+apt install python3 -y
+apt install nano
+apt clean
+
+nano app.py
+	nome = input("qual seu nome")
+	print (nome)
+
+acima é o modo manual, criando o container, entrando, instlando e criando aplicação
+
+docker file
+
+cria a aplicação
+
+vim dockerfile
+	FROM ubuntu
+
+	RUN apt update && apt install -y python3 && apt clean
+
+	COPY app.py /opt/app.py
+
+	CMD python3 /opt/app.py
+
+docker build . -t ubuntupython2
+
+docker run -it --name meu-app ubuntupython2
+
+
+Imagem MULTISTAGE
+	Gerada uma imagem de uma linguagem (golang), encapsulado o binário em outra imagem (alpine)
+	
+Subir para o Dockerhub
+	docker login
+	docker build . -t icsalgado/my-go-app:1.0
+	docker push icsalgado/my-go-app:1.0
+
+Registry - nome dado a um repositorio de imagens
+
+	docker run -d -p 5000:5000 --restart=always --name registry registry:2 
+		isso no servidor de imagens
+
+	docker image tag 3369c59bd85b 192.168.122.122:5000/my-go-app:1.0
+		tagear a imagem para o servidor de imagens no servidor inicial
+	curl 192.168.122.122:5000/v2/_catalog
+		para ver se tem imagens no servidor de imagens
+
+	docker push 192.168.122.122:5000/my-go-app:1.0
+		ele vai indicar que não está usando o https
+	editar arquivo /etc/docker/daemon.json 
+		{ "insecure-registries":["192.168.122.122:5000"] }
+	systemctl restart docker
+	
+Docker compose
+	definir e compartilar aplicativos com vários conteineres
+	
+	verificar a versão compativel do compose com o docker
+	
+	
+	apt-get install -y docker-compose
+	
+	
+	depois de criar o docker-compose.yml
+	
+	docker-compose up -d
+		 para subir - d em segundo plano
+			down para descer
+
+

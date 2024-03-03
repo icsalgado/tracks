@@ -1,5 +1,0 @@
-docker stop [id]
-docker rm [id]
-docker rmi [imagem]
-
-docker run -dti --name Ubuntu-A ubuntu

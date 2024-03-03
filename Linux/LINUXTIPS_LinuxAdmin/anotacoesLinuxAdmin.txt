@@ -1,0 +1,982 @@
+cat /etc/debian_version
+
+	$ significa que está com um user comum, qualquer um menos o root
+	# significa que é o root
+	
+	"su - " vai para super user no ambiente do root
+	
+	o root não fica no diretorio home
+	
+	cd - vai para o último diretorio acessado
+	cd sozinho volta para a home
+	
+	ctrl + l limpa a tela
+	
+	ctrl + d sai do shell
+	
+	bash - born again shell
+		um dos recursos é usar a seta para cima
+		
+	partindo do / indica-se um caminho absoluto
+	
+LSB - linux standard base
+	FHS -  Filesystem Hierarchy Standard
+		/bin
+			binários do sistema, os executaveis como o ls, os essenciais para o linux
+		/boot
+			inicialização do sistema
+			vmlinuz - é o kernel do linux
+		/dev
+			devices - dispositivos
+			sda - 
+				Discos sata
+				um segundo disco seria sdb e assim por diante
+				sda1
+					partição do disco sda
+					os discos podem ser particionado em até 4 primarias
+						sda1, sda2, sda2, sda4
+					partições lógicas são a partir do 5
+						sda5, sda6 ...							
+			hda -
+				Discos IDE
+				
+			Existem dois tipos de devices
+				Bloco - armazenamento
+					representado pelo b 
+					HD por exemplo
+				Caractere - transferencia de informação
+					representado pelo c	
+					Terminal por exemplo
+						tty
+		/etc
+			arquivos de confguração da maquina
+				nome da maquina - hostname por exemplo
+		/home
+			as homes de cada user
+		initrd.img
+			imagem de inicio 
+		/lib
+			bibliotecas compartilhadas do sistemas
+				libdiscover.so por exemplo
+			/lib/modules/5.10.0-18-amd64/kernel/drivers
+				driveis do sistema
+					modulos de kernel = driver
+						vrs.ko por exemplo
+		/lost+found
+			para recuperar perdidos por falhas
+		/media
+			pendrives, hd externo
+		/mnt
+			ponto de montagem usado mais de forma temporária
+		/opt
+			ponto onde deveriam estar os arquivos de softwares, mas é pouco usado
+		/proc
+			filesystem virtual criado pelo kernel e outros processos
+			normalmente é usado com arquivos dinâmicos				
+		/root
+			home do root
+		/run
+			tudo que está rodando desde o último boot
+			Informações dos processos
+			tmpfs temporary filesystem
+			antigo /var/run mudou na FHS3
+		/sbin	
+			super user binaries
+		/srv
+			dados estaticos como arquivos do apache por exemplo
+		/sys
+			arquivos do sistema do pornto de vista de kernel, driver e outros devices	
+		/tmp
+			usado por apps para dados temporários
+		/usr
+			Como se fosse a segunda hierarquia de diretorios
+			Tudo que não é essencial para o linux e instalado depois da instalação dele
+			segunda hierarquia de diretórios do linux
+			/bin
+				binarios não essenciais para o sistema
+			as bibliotecas vão ser locais
+			/local
+				terceira hierarquia de diretórios do linux
+				coisas da maquina, não compartilhadas no servidor
+		/var
+			variaveis, logs, backups, cache
+				lock
+					para que não execute a mesma coisa duas vezes
+				spool
+					coisas aguardando processamento
+						
+						
+	desligar a maquina
+		halt
+		poweroff
+		shutdowb -h now
+		shutdown -h 18:00
+		shutdown -h +30 "mensagem para os users"
+		shutdown -r now >> reinicia
+			shutdown -r +30 "Reboot in 30 min"
+			shutdown -c "Reboot canceled"
+		reboot
+		init 0 >> desliga
+		init 6 >> reinicia
+
+Comandos internos e externos do shell
+	internos, dentro do interpretador de comandos e é executado mais rapidamente
+	
+	which ls
+		para saber onde está o comando
+	man builtins
+	
+	type alias
+		diz se o comando é interno ou externo
+	
+ls -B 
+	lista arquivos exceto backups
+		backups são terminados em ~ por convenção
+		
+ls --color=auto
+	diferencia pastas e arquivos em cores
+
+ls -f = ls -p esse último não mostra o * e @ 
+	lista por ordem de criação/alteração
+	
+Links simbolicos(atalhos)
+	representados por @ no final
+
+Executaveis
+	representados por * no final
+	
+ls -lG = ls -lo esse ultimo lista apenas o dono e ls -lg lista apenas o grupo
+	oculta a coluna do grupo
+	
+ls -ln
+	muda o nome do dono e grupo para formato numérico
+	
+ls -L
+	altera os links simbilicos listados apenas para uma referencia unica
+	
+ls -r
+	reverte a listagem para ultimos alterados
+		boa para analisar Logs
+ls -lac
+	classifica pela ctime de alteração
+ls -X
+	classifica conforme a extensão
+ls -R
+	listagem recursiva
+
+	drwxr-xr-x 2 root root 4096 out  6 21:13 pasta1
+		o 2 depois da permissão indica quantos diretórios tem dentro do diretorio listado, incluindo . e ..
+		
+pwd
+	caminho atual
+cd - 
+	volta para o diretório anterior
+
+mkdir 
+	criar diretório
+	
+	mkdir -p diretorio1/diretorio1-1/diretorio1-1-1
+		para criar uma estrutura maior de diretórios -p
+		
+comando tree -A mostra a arvore mais bonitinha
+	
+rmdir -p diretorio1
+	remover recursuvamente os diretorios vazios
+
+cat - semelhante ao type no windows
+	visualiza o conteudo de um arquivio
+	-n exibe o numero da linha
+	-s oculta linhas em branco repetidas exceto uma
+	-b numera linhas com caracteres
+	-E adiciona um $ no final de cada linha
+	-T tabs são convertidos em ^I
+	
+zcat
+	arquivos .gz
+bzcat
+	.bz2
+xzcat
+	.xz
+tac
+	exibe o arquivo ao contrário
+	
+rm
+	-r remove recursivo
+	-rf remove recursivamente sem perguntas
+	-- -
+		para remover o arquivo -
+
+cp
+	copiar da origem para o destino
+	-u somente se os arquivos forem atualizados
+	-x não copia arquivos em partições separadas
+	-p preserva dono grupo e permissões
+	-a referencia a links simbolicos, preserva atributos e recursivamente
+
+mv
+	move arquivo para destino
+	renomeia aquivo para outro nome
+	-u move apenas se no destino a data do arquivo for mais antiga
+	
+	
+nano
+	acompanha o debian GNUlinux
+	
+	para sair ctrl^ + x
+
+mcedit
+	apt-get install mc
+	utiliza do F1 ao F10
+	para sair pode usar além do F10 duas vezes o esc
+	
+vi
+	funciona com modal
+		modo de comandos
+		modo de edição
+	
+Extra por minha conta hahah
+	EMACS
+		apt install snapd
+		snap install emacs --classic
+		
+		ou
+		
+		apt-get install emacs
+		
+		https://www.youtube.com/watch?v=eu_UiSiIwz0
+		
+		com GUI 
+			emacs texto.txt
+			
+		sem GUI
+			emacs -nw texto.txt
+			ctrl + x sai da edição
+			ctrs + s salva
+			crtl + x
+			ctrl + c sair
+
+Day 4
+Coringas
+	*
+		nenhum um ou mais de um caractere na posição
+	?
+		um caractere
+	[a-z]
+		padrão
+		[^abc]
+			negação, não termina com nenhum dos caracteres
+	{}
+		padrão strings
+		{zd,ze}
+			pedaços do arquivo
+			
+Comandos diversos
+	clear
+		limapr a tela
+		ctrl+l também tem essa função no shell
+	#
+		pode comentar um comando e salva-lo sem executar
+	date
+		data e hora atual e fuso
+		date -u
+			horario GMT
+		date -s 18:36
+			alteração do horário
+		date 10101837202240
+			MES DIA HORA MINUTO ANO SEGUNDOS
+			para alterar a data
+			
+		hwclock --systohc
+			para salvar no hardware da maquina
+			
+		date +%d
+			somente dia
+		date +%y
+			somente ano com 2 digitos
+		date +%Y
+			somente ano com 4 digitos
+		date +%m
+			somente mês
+		date +%d_%m_%Y
+			data completa com _ de espaçador
+		date +"%d %Y %j %T "
+			j para dia do ano em 365 
+			T para hora completa
+		date +"%r %p"
+			r para horario americano
+			p AM PM
+		date --date='@1234567890'
+			contador do unix time
+		date -u --date='@1'
+			primeiro segundo do unix time
+	df
+		espaço livre nas partições
+		df -h
+			mostrando com multiplos da computação
+		df -H
+			mostrando com multiplos do SI
+		df -l
+			arquivos locais
+		df -m
+			saidas em megabytes
+		df -a
+			detalhamento em pseudo filesystems
+			parecido com mounts
+		df -i
+			inodes > posição no disco	
+		df -T
+			sistemas de arquivo	
+		df -t ext4
+			filtro para uma listagem
+		df -P
+			formato posix
+	ln
+		cria um link
+		ln -s
+			link simbólico
+			cp -l
+				faz um apontamento hard link
+	du
+		ocupação do tamnho de cada arquivo
+		du -h
+			mostra em multiplos
+		du -s
+			para sumarizar
+		du -k
+			para mostrar em kbytes
+		du -m
+			mebytes
+		du --inodes
+			inodes
+		du -c
+			mostra o total
+	find
+		buscar tudo dentro do diretório atual
+		find . -name ls
+			diretorios que tenham no ls
+		find . -name mc
+			binarios e pastas
+		find . -type d -name mc
+			busca tipo diretorios
+		find . -type f -name mc
+			busca arquivos
+		find . -maxpth 2 -type f -name mc
+			busca com dois niveis
+			-minpth
+				minimo de niveis
+		find /etc -mtime -1
+			data de criação a um dia
+				exite
+					created
+					modified
+					access
+			find /etc -amin -300
+				acessados nos ultimos 300 minutos
+			find /etc -cmin -1
+				criados no ultimo minuto
+					-ctime para dias
+		find /usr -mount
+			faz a pesquisa em pontos montados no diretorio
+		find /usr -gid
+			pesquisa por grupo
+			
+			-uid 
+				por usuario
+			-user nomeDoUser
+				arquivos e pastas desse dono
+			-group nomeDoGrupo
+				arquivos e grupos com esse nome
+		find /usr -links 2
+			arquivos com 2 referencias
+		find /usr -size -1000
+			arquivos menos de 1000 blocos de bytes
+				+1000
+				1000
+		find /usr -types f
+					files
+				d
+					diretorio 
+				b
+					blocos
+				p
+					pipes
+				c
+					caracteres
+				s
+					sockets
+				l
+					links simbolicos
+	free
+		memoria ram fisica livre e memoria swap
+		usa o cat /proc/meminfo
+		
+		free --kilo
+		free --mega
+		free --kibi
+		free --mebi
+		
+		free --mega -s 1
+			a cada segundo
+			
+	grep
+		pesquisa por expressões dentro de um arquivo ou na entrada padrão
+		grep 'root' /etc/passwd
+		
+		grep -v
+			inverte a busca, exceto o que foi indicado
+		grep -f
+			texto num arquivo
+		grep -i
+			ignora case sensitive
+		grep -e '^www-data.*nologin$'
+			pesquisa por expressões regulares ^
+			.* qualquer caractere
+			$ termina alí
+		grep -F
+			busca também caracteres especiais como .*
+		grep -r
+			recursivamente
+		grep -h
+			oculta o nome do arquivo
+		grep -l
+			lista nome do arquivo apenas
+		grep -n
+			numero da linha
+	head
+		10 primeiras linhas de um arquivo
+		head -n 3
+			3 linhas
+		head -c
+			quantidade de bytes
+			-c 50 passwd
+				50 primeiros bytes de um arquivo
+	nl
+		numera a quantidade de linhas de um arquivo
+		nl -f a
+			numerar linhas vazias
+				
+	>
+		salva num arquivo 
+		echo "teste" > arquivo.txt
+		echo "testes" >> arquivo.txt
+			salva no final do arquivo
+	more
+		more arquivo
+		ele não rola para cima
+		mostra percentual do arquivo
+		pode usar barra para pular página
+		usar enter para linha
+		
+		cat arquivo | more
+			não mostra o percentual
+	less
+		less arquivo
+		não mostra percentual
+		controle com setas, enter e espaço
+		permite pesquisa
+		
+		/expressao
+			enter busca a proxima ocorrencia
+	sort
+		ordena o arquivo em ordem numerica e alfabetica
+		sort -r 
+			inverte string
+		sort -n
+			interte numericamente
+		sort -c
+			informa se esta ordenado ou não
+		sort +1
+			ordenando pela segunda coluna
+		sort -t " "
+			utiliza o delimitador espaço
+		sort -k 1
+			utiliza o delimitador chave primeiro campo
+			-k 2 segundo campo
+	tail
+		visualizar o final de um arquivo, ultimas 10 linhas
+		tail -n 4
+			ultimas 4 linhas
+		tail -f
+			modificações feitas
+			ctrl c sai
+	time
+		tempo de execução de um comando
+		time ls
+			tempo levado para listar
+	touch
+		cria um arquivo
+	uptime
+		tempo de execução da mauina
+	dmesg
+		mensagens do ringbuffer do kernel
+		--color=never
+			sem cor - interessante para scripts
+		-w
+			tipo tail -f
+		-x
+			decodifica msgs em texto
+		-t
+			transforma a timestamp para uma data e hora legivel
+	 	-c
+	 		limpa mensagens depois de exibir as informações
+	 mesg
+	 	receber ou não mensagens do talk
+	 echo
+	 	exibe mensagem na tela
+	 	echo -n 
+	 		não faz quebra de linha
+	 	echo -e
+	 		para caracteres especiais
+	 su
+	 	eleva a privilegios de root
+	 	su -
+	 		equivalente a su -l para login, eliminando variaveis de ambiente, é mais seguro
+	 sudo
+	 	escalar privilégios 
+	 	adduser usuario sudo
+	 	deluser usuario sudo
+	 sync
+	 	gravar buffer do kernel no disco
+	 uname
+	 	nome do sistema
+	 	uname -a
+	 		mais detalhes
+	 	uname -s 
+	 		exibe o kernel
+	 	uname -n
+	 		nome da maquina
+	 	uname -r
+	 		versão do kernel rodando
+	 	uname -v
+	 		data de compilação do kernel
+		uname -m
+			aruitetura 	
+	reboot
+		reinicia a maquina, com o root
+		systemctl reboot
+			mesma coisa
+		reboot -f
+			força sem fechar processos 
+			recomendado usar o sync antes
+		shutdown -r now
+			mesma coisa
+		echo b >/proc/sysrg-trigger
+			reinicia direto no kernel
+	halt
+		desliga a maquina
+		systemctl halt
+			mesma coisa
+		shutdown -h now
+			mesma coisa
+		echo o >/proc/sysrq-trigger
+			desliga no kernel
+		shutdown -h horario
+			agenda para desligar, pode ser o -r para reiniciar
+				shutdown -h +10
+					desliga em 10 minutos
+		shutdown -c
+			cancela os agendamentos
+	wc
+		conta palavras, bytes e linhas
+			na ordem Linha Palavras bytes
+		wc -l
+			numero de linhas
+		wc -c
+			numero de bytes
+		wc -w
+			numero de palavras
+	seq
+		sequencia de numeros
+		seq 10
+			de 1 a 10
+		seq 2 10
+			de de 2 a 10
+		seq 2 2 10
+			de 2 em 2 começando de 2 ate 10
+			inicio incremento final
+		seq -w
+			utiliza 01 02 ...		
+	chattr
+		permite alterar atributos de um sistema de arquivos
+		trabalha em conjunto com lsattr
+		
+			padrão ---e--- extense padrão no ext4
+		chattr +i teste
+			imutavel, não permite alterações no arquivo
+			nem o root pode 
+			
+			-i teste
+				remove o atributo
+				
+		chattr +a teste
+			permite adicionar apenas conteudo no final do arquivo e impede a remoção
+			para diretórios ele impede apenas que os arquivos sejam removidos	
+			
+		chattr =aie * 
+			para atribuir a vários
+		
+		chattr +c
+			faz a compactação em algumas distros
+			
+		chattr +s
+			remoção segura, os blocos são zerados e dificulta a recuperação. Mas esta caindo em desuso principalmente por causa do journaling
+		chattr +S
+			sync imediato para arquivos
+			+D
+				sync imediato para diretórios
+		chattr +d
+			não serão incluidos no backup do Dump
+			
+	cut
+		corta um pedaço do arquivo para exibir apenas parte dele
+	cmp arquivo1 arquivo2
+		para comparar um arquivo indicando o byte diferente
+	diff arquivo1 arquivo2		
+		compara mostrndo a diferença mais legivel
+		diff -u
+			unificado fica mais legivel
+		diff -r
+			compara diretórios
+		
+	apt-get patch
+		patch -p1 -N </caminho
+			p1 signica o nível da pasta para comparação
+			significar aplicar as diferenças entres arquivos e diretórios
+		patch -p1 -R
+			reverte um patch aplicado
+	whereis
+		localiza pagina de manual do sistema	
+	which 
+		localiza o binário do comando
+	jobs
+		programas em segundo plano
+		
+	fg 1
+		passa o programa rodando em background para primeiro plano
+	bg 1
+		passa para segundo depois de um ctrl z que serve para parar
+	kill 
+		encerra um processo
+	
+	; 	
+		permite executar comandos em sequencia
+		
+	sleep 2
+		pausa por 2 segundos
+	ps
+		exibe processos em execução no teminal altual 
+		ps -a
+			em todos terminais
+		ps -ax
+			com terminal associado ou não, e em todos usuarios
+		ps -aux
+			listagem com filtro de usuario
+			coluna stat
+				s soneca não interrompivel
+				D io de disco
+				I ocioso
+				R rodando
+				Z zumbi, perde a referencia de um processo pai
+				X processo morto
+		ps -axm
+			memoria de cada processo
+		ps -a -x -f = ps -axf
+			listagem em modo de arvore
+		ps -e
+			variaveis de ambiente utilizada no comando
+		ps -w
+			exibe linhas longas
+	pidof
+		retorna a pid de um processo especificado pelo nome
+		-s
+			retorna o primeiro processo
+	pstree
+		exibe a arvore de processos
+		-A
+			usando caracteres
+		-c
+			mostra incluindo processos pai
+		-h
+			processos pai e antecessores
+		-p
+			exibe o pid
+		-H 433
+			exibe o processo 433 em destaque
+	kill
+		mata um processo
+		por padrão usa o -15 ou kill -TERM
+			são chamado de sinal - pede para o programa finalizar de forma amigavel
+		kill -9 ou kill -KILL
+			mata o processo sem perguntar nada
+		kill -HUP ou kill -1
+			releitura dos arquivos de configuração sem finalizar
+		kill %1
+			matar conforme o comando jobs
+			
+	pgrep -u
+		grep de processos
+	pkill
+		mata processos atraves do nome
+	killall
+		mata processo de acordo com nome
+	killall5
+		esse mata todos os procesos
+		perde inclusive o acesso remoto
+		
+	nohup
+		impede que o programa seja afetado por um sinal de interrupção
+	top
+		status da execução dos processos em tempo real
+		horario da maquina
+		uptime da maquina
+		load average
+			quantidade de carga e fila de processamento a ser executado, de acordo com a quantidade de cpu
+		tarefas 
+			total, executando, sleep, parada, zumbis
+		uso de cpu
+			uso de cpu us, uso do sistema sy, nice ni, idle id, waiting wa, tempo para interrupção de hardware hi, tempo interrupção de software si, tempo roubado pela vm pelo hypervisor st 
+		memoria
+		memoria swap
+		
+		se apertar m dentro do top, muda a exibição da memoria
+		se apertar 1 muda a forma de exibição das cpus
+		
+		colunas do top
+			PID
+			usuario
+			PR
+				prioridade agendada
+			NI
+				nice - prioridade para executar no sistema os processo
+			VIRT
+				tamanho virtual do processo
+			RES
+				o que esta residente em memoria
+			SHR
+				memoria compartilhada entre os programas
+			S
+				stat como no ps
+			%CPU
+			%MEM
+			
+		shift + m
+			classifica por uso de memoria
+		apertando f
+			mostra tela descritiva de campos
+			a rola para baixo w rola para cima
+			q retorna na ordenação escolhida
+		apertando k
+			manipilação de processos com kill
+		apertando d
+			muda o delay
+		shift + w
+			salva as configurações customizadas
+		apertando i
+			ignora zumbis
+			
+		top -i
+			ignora processos zumbi
+		top -c
+			linha de comando completa da linha de parametros de completa
+		
+	nice
+		determina prioridade de execução de um programa ou comando
+			varia de -20 maior a 19 menor 
+			prioridade abaixo de zero apenas o root configura
+		nice -n 10 sleep 1000
+			-n indica um numero inteiro
+		renive -n 10 -p 597
+			atualiza o nice do processo usando o pid com -p
+			-u ou -g atualiza para usuarios ou grupos
+	tload
+		monitora os processos de forma mais gráfica
+	vmstat
+		tempo de utilização dos parametros do sistema linha a linha
+		vmstat 1
+			atualiza a cada um segundo
+
+
+multiplexador de terminal
+	screen
+		ctrl a
+			troca terminais
+		ctrl a w
+			mostra as screens
+		ctrl a c
+			cria nova screen
+		ctrl a 0
+			vai para a screen do numero
+			
+		ctrl a d
+			desconecta dp screen
+			
+			
+	screen -ls
+		mostra screens em execução 
+		
+	screen -x
+		reconecta na screen
+
+	TMUX
+		tmux new
+			ctrl+b c (aperta ctrl+b e solta depois o c)
+				para criar nova tela
+			ctrl+b 0
+				vai para tela do numero
+			ctrl+b d
+				desconecta
+			exit fecha a tela do tmux
+			
+			tmux attach
+				reconecta na sessão criada
+				
+			ctrl+b shift "
+				divide a tela na horizontal
+			ctrl+b shift %	
+				divide a tela na vertical
+			ctrl+b setas direcionais
+				para alternar entre as divisões
+
+Discos e partições
+
+	fidsk -l
+		lista discos
+	fdisk -l /dev/sdb
+		lista partições desse disco
+	fdisk /dev/sdb
+		entra no fdisk
+		p
+			partições criadas e rotulo de disco (esquema de particionamento)
+				g
+					para usar esquema gpt
+				o
+					esquema dos
+				s	
+					esquema sun
+				G? 
+					ives?
+		n 
+			nova partição - 1 a 4 primarias 5 a 68 swap
+
+				+400M para indicar o tamanho da partição
+		t
+			alterar tipo da particao
+		w 
+			salvar alterações
+	mkfs.ext3 /dev/sdb1
+		para formatar partição linux
+	mkswap /dev/sda2
+		para formatar partição como swap
+	wipefs -a /dev/sdb
+		destroi dados de partições criadas e apagar o que foi feito no discp
+		
+	gdisk /dev/sdb
+		entrar no gdisk
+		o
+			partição gpt
+			i
+				detalhes da partição
+			n
+				criar partições 1 a 128 partições
+		w
+			listar partições
+		b
+			backup
+	        v
+	        	verificação do disco
+	        x
+	        	modo expert
+	        	c
+	        		alterar esquema de disco
+	        	d
+	        		valor de alinhamento
+	        	s
+	        		resize
+	        	z
+	        		destroi estruturas gpt do disco
+	
+	parted /dev/sdb
+		entrar no parted
+		print
+			mostrar partições
+		mklabel msdos
+			criar partição tipo msdos
+		mkpart
+			para criar partição
+		set 1 boot on
+			setaa como boot a partição
+		rm
+			para remover
+			
+	cfdisk /dev/sdb
+		para entrar
+		t
+			lista de partições
+	
+no msdos o maior tamanho de partição é de TB
+no gpt o maior tamanho é de 1 ZB
+
+BIOS
+	feito em assembly na eprom da maquina
+	incializva uma tela e teclado básicos e procurava o sistema mbr para boot - POST power on self test
+	precisa de uma partição abaixo do cilindro 1024 para dar boot
+	
+UEFI - evolução do BIOS
+	programas de inicialização escritos em C (MS APPLE IBM ...)
+	roda programas de diagnostico dentro do efi
+	boot seguro
+	pode inicializar a rede no boot da maquina
+
+	Criar layout de particionamento usando uefi
+	
+	precisa ser criado como gpt
+		partição de compatibilidade de 1M para grub obrigatória
+		tipo Sistema EFI
+		
+	formatar as unidades menos o BIOS
+		apt install dosfstools
+			para usar o mkfs.vfat
+		mkfs.vfat /dev/sda2
+			essa partição efi precisa ser em vfat
+			
+Planejamento de disco
+	disco 1TB
+	
+	desktop
+	/ 20GB
+	/usr 15GB
+	/var 10GB
+	/home 500GB
+	swap 8GB
+	
+	
+	alternativo
+	/ 50GB
+	/home 930GB
+	swap 8GB
+	
+	servidor de e-mail
+	/ 20GB
+	/var 900GB
+	/home 5GB
+	swap 16Gb
+	
+	servidor de arquivos
+	/ 20GB
+	/home 5GB
+	/data 900GB
+	swap 8GB
+	
+	Servidor Web
+	/ 20GB
+	/home 5GB
+	/var 950GB
+	swap 8GB
+		
+		
+		
+						
+						
+						
+LinuxTips-LinuxAdmin - Day 2 FHS, diretorios e desligando a maquina
+				

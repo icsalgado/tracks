@@ -1,0 +1,63 @@
++====================== BASIC ======================+
+|---------------------------------------------------|
+|git init nomeRepositorio   #Cria um repositorio git|
+|git init     #Dentro de um diretorio para versionar|
+|git clone [url]        #Copia um repositorio remoto|
+|git config --global user.name "[seu nome]"        #|
+|git config --global user.email "[seu email]"      #|
+|---------------------------------------------------|
++====================== BRANCH =====================+
+|---------------------------------------------------|
+|git branch           #mostra as branches do projeto|
+|git branch novoRamo           #cria uma nova branch|
+|git checkout -b novoRamo    #cria e entra na branch|
+|git checkout outroRamo              #muda de branch|
+|git branch -d maisUmRamo  #remove o branch indicado|
+|git diff novoRamo outroRamo #diferencas entre ramos|
+|---------------------------------------------------|
++====================== CONTROL ====================+
+|---------------------------------------------------|
+|git status      #no repositorio para ver alteracoes|
+|git diff arquivo  #alteracoes realizadas no arquivo|
+|git add arquivo        #passa o arquivo para staged|
+|git diff --staged    #mostra diferencas das versoes|
+|git reset arquivo                 #retira do staged|
+|git reset hashDoCommit #remove commits depois desse|
+|git rm -f arquivo    #forca a remocao de um arquivo|
+|git rm --cached arquivo     #mantem local o arquivo|
+|git mv arquivo novoArquivo  #troca o nome em staged|
+|git commit -m "Informacoes relevantes aqui"       #|
+|---------------------------------------------------|
++====================== HISTORY ====================+
+|---------------------------------------------------|
+|git log  #historico de commits do projeto na branch|
+|git log --follow arquivo      #historico do arquivo|
+|git show hashDoCommit         #mudancas do conteudo|
+|---------------------------------------------------|
++====================== GITIGNORE ==================+
+|---------------------------------------------------|
+|.gitignore #nao versiona o que for lista no arquivo|
+|  \_ *.log                 #tudo que for log ignora|
+|  \_ diretorio/      #tudo que estiver no diretorio|
+|git ls-files --other --ignored --exclude-standard #|
+|---------------------------------------------------|
++====================== FRAGMENTS ==================+
+|---------------------------------------------------|
+|git stash       #salva alteracoes nao confirmadas e|
+|                 \_ retorna o ambiente para o ponto|
+|                          \_ anterior as alteracoes|
+|git stash list           #lista alteracoes em stash|
+|git stash pop        #restaura os arquivos em stash|
+|git stash apply    #mantem o stash salvo e restaura|
+|git stash drop     #remove tudo que estava em stash|
+|---------------------------------------------------|
++====================== SYNC =======================+
+|---------------------------------------------------|
+|git pull origin nomeRamo     #pega os dados remotos|
+|git push origin nomeRamo   #publica os dados locais|
+|git tag nomeTag hashDoCommit    #para criar uma tag|
+|git tag                   #lista as tags existentes|
+|git merge ramoAtualizado         #atualiza os ramos|
+|---------------------------------------------------|
++===================================================+
+|---------------------------------------------------|

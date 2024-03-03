@@ -1,0 +1,10 @@
+	Ambiente react
+vscode
+node e npm
+yarn
+react devtools para navegador
+
+
+	Criando projeto react
+npx ou npm create-react-app nomedoprojeto
+

@@ -1,0 +1,116 @@
+Instrutor Carlos Barbero
+
+	cloud computing
+		pagamento pelo uso
+		poder computacional, armazenamento, banco de dados, etc.
+	Provedores
+		Google, Amazon, Microsoft, Rackspace, DigitalOcean, etc.
+			a diferença é a implementação de containers
+	Beneficios
+		Agilidade
+		Elasticidade
+		Economia de custo
+		Globalmente distribuido
+		Suporte
+		Manutenção
+		Requer um trabalho mínimo para hospedar as aplicaçõescomparados ao fazer dentro de casa
+		
+	Grandes empresas não são candidatas a usar cloud publicas
+		são elas Google, microsof, amazon, ibm etc.
+		
+		Recomendado ler a biografia do google
+		
+	Tipos de serviços
+		IAAS
+			infrastructure as a service
+				Recursos computacionais, de rede, armazenamento.
+				Recursos proximos emnossas areas de TI
+		PAAS
+			Platform as a service
+				Entre o IAAS e SAAS
+				proporciona instalação de aplicações
+		SAAS
+			Software as a service
+				entrega fim a fim
+				só precisa configurar e usar
+	Regiões e zonas
+		Regiões - Localizações geograficas onde o datacenter é distribuido globalmente
+		Para cada região no minimo 3 zonas
+		Zona - Area de implantação de recursos do google cloud em uma região
+		Recursos regionais, Implantados de forma redundante em várias zonas de uma regição - proporciona mais disponibilidade em relação aos recursos de zona
+		Recursos multi-regionais
+			serviços distribuidos entre várias regições, otimizam a disponibilidadeo, desempenho e a eficiência do recurso
+			
+	Pontos de presença
+		Estrutura de rede globalmente distribuida
+		Hospedagem de recursos em uma borda mais proxima do usuário melhorando a experiência e segurança
+		Diminui a latência
+		CDN - armazena os arquivos estáticos
+		Fobra dedicada entre pontos de presença
+		
+	Google cloud network
+		Conectado por fibra
+		Nenhum outro provedor de nuvem tem a mesma estrutura
+			
+	Latẽncia
+		Tempo que uma request leva para ser transferida de um ponto a outrs medida em ms
+		gweb-network-tier-demo-archive.firebaseapp.com	
+			
+	Responsabilidade compartilhada
+		uso correto do serviço contratado, por exemplo manter as questões de segurança e compliance
+	
+	SLA
+		Acordo de nível de serviço
+		contrato entre duas partes
+			definição dos resultados
+			tempo de execução 
+			Definir os responsáveis pelas atividades e o envolvimento queterão 
+			Definir ferramentas utilizadas
+			
+Pontos importantes na adoção da nuvem
+	União entre as areas de PEOPLE > TECHNOLOGY > PROCESS
+Gestão de identidade
+	Autenticação de forma segura, dos usuários e serviços
+	Proteção contra perda de credenciais e tentativas de falsificação de indentidade
+	
+	Cloud Identity
+		Autenticação
+		Autorização - Cloud iam
+		Auditoria - Cloud Operations Audit Logging & Reports API
+			
+		Solução de IDaaS - identidade como serviço
+		Gerenciamento centralizado os usuários e grupos
+			
+			
+https://workspace.google.com/gcpidentity/signup/welcome
+
+admin.google.com
+
+cloud.google.com
+		
+console.cloud.google.com
+
+draw.io
+
+cloud.google.com/docs/terraform
+	iniciar o uso do terraforme para automação
+	a automatização evita erros humanos criando processos
+			
+Terraform
+	terraform plan
+	
+	terraform apply
+			
+https://github.com/digitalinnovationone/trilha-gcp-fundations-terraform-adminconsole.git
+
+
+Gestão de acessos e segurança
+			
+			
+			
+			
+			
+			
+			
+			
+			

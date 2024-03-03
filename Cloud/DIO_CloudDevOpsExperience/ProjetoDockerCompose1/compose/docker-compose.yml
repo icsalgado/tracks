@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  web:
+    image: httpd 
+    ports:
+      - "9000:80"
+    volumes:
+      - /root/data/curriculo:/usr/local/apache2/htdocs
+    networks:
+      - redeDocker
+
+networks: 
+  redeDocker:
+    driver: bridge
+

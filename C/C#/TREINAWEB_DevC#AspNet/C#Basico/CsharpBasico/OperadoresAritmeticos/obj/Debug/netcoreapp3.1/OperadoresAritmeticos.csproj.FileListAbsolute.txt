@@ -1,0 +1,16 @@
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\bin\Debug\netcoreapp3.1\OperadoresAritmeticos.exe
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\bin\Debug\netcoreapp3.1\OperadoresAritmeticos.deps.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\bin\Debug\netcoreapp3.1\OperadoresAritmeticos.runtimeconfig.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\bin\Debug\netcoreapp3.1\OperadoresAritmeticos.runtimeconfig.dev.json
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\bin\Debug\netcoreapp3.1\OperadoresAritmeticos.dll
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\bin\Debug\netcoreapp3.1\OperadoresAritmeticos.pdb
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.csproj.AssemblyReference.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.frmCalculadora.resources
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.csproj.GenerateResource.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.AssemblyInfoInputs.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.AssemblyInfo.cs
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.csproj.CoreCompileInputs.cache
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.dll
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.pdb
+C:\Users\icsalgado\Documents\tracks\TREINAWEB_DevC#AspNet\C#Basico\CsharpBasico\OperadoresAritmeticos\obj\Debug\netcoreapp3.1\OperadoresAritmeticos.genruntimeconfig.cache

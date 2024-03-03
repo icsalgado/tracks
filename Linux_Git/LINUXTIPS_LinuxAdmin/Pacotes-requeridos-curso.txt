@@ -1,4 +1,0 @@
-Execute o comando a seguir como root para instalar os seguintes pacotes:
-
-apt install tree coreutils bsdutils bsdmainutils net-tools man-db
-

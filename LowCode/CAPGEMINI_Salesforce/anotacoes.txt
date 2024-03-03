@@ -1,0 +1,33 @@
+CRM Salesforce - Capgemini
+	relacionamento entre empresa e consumidor
+	visão 360 do cliente
+	
+	
+	-Sales
+	-Service Cloud
+	-Marketing
+	-Commerce
+	-Analytics
+	-Interaction
+	-
+	-Industries
+	-Health
+	-Sustainability
+	-Partners
+	-Success
+	
+Setup
+	é importante criar ordens com um indicativo que facilite no username, por exemplo email@provedor.com.trail
+	
+	No trailhead
+		trailhead community
+			aprenda a usar
+Modelagem
+	tabela > objeto
+	colunas -> campos
+	linhas -> registros
+	
+	__c quer dizer um objeto customizado, sem ele quer dizer que é nativo
+	
+	fazer, Noções básicas da salesforce plataform e Modelagem de dados
+	

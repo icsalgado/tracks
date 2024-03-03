@@ -1,5 +1,0 @@
-Instalando o VirtualBox no MacOS
-
-Abre o console de comandos, e digite:
-
-# brew cask install virtualbox

@@ -1,0 +1,8 @@
+Repositorio do projeto
+https://discord.com/developers/applications
+Token do discord
+MTE2OTI0NzEwNDM4MDcwNjgyNg.GSPi39.qilT9K4IQpgcVKOhFPBYp-VIVOVe28Oy3mhqWU
+link do bot para integrar no servidor do discord
+https://discord.com/api/oauth2/authorize?client_id=1169247104380706826&permissions=8&scope=bot
+
+

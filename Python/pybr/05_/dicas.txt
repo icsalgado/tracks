@@ -1,2 +1,0 @@
-
-pip freeze - para listar as bibliotecas instaladas no ambiente

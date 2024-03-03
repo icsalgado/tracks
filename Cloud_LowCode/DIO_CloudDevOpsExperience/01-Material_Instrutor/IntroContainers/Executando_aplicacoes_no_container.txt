@@ -1,3 +1,0 @@
-docker run -dti  ubuntu 
-docker exec -it [id ou nome]  /bin/bash
-

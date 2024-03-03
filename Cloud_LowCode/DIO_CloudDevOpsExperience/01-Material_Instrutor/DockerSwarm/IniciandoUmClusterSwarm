@@ -1,9 +1,0 @@
-hostnamectl hostname aws1
-
-docker swarm init
-
-docker swarm leave
-
-docker swarm join --token [token]
-
-docker node ls
