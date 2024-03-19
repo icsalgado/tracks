@@ -1,0 +1,15 @@
+Pedro Bezerra - Pallo alto
+	Falou sobre metaverso, com conexões entre Rick & Morty, BlackMirror e Loki
+	
+
+	Pesquisar sobre: 
+		Tabela SWOT - análise de riscos - https://pt.linkedin.com/pulse/an%C3%A1lise-swot-aplicada-%C3%A0-seguran%C3%A7a-da-informa%C3%A7%C3%A3o-pedro-henrique
+			- https://securityleaders.com.br/ja-pensou-em-usar-analise-swot-na-seguranca-da-informacao/
+		Pixel Codec avatars (PICA) 
+			A posse de itens no metaverso estará em blockchain, assim como o código que mapeou o rosto em um óculos VR
+
+	Sobre Blockchain, atenção especial com os serviços de cuidado com a saúde
+		Tokenização de bens físicos
+		Smart contracts
+
+	Sobre IA, Artigo Adversarial attacks on ai systems
